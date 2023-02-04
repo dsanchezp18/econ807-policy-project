@@ -1,10 +1,12 @@
 ---
-title: "The influence of legitimization of business on labour market formalization"
+title: "The influence of entry regulation on labour market formalization"
 subtitle: "Policy Project Proposal"
 author: "Daniel Sánchez Pazmiño"
+mainfont: Latin Modern Roman
+sansfont: Latin Modern Roman
 date: "02/06/2023"
 bibliography: references.bib
-style: apa.csl
+csl: apa.csl
 format: pdf
 knitr:
   opts_chunk: 
@@ -24,7 +26,22 @@ library(tidyverse)
 
 # Introduction
 
-Ecuador is a middle income country located in upper South America next to Colombia and Peru. After its full dollarization in 2000, the country saw an economic surge between 2007-2014 as a result of high oil prices and a relatively indebted government [@Weisbrot.2017]. However, after a sharp decline in oil prices and the COVID-19 pandemic, the country seems to be unable to return to its pre-pandemic or pre-2014 levels, with employment indicators at an all-time low (see @fig-employment-graph).
+It is well understood that informal work -legal but informal economic activities which occur outside the government's regulatory capabilities [@Sassen.1994] can hinder economic development. On one hand, informal firms reduce the amount of taxes that can be collected by governments. Further, these businesses tend to remain small and with low productivity. Additionally, workers in the informal sector usually lack access to social security and other employment benefits, and tend to earn lower wages after controlling for skills. Informality is also related to bigger gender gaps, higher inequality, lower education and several other factors which worsen economic outcomes [@Delechat2020]. Further, the informal economy has been characterized with poorly defined work spaces, unsafe and unsanitary working conditions, inconsistent pay, long working hours and a lack of access to markets, financial services, work training, and technology [@IloND]. 
+
+While less present in the developed world, informality seems to be most present in developing countries, where it represents a third of of low and middle-income countries' economic activity [@Delechat2020]; in the world, the informal economy is reported to comprise more than half of the labour force and more than 90% of micro and small enterprises. At the macroeconomic level, informality can be regarded as one consequence of poor institutions, which have been shown to be significant factors for growth [@Acemoglu.2001, @RafaelLaPorta.1997, @Glaeser.2004]. For  its effect on inequality and its potential to be a channel for the propagation of monetary and fiscal policy [@Alberola.2020], informality is relevant at both the microeconomic and macroeconomic level.
+
+The desire for the formalization of the economy is well understood on the economy, especially considering that the impact on economic activity due to COVID-19 has increased informality worldwide [@ILO.2022]. However, the policy angle to this issue is subtle, given that the causes and effects of informality are difficult to document and understand completely. Among others, some policy approaches have focused on the role of governments in providing incentives for formalization to companies. One approach is to design tax systems that minimize distortions in the market [@Bardey.2019] as well as reducing the costs of formalization by reducing entry regulation for firms. The reasoning behind the effectiveness of this type of policy is that, as proposed by [@MauricioPrado.2011], firms who are less productive endogenously choose to operate in the informal due to the costs of entry (red tape cost) and the proportional taxation in the formal sector. While larger firms might be able to supercede the cost of formalization, smaller, less productive firms will not. Policy, in that case, should be directed at reducing regulation costs.
+
+I propose an empirical framework to test the relationship between the reduction of entry regulation on the formalization of the labour market in post-pandemic Ecuador. This setting is particularly useful for testing this kind of relationship due to the introduction of an unexpected reform in October 2020 which significantly reduced entry regulation for firms [@CaminoMogro.2022]. I propose the use of a regression discontinuiy in time (RDiT) design to investigate the causal effect of the reform on the creation of formal jobs at the province level.
+
+# Institutional background
+
+Ecuador is a middle income country located in upper South America next to Colombia and Peru. After its full dollarization in 2000, the country saw an economic surge between 2007-2014 as a result of high oil prices and a relatively indebted government [@Weisbrot.2017]. However, after a sharp decline in oil prices and the COVID-19 pandemic, the country seems to be unable to return to its pre-pandemic or pre-2014 levels, with employment indicators at an all-time low (see @fig-employment-graph). 
+
+However, informality and underemployment in this labour market have been shown to be historically high [@Meneses.2021, @Chavez.2012, @Mendoza.2020]: it has been determined that minimum wage increases in Ecuador (which have been frequent and substantial) have had virtually no effect on employment levels due to high-level of non-compliance and informality in the labour market [@Canelas.2014]. Further, Ecuador has been shown to have one of the most cumbersome labour market legislation in the region [@MacIsaac.1997], whose effect is attenuated by smaller base earnings over which benefits are paid, which suggests a correlation between lower wages and higher amount of labour market regulation. In 2020, some labour market regulations were removed in order to smooth the impact of COVID-19 on businesses, however, it is unclear if these actually helped businesses stay afloat or merely allowed for the reduction of adequate employment. 
+
+Not only the labour market is highly regulated in the country: the business environment in Ecuador is complicated for firms: Ecuador constantly ranks very low in terms of property rights, judicial transparency and economic freedom. Its low standing in economic freedom responds to a flawed and corrupt judiciary, characterized by inefficiency and difficulty to start a business [@Euromonitor.2022]. Further, an unstable economic environment after the election of the conservative Guillermo Lasso not long after a decade-long leftist regime has taken its toll on the government's financing capabilities. This political instability has also made the flexibilization of the labour market difficult to discuss in the legislative branch: only one set of policies aimed to improve the business environment have been passed, and the labour market reform which was proposed in May 2021 has still not been sent to Congress by early 2023. Given the difficulty to pass any kind of labour-related policy, other types of reforms which indirectly target the labour market would be welcome. The present analysis attempts to evaluate a policy like this one, which was not directly aimed to enhance employment, but still could cause an effect if companies with informal employees decide to formalize job contracts after entering the formal sector of the economy. 
+
 
 ```{r}
 #| label: fig-employment-graph
@@ -48,11 +65,9 @@ employment %>%
     labs( x = 'Year',
           y = 'Adequate employment (% of labour force)')
 
-
 ```
 
-
-# Policy and institutional background
+*The graph shows adequate employment as a percent of the labour force across time. Adequate employment refers to workers who earn a wage greater or equal to the prevalent minimum wage at the time of the survey.*
 
 # Literature review
 
