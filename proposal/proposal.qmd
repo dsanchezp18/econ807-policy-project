@@ -1,26 +1,53 @@
 ---
-title: "Policy Project Proposal"
+title: "The influence of legitimization of business on labour market formalization"
+subtitle: "Policy Project Proposal"
 author: "Daniel Sánchez Pazmiño"
-date: "Due Feb. 6th 2023"
+date: "02/06/2023"
 bibliography: references.bib
 style: apa.csl
 format: pdf
 knitr:
   opts_chunk: 
     echo: false
+    message: false
 ---
+
+```{r}
+#| label: setup
+
+# Load libraries
+
+library(tidyverse)
+
+```
+
 
 # Introduction
 
-Ecuador is a middle income country located in upper South America next to Colombia and Peru. After its full dollarization in 2000, the country saw an economic surge between 2007-2014 as a result of high oil prices and a relatively indebted government [@Weisbrot.2017]. However, after a sharp decline in oil prices and the COVID-19 pandemic, the country seems to be unable to return to its pre-pandemic or pre-2014 levels, with employment indicators at an all-time low.
+Ecuador is a middle income country located in upper South America next to Colombia and Peru. After its full dollarization in 2000, the country saw an economic surge between 2007-2014 as a result of high oil prices and a relatively indebted government [@Weisbrot.2017]. However, after a sharp decline in oil prices and the COVID-19 pandemic, the country seems to be unable to return to its pre-pandemic or pre-2014 levels, with employment indicators at an all-time low (see @fig-employment-graph).
 
 ```{r}
-#| label: employment-graph
+#| label: fig-employment-graph
+#| fig-cap: "Adequate employment in Ecuador"
 
 # Load the data
 
 employment<-
-  write.csv('labour-market-stats.csv')
+  read.csv('labour-market-stats.csv')
+
+# Graph
+
+employment %>%
+  filter(series == 'Adequate Employment') %>% 
+  ggplot(aes(year, value))+
+    geom_point(colour = '#2F66A9')+
+    geom_line(colour = '#189ad3' )+
+    theme_bw()+
+    theme(panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank())+
+    labs( x = 'Year',
+          y = 'Adequate employment (% of labour force)')
+
 
 ```
 
@@ -28,3 +55,5 @@ employment<-
 # Policy and institutional background
 
 # Literature review
+
+# References
