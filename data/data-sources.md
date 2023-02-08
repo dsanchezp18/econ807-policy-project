@@ -18,5 +18,12 @@ https://www.ecuadorencifras.gob.ec/documentos/web-inec/Geografia_Estadistica/Mic
 
 - DPA 2022 (found in the INEC website) uses tildes for provinces. SCVS uses without tildes but with the ñ in Cañar.
 
+4. Formal Job Contracts (SUT)
 
+https://www.datosabiertos.gob.ec/dataset/contratos-en-el-sistema-unico-de-trabajo
+
+
+5. Public employees
+
+https://www.datosabiertos.gob.ec/dataset/servidores-registrados-en-el-sistema-informatico-integrado-de-talento-humano-siith
 

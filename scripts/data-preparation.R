@@ -14,15 +14,20 @@ library(lubridate)
 
 # Load the data
 
+# Load all area codes as per the DPA 2022 (See data sources)
+
+area_codes <-
+  read_excel('data/CODIFICACION_2022.xlsx')
+
 # Business creation data (Directorio de Compañías SCVS)
 
 scvs_raw <-
   read_excel('data/directorio_companias.xlsx')
 
-# Load all area codes as per the DPA 2022 (See data sources)
+# Formal jobs data
 
-area_codes <-
-  read_excel('data/CODIFICACION_2022.xlsx')
+jobs_raw <-
+  read.csv('')
 
 # Area Identifiers ----------------------------------------------------------------------------------------
 
