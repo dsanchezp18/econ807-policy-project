@@ -27,7 +27,8 @@ scvs_raw <-
 # Formal jobs data
 
 jobs_raw <-
-  read.csv('')
+  read.csv('data/contracts-sut.csv',
+           sep = ";")
 
 # Area Identifiers ----------------------------------------------------------------------------------------
 
@@ -70,9 +71,40 @@ provinces_no_tilde <- c(
   'SANTA ELENA'
 )
 
+# Do an alternative ordering, some have tildes, other don't
+
+provinces_some_tildes <- c(
+  'AZUAY',                         
+  'BOLIVAR',                       
+  'CAÑAR',                         
+  'CARCHI',                      
+  'COTOPAXI',                      
+  'CHIMBORAZO',                    
+  'EL ORO',                        
+  'ESMERALDAS',                    
+  'GUAYAS',                   
+  'IMBABURA',                     
+  'LOJA',                          
+  'LOS RIOS',                      
+  'MANABI',                        
+  'MORONA SANTIAGO',               
+  'NAPO',              
+  'PASTAZA',                       
+  'PICHINCHA',                    
+  'TUNGURAHUA',                   
+  'ZAMORA CHINCHIPE',              
+  'GALÁPAGOS',                     
+  'SUCUMBIOS',                    
+  'ORELLANA',                      
+  'SANTO DOMINGO DE LOS TSÁCHILAS',
+  'SANTA ELENA'
+)
+
+
 province_codes <-
   province_codes %>% 
-  mutate(province_no_tilde = provinces_no_tilde)
+  mutate(province_no_tilde = provinces_no_tilde,
+         province_some_tildes = provinces_some_tildes)
 
 # Business Creation data ----------------------------------------------------------------------------------
 
@@ -111,15 +143,50 @@ scvs <-
   scvs %>% 
   mutate(creation_date = dmy(FECHA_CONSTITUCION),
          month = month(creation_date),
-         year = year(creation_date),
-         month_year = floor_date(creation_date, 'month') %>% format('%m-%Y')) %>% 
+         year = year(creation_date) %>% as.integer(),
+         month_year = floor_date(creation_date, 'month')) %>% 
   select(-FECHA_CONSTITUCION)
 
 df <-
   scvs %>%
   group_by(province_code, month_year) %>% 
-  summarise(buss_new = n())
-  
+  summarise(buss_new = n()) %>% 
+  mutate(month = month(month_year),
+         year = year(month_year))
 
+# Jobs data -----------------------------------------------------------------------------------------------
 
+# Clean the dataframe as is at the moment and add the province code
+
+jobs <-
+  jobs_raw %>%
+  mutate(
+    date = dmy(Fecha.Inicio),
+    year = year(date),
+    month = month(date),
+    month_year = floor_date(date, 'month')
+  ) %>% 
+  rename(province = 'Provincia.Contrato..grupo.',
+         jobs = 'Contratos') %>% 
+  left_join(province_codes %>% select(-province, -province_no_tilde), 
+            by = c('province'='province_some_tildes'))
+
+# Group at the province level, then join to the dataframe
+
+jobs_province <-
+  jobs %>% 
+  group_by(province_code, month_year) %>% 
+  summarise(jobs = sum(jobs))
+
+# Join it to the main dataframe
+
+df <-
+  df %>% 
+  left_join(jobs_province, by = c('province_code', 'month_year'))
+
+# Export --------------------------------------------------------------------------------------------------
+
+# Export the main dataframe to an Rdata object
+
+save(df, file = 'data/df-main.RData')
 

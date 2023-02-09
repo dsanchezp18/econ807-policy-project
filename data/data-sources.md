@@ -22,6 +22,7 @@ https://www.ecuadorencifras.gob.ec/documentos/web-inec/Geografia_Estadistica/Mic
 
 https://www.datosabiertos.gob.ec/dataset/contratos-en-el-sistema-unico-de-trabajo
 
+Holds all formal jobs data registered in the Unified Jobs System (SUT from its initials in Spanish) from 2020 to 2023.
 
 5. Public employees
 
