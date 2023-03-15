@@ -25,11 +25,17 @@ area_codes <-
 scvs_raw <-
   read_excel('data/directorio_companias.xlsx')
 
-# Formal jobs data
+# Formal jobs data (job contracts)
 
 jobs_raw <-
   read.csv('data/contracts-sut.csv',
            sep = ";")
+
+# Layoffs
+
+layoffs_raw <-
+  read.csv('data/layoffs.csv',
+            sep = ";")
 
 # Area Identifiers ----------------------------------------------------------------------------------------
 
@@ -155,7 +161,7 @@ df <-
   mutate(month = month(month_year),
          year = year(month_year))
 
-# Jobs data -----------------------------------------------------------------------------------------------
+# +Jobs data -----------------------------------------------------------------------------------------------
 
 # Clean the dataframe as is at the moment and add the province code
 
@@ -184,6 +190,21 @@ jobs_province <-
 df <-
   df %>% 
   left_join(jobs_province, by = c('province_code', 'month_year'))
+
+
+# Layoffs -----------------------------------------------------------------
+
+layoffs <-
+  layoffs_raw %>% 
+  mutate(
+    date = dmy(Fecha.Lagalizacion),
+    year = year(date),
+    month = month(date),
+    month_year = floor_date(date, 'month')
+  ) %>% 
+  
+  
+
 
 # Running variable --------------------------------------------------------
 
