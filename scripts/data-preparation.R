@@ -11,6 +11,7 @@
 library(tidyverse)
 library(readxl)
 library(lubridate)
+library(zoo)
 
 # Load the data
 
@@ -183,6 +184,14 @@ jobs_province <-
 df <-
   df %>% 
   left_join(jobs_province, by = c('province_code', 'month_year'))
+
+# Running variable --------------------------------------------------------
+
+# Define the running variable: number of months before the month of implementation. 
+
+df <-
+  df %>% 
+  mutate(time = 12 * (as.yearmon(month_year) - as.yearmon(as.Date('2020-05-01'))))
 
 # Export --------------------------------------------------------------------------------------------------
 
