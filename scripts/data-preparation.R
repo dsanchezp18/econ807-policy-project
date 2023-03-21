@@ -202,9 +202,6 @@ layoffs <-
     month = month(date),
     month_year = floor_date(date, 'month')
   ) %>% 
-  
-  
-
 
 # Running variable --------------------------------------------------------
 

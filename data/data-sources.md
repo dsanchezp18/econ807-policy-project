@@ -16,15 +16,29 @@ https://www.ecuadorencifras.gob.ec/documentos/web-inec/Geografia_Estadistica/Mic
 
 - This is important to identify provinces accurately.
 
-- DPA 2022 (found in the INEC website) uses tildes for provinces. SCVS uses without tildes but with the ñ in Cañar.
+- DPA 2022 (found in the INEC website) uses tildes for provinces. SCVS uses without tildes but with the ñ in Cañar. I correct for this in the data preparation script.
 
 4. Formal Job Contracts (SUT)
 
 https://www.datosabiertos.gob.ec/dataset/contratos-en-el-sistema-unico-de-trabajo
 
-Holds all formal jobs data registered in the Unified Jobs System (SUT from its initials in Spanish) from 2020 to 2023.
+- Holds all formal jobs data registered in the Unified Jobs System (SUT from its initials in Spanish) from 2020 to 2023. 
 
-5. Public employees
+- Can only be observed at the monthly level, and has significant limitations. Used as a robustness check.
 
-https://www.datosabiertos.gob.ec/dataset/servidores-registrados-en-el-sistema-informatico-integrado-de-talento-humano-siith
+5. Layoffs
+
+https://www.datosabiertos.gob.ec/dataset/actas-de-finiquito-en-el-sistema-unico-de-trabajo
+
+- Formally, total number of layoff notices (or job contract termination) registered in the SUT, the registration repository for all labour contracts in the country.
+
+6. Social Security Employment Registry
+
+https://www.ecuadorencifras.gob.ec/registro-empleo-seguridad-social/
+
+- The Social Security Institute's (IESS, for its initials in Spanish) registry of labour contracts. All formal job contracts pass through here, since there is mandatory contribution to Social Security. 
+
+
+
+
 
