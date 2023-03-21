@@ -25,6 +25,11 @@ area_codes <-
 scvs_raw <-
   read_excel('data/directorio_companias.xlsx')
 
+# Social security jobs data
+
+iess_raw <-
+  read.csv('data/social-security-data.csv')
+
 # Formal jobs data (job contracts)
 
 jobs_raw <-
@@ -107,7 +112,6 @@ provinces_some_tildes <- c(
   'SANTA ELENA'
 )
 
-
 province_codes <-
   province_codes %>% 
   mutate(province_no_tilde = provinces_no_tilde,
@@ -178,7 +182,7 @@ jobs <-
   left_join(province_codes %>% select(-province, -province_no_tilde), 
             by = c('province'='province_some_tildes'))
 
-# Group at the province level, then join to the dataframe
+# Group at the province level
 
 jobs_province <-
   jobs %>% 
@@ -190,18 +194,6 @@ jobs_province <-
 df <-
   df %>% 
   left_join(jobs_province, by = c('province_code', 'month_year'))
-
-
-# Layoffs -----------------------------------------------------------------
-
-layoffs <-
-  layoffs_raw %>% 
-  mutate(
-    date = dmy(Fecha.Lagalizacion),
-    year = year(date),
-    month = month(date),
-    month_year = floor_date(date, 'month')
-  ) %>% 
 
 # Running variable --------------------------------------------------------
 

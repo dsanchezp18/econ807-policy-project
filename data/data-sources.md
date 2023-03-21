@@ -26,13 +26,7 @@ https://www.datosabiertos.gob.ec/dataset/contratos-en-el-sistema-unico-de-trabaj
 
 - Can only be observed at the monthly level, and has significant limitations. Used as a robustness check.
 
-5. Layoffs
-
-https://www.datosabiertos.gob.ec/dataset/actas-de-finiquito-en-el-sistema-unico-de-trabajo
-
-- Formally, total number of layoff notices (or job contract termination) registered in the SUT, the registration repository for all labour contracts in the country.
-
-6. Social Security Employment Registry
+5. Social Security Employment Registry
 
 https://www.ecuadorencifras.gob.ec/registro-empleo-seguridad-social/
 
