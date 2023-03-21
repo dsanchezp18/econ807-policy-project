@@ -36,11 +36,12 @@ jobs_raw <-
   read.csv('data/contracts-sut.csv',
            sep = ";")
 
-# Layoffs
+# Province populations
 
-layoffs_raw <-
-  read.csv('data/layoffs.csv',
-            sep = ";")
+prov_pop <-
+  read.csv('data/province-population.csv')
+
+# Layoffs
 
 # Area Identifiers ----------------------------------------------------------------------------------------
 
@@ -112,10 +113,38 @@ provinces_some_tildes <- c(
   'SANTA ELENA'
 )
 
+province_all_tildes_sd <- c(
+  'AZUAY',                         
+  'BOLÍVAR',                       
+  'CAÑAR',                         
+  'CARCHI',                      
+  'COTOPAXI',                      
+  'CHIMBORAZO',                    
+  'EL ORO',                        
+  'ESMERALDAS',                    
+  'GUAYAS',                   
+  'IMBABURA',                     
+  'LOJA',                          
+  'LOS RÍOS',                      
+  'MANABí',                        
+  'MORONA SANTIAGO',               
+  'NAPO',              
+  'PASTAZA',                       
+  'PICHINCHA',                    
+  'TUNGURAHUA',                   
+  'ZAMORA CHINCHIPE',              
+  'GALÁPAGOS',                     
+  'SUCUMBÍOS',                    
+  'ORELLANA',                      
+  'SANTO DOMINGO',
+  'SANTA ELENA'
+)
+
 province_codes <-
   province_codes %>% 
   mutate(province_no_tilde = provinces_no_tilde,
-         province_some_tildes = provinces_some_tildes)
+         province_some_tildes = provinces_some_tildes,
+         province_all_tildes_sd  = province_all_tildes_sd)
 
 # Business Creation data ----------------------------------------------------------------------------------
 
@@ -165,7 +194,50 @@ df <-
   mutate(month = month(month_year),
          year = year(month_year))
 
-# +Jobs data -----------------------------------------------------------------------------------------------
+# Province Populations ----------------------------------------------------
+
+# Add province populationsto compute "per capita" indicators
+# Need to include the correct province codes
+
+prov_pop <-
+  prov_pop %>% 
+  left_join(province_codes %>% select(-province), 
+            by = c('province' = 'province_all_tildes_sd'))
+
+df <-
+  df %>% 
+  left_join(prov_pop %>% select(province_code, pop),
+            by = 'province_code')
+
+# Social Security Employment Registry data --------------------------------
+
+# Wrangle to later join
+
+iess <-
+  iess_raw %>%
+  select(-Descripcion) %>% 
+  rename(province_code = 'Desagregaciones..Provincia.') %>% 
+  filter(!(province_code %in% c('90', 'Z0_Nocla_ubicacion'))) %>% 
+  pivot_longer(
+    cols = -province_code,
+    names_to = 'month_year',
+    values_to = 'value'
+  ) %>%
+  mutate(year = paste('20', str_sub(month_year, -2, -1), sep = ''),
+         month_str = str_sub(month_year,1,3),
+         month_str = case_when(month_str == 'abr' ~ 'apr', 
+                               month_str == 'ene' ~ 'jan',
+                               month_str == 'ago' ~ 'aug',
+                               month_str == 'dic' ~ 'dec',
+                               TRUE ~ month_str),
+         month_year = parse_date_time(paste0(month_str,year), orders = 'b Y') %>% ymd()) %>% 
+  select(province_code, month_year, value)
+
+df <-
+  df %>% 
+  left_join(iess %>% rename(jobs = 'value'), by = c('province_code', 'month_year'))
+
+# Formal jobs data (SUT) -----------------------------------------------------------------------------------------------
 
 # Clean the dataframe as is at the moment and add the province code
 
@@ -178,16 +250,16 @@ jobs <-
     month_year = floor_date(date, 'month')
   ) %>% 
   rename(province = 'Provincia.Contrato..grupo.',
-         jobs = 'Contratos') %>% 
+         contracts = 'Contratos') %>% 
   left_join(province_codes %>% select(-province, -province_no_tilde), 
-            by = c('province'='province_some_tildes'))
+            by = c('province' = 'province_some_tildes'))
 
 # Group at the province level
 
 jobs_province <-
   jobs %>% 
   group_by(province_code, month_year) %>% 
-  summarise(jobs = sum(jobs))
+  summarise(contracts = sum(contracts))
 
 # Join it to the main dataframe
 
@@ -205,7 +277,13 @@ df <-
 
 # Export --------------------------------------------------------------------------------------------------
 
-# Export the main dataframe to an Rdata object
+# Export the main dataframe to an RData object
 
 save(df, file = 'data/df-main.RData')
+
+# Export a reduced dataframe to an RData object, between 2018 and 2022
+
+df %>% 
+  filter(year %>% between(2018, 2022)) %>% 
+  save(file = 'data/df18_22.RData')
 

@@ -22,6 +22,76 @@ theme_ds <-
   theme_bw() +
   theme(panel.grid = element_blank())
 
+# Jobs --------------------------------------------------------------------
+
+# At the province level in level jobs IESS
+
+df %>%
+  filter(year %>% between(2019, 2022)) %>%
+  ggplot(aes(month_year, jobs)) +
+  geom_point() +
+  scale_x_date(date_breaks = '1 month', 
+               date_labels = '%m-%y') +
+  theme_ds +
+  theme(axis.text.x = element_text(angle = 90, 
+                                   hjust = 1)) +
+  geom_vline(xintercept = as.numeric(as.Date('2020-05-01')),
+             colour = 'blue', 
+             linetype = 'dashed')
+
+# At the province level, log jobs
+
+df %>%
+  filter(year %>% between(2019, 2022)) %>%
+  ggplot(aes(month_year, log(jobs))) +
+  geom_point() +
+  scale_x_date(date_breaks = '1 month', 
+               date_labels = '%m-%y') +
+  theme_ds +
+  theme(axis.text.x = element_text(angle = 90, 
+                                   hjust = 1)) +
+  geom_vline(xintercept = as.numeric(as.Date('2020-05-01')),
+             colour = 'blue', 
+             linetype = 'dashed')
+
+# At the country level, log jobs
+
+
+
+
+# Job contracts SUT -------------------------------------------------------
+
+# At the province level in level contracts SUT
+
+df %>%
+  filter(year %>% between(2020, 2022)) %>%
+  ggplot(aes(month_year, contracts)) +
+  geom_point() +
+  scale_x_date(date_breaks = '1 month', 
+               date_labels = '%m-%y') +
+  theme_ds +
+  theme(axis.text.x = element_text(angle = 90, 
+                                   hjust = 1)) +
+  geom_vline(xintercept = as.numeric(as.Date('2020-05-01')),
+             colour = 'blue', 
+             linetype = 'dashed')
+
+# At the province level in log jobs
+
+df %>% 
+  filter(year == 2020 ) %>% 
+  group_by(month_year) %>% 
+  summarise(jobs = sum(jobs)) %>% 
+  ggplot(aes(month_year, log(jobs)))+
+  geom_point()+
+  geom_line()+
+  scale_x_date(date_breaks = '1 month', 
+               date_labels = '%m-%y') +
+  geom_vline(xintercept = as.numeric(as.Date('2020-05-01')),
+             colour = 'blue', 
+             linetype = 'dashed') +
+  theme_ds
+
 # Business Creation ---------------------------------------------------------------------------------------
 
 # Against time, each point represents one province
@@ -45,25 +115,6 @@ df %>%
   scale_x_date(date_breaks = '1 month', 
                date_labels = '%m-%y')
 
-# Jobs --------------------------------------------------------------------
-
-# At the province level in level jobs
-
-df %>%
-  filter(year %>% between(2020, 2022)) %>%
-  ggplot(aes(month_year, jobs)) +
-  geom_point() +
-  scale_x_date(date_breaks = '1 month', 
-               date_labels = '%m-%y') +
-  theme_ds +
-  theme(axis.text.x = element_text(angle = 90, 
-                                   hjust = 1)) +
-  geom_vline(xintercept = as.numeric(as.Date('2020-05-01')),
-             colour = 'blue', 
-             linetype = 'dashed')
-
-# At the province level in log jobs
-
 # RDiT plots --------------------------------------------------------------
 
 # Run some RDiT plots to see the initial relationship
@@ -72,8 +123,8 @@ df_rdit <-
   df %>% 
   filter(month_year %>% between(as.Date('2020-01-01'), as.Date('2020-10-01')))
 
-rdplot(df_rdit$jobs, df_rdit$time, p = 2)
+rdplot(df_rdit$contracts, df_rdit$time, p = 2)
 
-rdplot(df_rdit$jobs, df_rdit$time, p = 1)
+rdplot(df_rdit$contracts, df_rdit$time, p = 1)
 
-rdplot(df_rdit$jobs %>% log(), df_rdit$time, p = 2)
+rdplot(df_rdit$contracts %>% log(), df_rdit$time, p = 2)
