@@ -15,6 +15,7 @@ library(rdrobust)
 # Load data
 
 load('data/df-main.RData')
+load('data/df18_22.RData')
 
 # Predefine a theme
 
@@ -56,8 +57,35 @@ df %>%
 
 # At the country level, log jobs
 
+df18_22 %>% 
+  group_by(month_year) %>% 
+  summarise(jobs = sum(jobs)) %>% 
+  ggplot(aes(month_year, log(jobs)))+
+  geom_point()+
+  geom_line()+
+  scale_x_date(date_breaks = '3 months', 
+               date_labels = '%b-%y') +
+  geom_vline(xintercept = as.numeric(as.Date('2020-05-01')),
+             colour = 'blue', 
+             linetype = 'dashed') +
+  theme_ds +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 
+# At the country level, level jobs
 
+df18_22 %>% 
+  group_by(month_year) %>% 
+  summarise(jobs = sum(jobs)) %>% 
+  ggplot(aes(month_year, jobs))+
+  geom_point()+
+  geom_line()+
+  scale_x_date(date_breaks = '3 months', 
+               date_labels = '%b-%y') +
+  theme_ds +
+  geom_vline(xintercept = as.numeric(as.Date('2020-05-01')),
+             colour = 'blue', 
+             linetype = 'dashed') +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 
 # Job contracts SUT -------------------------------------------------------
 

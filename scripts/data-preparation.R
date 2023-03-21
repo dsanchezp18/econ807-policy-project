@@ -32,16 +32,20 @@ iess_raw <-
 
 # Formal jobs data (job contracts)
 
-jobs_raw <-
+contracts_raw <-
   read.csv('data/contracts-sut.csv',
-           sep = ";")
+           sep = ';')
 
 # Province populations
 
 prov_pop <-
   read.csv('data/province-population.csv')
 
-# Layoffs
+# Remote workers
+
+remote_workers_raw <-
+  read.csv('data/remote-workers.csv',
+           sep = ';')
 
 # Area Identifiers ----------------------------------------------------------------------------------------
 
@@ -175,7 +179,8 @@ scvs <-
 scvs <-
   scvs %>% 
   rename(province = 'PROVINCIA') %>% 
-  left_join(province_codes %>% select(-province), by = c('province' = 'province_no_tilde'))
+  left_join(province_codes %>% select(-province), 
+            by = c('province' = 'province_no_tilde'))
 
 # Create the month-year combination through lubridate in the scvs data and add month-year
 
@@ -196,7 +201,7 @@ df <-
 
 # Province Populations ----------------------------------------------------
 
-# Add province populationsto compute "per capita" indicators
+# Add province populations to compute "per capita" indicators
 # Need to include the correct province codes
 
 prov_pop <-
@@ -241,8 +246,8 @@ df <-
 
 # Clean the dataframe as is at the moment and add the province code
 
-jobs <-
-  jobs_raw %>%
+contracts <-
+  contracts_raw %>%
   mutate(
     date = dmy(Fecha.Inicio),
     year = year(date),
@@ -251,7 +256,7 @@ jobs <-
   ) %>% 
   rename(province = 'Provincia.Contrato..grupo.',
          contracts = 'Contratos') %>% 
-  left_join(province_codes %>% select(-province, -province_no_tilde), 
+  left_join(province_codes %>% select(-province, -province_no_tilde, province_all_tildes_sd), 
             by = c('province' = 'province_some_tildes'))
 
 # Group at the province level
@@ -265,8 +270,40 @@ jobs_province <-
 
 df <-
   df %>% 
-  left_join(jobs_province, by = c('province_code', 'month_year'))
+  left_join(jobs_province, 
+            by = c('province_code', 'month_year'))
 
+# Remote workers ----------------------------------------------------------
+
+# Add this variable to the main dataframe, but first wrangle it a little bit
+
+remote_workers <-
+  remote_workers_raw %>% 
+  rename(year = 'Anio.Fecha.Inicio.Teletrabajo',
+         month = 'Mes.Fecha.Inicio.Teletrabajo',
+         province = 'Provincia.Contrato..grupo.') %>% 
+  mutate(month_year = make_date(year = year, month = month, day = 01)) %>% 
+  filter(!is.na(month_year)) %>% 
+  group_by(province, month_year) %>% 
+  summarise(remote_workers = sum(Contratos)) %>% 
+  mutate(province = case_when(
+    province == 'SANTO DOMINGO DE LOS TSÁCHILAS' ~ 'SANTO DOMINGO DE LOS TSACHILAS',
+    province == 'GALÁPAGOS' ~ 'GALAPAGOS',
+    TRUE ~ province
+  )) %>%
+  mutate(year = year(month_year),
+         month = month(month_year)) %>% 
+  left_join(province_codes %>% select(-province, province_some_tildes, province_all_tildes_sd), 
+            by = c('province' = 'province_no_tilde')) %>% 
+  ungroup()
+
+# Now left join to the actual dataset
+
+df <-
+  df %>% 
+  left_join(remote_workers %>% select(province_code, month_year, remote_workers),
+            by = c('province_code', 'month_year'))
+ 
 # Running variable --------------------------------------------------------
 
 # Define the running variable: number of months before the month of implementation. 
@@ -279,11 +316,14 @@ df <-
 
 # Export the main dataframe to an RData object
 
-save(df, file = 'data/df-main.RData')
+save(df, 
+     file = 'data/df-main.RData')
 
 # Export a reduced dataframe to an RData object, between 2018 and 2022
 
-df %>% 
-  filter(year %>% between(2018, 2022)) %>% 
-  save(file = 'data/df18_22.RData')
+df18_22 <-
+  df %>% 
+  filter(year %>% between(2018, 2022))
 
+save(df18_22,
+     file = 'data/df18_22.RData')
