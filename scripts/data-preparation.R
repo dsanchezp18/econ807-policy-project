@@ -51,10 +51,41 @@ remote_workers_raw <-
 
 thefts_raw <-
   read_excel('data/thefts.xls',
-             col_names = c('theft_type', 'province', 'canton', 'month', 'year', 'thefts'),
-             skip = 2) %>% 
-  slice(-2)
+             col_names = c('theft_type', 'province', 'canton', 'month_str', 'year', 'thefts'),
+             skip = 4)
 
+# Homicides
+
+homicides_raw <-
+  read_excel('data/homicides.xls',
+             col_names = c('homicide_type', 'province', 'canton', 'month_str', 'year', 'weapon', 'age_range', 'sex', 'homicides'),
+             skip = 4)
+
+# COVID-19 cases
+
+covid_cases_raw <-
+  read.csv('data/covid-cases.csv', sep = ';')
+
+# Internal Revenue Service (SRI) active tax-registered contributors
+
+active_2022 <-
+  read.csv('data/sri_activos_2022.csv', sep = '|')
+
+active_2021 <-
+  read.csv('data/sri_activos_2021.csv', sep = '|')
+
+active_2020 <-
+  read.csv('data/sri_activos_2020.csv', sep = ';')
+
+active_2019 <-
+  read.csv('data/sri_activos_2019.csv', sep = ';')
+
+active_2018 <-
+  read.csv('data/sri_activos_2018.csv', sep = ';')
+
+active_2017 <-
+  read.csv('data/sri_activos_2017.csv', sep = ';')
+  
 # Area Identifiers ----------------------------------------------------------------------------------------
 
 # Ecuador has 24 provinces which each normally have an id code which is used across the public sector.
@@ -152,11 +183,59 @@ province_all_tildes_sd <- c(
   'SANTA ELENA'
 )
 
+province_all_tildes_sdt <- c(
+  'AZUAY',                         
+  'BOLÍVAR',                       
+  'CAÑAR',                         
+  'CARCHI',                      
+  'COTOPAXI',                      
+  'CHIMBORAZO',                    
+  'EL ORO',                        
+  'ESMERALDAS',                    
+  'GUAYAS',                   
+  'IMBABURA',                     
+  'LOJA',                          
+  'LOS RÍOS',                      
+  'MANABí',                        
+  'MORONA SANTIAGO',               
+  'NAPO',              
+  'PASTAZA',                       
+  'PICHINCHA',                    
+  'TUNGURAHUA',                   
+  'ZAMORA CHINCHIPE',              
+  'GALÁPAGOS',                     
+  'SUCUMBÍOS',                    
+  'ORELLANA',                      
+  'SANTO DOMINGO DE LOS TSÁCHILAS',
+  'SANTA ELENA'
+)
+
 province_codes <-
   province_codes %>% 
   mutate(province_no_tilde = provinces_no_tilde,
          province_some_tildes = provinces_some_tildes,
-         province_all_tildes_sd  = province_all_tildes_sd)
+         province_all_tildes_sd  = province_all_tildes_sd,
+         province_all_tildes_sdt = province_all_tildes_sdt,
+         province_code2 = case_when(
+           as.numeric(province_code) <= 9 ~ str_sub(province_code, -1, -1),
+           TRUE ~ province_code
+         ))
+
+# Months -------------------------------------------------------------------
+
+# Create lookup tables for Spanish to English month names
+
+month_lookup <- data.frame(
+  spanish_month = c("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+                    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"),
+  english_month = month.abb
+)
+
+month_lookup_tax_registry <- data.frame(
+  spanish_month = c("01 Enero", "02 Febrero", "03 Marzo", "04 Abril", "05 Mayo", "06 Junio",
+                    "07 Julio", "08 Agosto", "09 Septiembre", "10 Octubre", "11 Noviembre", "12 Diciembre"),
+  english_month = month.abb
+)
 
 # Business Creation data ----------------------------------------------------------------------------------
 
@@ -312,9 +391,193 @@ df <-
   left_join(remote_workers %>% select(province_code, month_year, remote_workers),
             by = c('province_code', 'month_year'))
 
-# Running variable --------------------------------------------------------
+# Thefts ------------------------------------------------------------------
+
+# Prepare the thefts dataset for joining
+
+thefts <-
+  thefts_raw %>% 
+  mutate(month_str = case_when(month_str == 'Abr' ~ 'apr', 
+                               month_str == 'Ene' ~ 'jan',
+                               month_str == 'Ago' ~ 'aug',
+                               month_str == 'Dic' ~ 'dec',
+                               TRUE ~ month_str)) %>% 
+  filter(!is.na(month_str), !is.na(year)) %>% 
+  mutate(month_year = parse_date_time(paste0(month_str,year), orders = 'b Y') %>% ymd()) %>%
+  group_by(province, month_year) %>% 
+  summarise(thefts = sum(thefts)) %>%
+  ungroup() %>% 
+  left_join(province_codes %>% select(province_all_tildes_sdt, province_code), 
+            by = c('province' = 'province_all_tildes_sdt'))
+
+# Join to the main df
+
+df <-
+  df %>% 
+  left_join(thefts %>% select(-province), by = c('province_code', 'month_year'))
+
+
+# Homicides ---------------------------------------------------------------
+
+# Prepare the homicides dataset for joining
+
+homicides <-
+  homicides_raw %>% 
+  mutate(month_str = case_when(month_str == 'Abr' ~ 'apr', 
+                               month_str == 'Ene' ~ 'jan',
+                               month_str == 'Ago' ~ 'aug',
+                               month_str == 'Dic' ~ 'dec',
+                               TRUE ~ month_str)) %>% 
+  filter(!is.na(month_str), !is.na(year)) %>%
+  mutate(month_year = parse_date_time(paste0(month_str,year), orders = 'b Y') %>% ymd()) %>%
+  group_by(province, month_year) %>% 
+  summarise(homicides = sum(homicides)) %>%
+  ungroup() %>% 
+  left_join(province_codes %>% select(province_all_tildes_sdt, province_code), 
+            by = c('province' = 'province_all_tildes_sdt'))
+
+# Join to the main df
+
+df <-
+  df %>% 
+  left_join(homicides %>% select(-province), by = c('province_code', 'month_year'))
+
+# Confirmed COVID-19 Cases
+
+# Prepare the dataset and separate between all the types of cases
+
+covid_confirmed  <-
+  covid_cases_raw %>%
+  rename(date = 'fecha_notificacion',
+         year = 'anio_notificacion',
+         month = 'mes_notificacion',
+         day = 'dia_notificacion',
+         province_code2 = 'cod_provincia',
+         final_condition = 'condicion_final',
+         death_date = 'fecha_defuncion',
+         death_year = 'anio_defuncion',
+         death_month = 'mes_defuncion',
+         death_day = 'dia_defuncion',
+         final_classification = 'clasificacion_final') %>% 
+  mutate(date = ymd(date),
+         month_year = floor_date(date, 'month'),
+         province_code2 = as.character(province_code2)) %>% 
+  filter(final_classification == 'CONFIRMADO') %>% 
+  group_by(province_code2, month_year) %>% 
+  summarise(covid_confirmed = n()) %>%
+  ungroup() %>% 
+  left_join(province_codes %>% select(province_code, province_code2), by = 'province_code2') %>% 
+  select(-province_code2)
+
+# Left join to the actual dataframe
+
+df <-
+  df %>% 
+  left_join(covid_confirmed, by = c('province_code', 'month_year'))
+
+# Suspected + Likely COVID-19 Cases
+
+covid_susp <-
+  covid_cases_raw %>%
+  rename(date = 'fecha_notificacion',
+         year = 'anio_notificacion',
+         month = 'mes_notificacion',
+         day = 'dia_notificacion',
+         province_code2 = 'cod_provincia',
+         final_condition = 'condicion_final',
+         death_date = 'fecha_defuncion',
+         death_year = 'anio_defuncion',
+         death_month = 'mes_defuncion',
+         death_day = 'dia_defuncion',
+         final_classification = 'clasificacion_final') %>% 
+  mutate(date = ymd(date),
+         month_year = floor_date(date, 'month'),
+         province_code2 = as.character(province_code2)) %>% 
+  filter(!(final_classification %in% c('CONFIRMADO', 'DESCARTADO'))) %>% 
+  group_by(province_code2, month_year) %>% 
+  summarise(covid_susp = n()) %>%
+  ungroup() %>% 
+  left_join(province_codes %>% select(province_code, province_code2), by = 'province_code2') %>% 
+  select(-province_code2)
+
+# Left join to the actual dataframe and compute total cases
+
+df <-
+  df %>% 
+  left_join(covid_susp, by = c('province_code', 'month_year')) %>% 
+  mutate(total_covid_cases = covid_confirmed + covid_susp)
+
+# Dead by COVID-19
+
+# Prepare a dataset with the same source as before but with the monthly dead, using the variables I defined before.
+
+covid_dead <-
+  covid_cases_raw %>%
+  rename(date = 'fecha_notificacion',
+         year = 'anio_notificacion',
+         month = 'mes_notificacion',
+         day = 'dia_notificacion',
+         province_code2 = 'cod_provincia',
+         final_condition = 'condicion_final',
+         death_date = 'fecha_defuncion',
+         death_year = 'anio_defuncion',
+         death_month = 'mes_defuncion',
+         death_day = 'dia_defuncion',
+         final_classification = 'clasificacion_final') %>% 
+  mutate(death_date = ymd(death_date),
+         month_year = floor_date(death_date, 'month'),
+         province_code2 = as.character(province_code2)) %>% 
+  filter(final_classification != 'DESCARTADO') %>%  
+  group_by(province_code2, month_year) %>% 
+  summarise(total_covid_dead = n()) %>%
+  ungroup() %>% 
+  left_join(province_codes %>% select(province_code, province_code2), by = 'province_code2') %>% 
+  select(-province_code2)
+
+# Left join to the actual dataframe and compute total cases
+
+df <-
+  df %>% 
+  left_join(covid_dead, by = c('province_code', 'month_year'))
+
+# Tax Registry
+
+# Prepare the dataset
+
+tax_registry <-
+  active_2017 %>% 
+  bind_rows(active_2018) %>% 
+  bind_rows(active_2019) %>% 
+  bind_rows(active_2020) %>% 
+  bind_rows(active_2021) %>% 
+  bind_rows(active_2022) %>%
+  left_join(month_lookup_tax_registry, 
+            by = c("DFC_DESCRIPCION_MES" = "spanish_month")) %>%
+  rename(year = 'DFC_ANIO_PK',
+         month_str = 'english_month',
+         registered = 'TOTAL',
+         province = 'DESCRIPCION_PROVINCIA') %>% 
+  select(-DFC_DESCRIPCION_MES) %>% 
+  mutate(month_year = parse_date_time(paste0(month_str, year), orders = 'b Y') %>% ymd(),
+         province = case_when(
+           province == 'CA\xd1AR' ~ 'CAÑAR',
+           province == '' ~ NA,
+           TRUE ~ province
+         )) %>% 
+  left_join(province_codes %>% select(province_code, province_no_tilde), by = c('province' = 'province_no_tilde')) %>% 
+  group_by(province_code, month_year) %>% 
+  summarise(registered = sum(registered))
+
+# Left join to the full dataframe
+
+df <- 
+  df %>% 
+  left_join(tax_registry, by = c('province_code', 'month_year'))
+
+# Running variable/centered monthly --------------------------------------------------------
 
 # Define the running variable: number of months before the month of implementation. 
+# It means "centering" the variable around the date that we care for. 
 
 df <-
   df %>% 
