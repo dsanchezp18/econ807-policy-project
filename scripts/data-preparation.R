@@ -85,6 +85,26 @@ active_2018 <-
 
 active_2017 <-
   read.csv('data/sri_activos_2017.csv', sep = ';')
+
+# IRS reported sales
+
+sales_2022 <-
+  read.csv('data/sri_ventas_2022.csv', sep = '|')
+
+sales_2021 <-
+  read.csv('data/sri_ventas_2021.csv', sep = '|')
+
+sales_2020 <-
+  read.csv('data/sri_ventas_2020.csv', sep = '|')
+
+sales_2019 <-
+  read.csv('data/sri_ventas_2019.csv', sep = '|')
+
+sales_2018 <-
+  read.csv('data/sri_ventas_2018.csv', sep = '|')
+
+sales_2017 <-
+  read.csv('data/sri_ventas_2017.csv', sep = ';', fileEncoding = 'Latin1')
   
 # Area Identifiers ----------------------------------------------------------------------------------------
 
@@ -573,6 +593,40 @@ tax_registry <-
 df <- 
   df %>% 
   left_join(tax_registry, by = c('province_code', 'month_year'))
+
+# IRS Reported Sales ------------------------------------------------------
+
+# Prepare the dataset
+
+sales <-
+  sales_2017 %>%
+  rename(VENTAS_NETAS_TARIFA_12 = 'Ventas.netas.tarifa.12.',
+         VENTAS_NETAS_TARIFA_0 = 'Ventas.netas.tarifa.0.',
+         COMPRAS_NETAS_TARIFA_12 = 'Compras.netas.tarifa.12.',
+         COMPRAS_NETAS_TARIFA_0 = 'Compras.netas.tarifa.0.',
+         ANIO = 'AÑO') %>% 
+  bind_rows(sales_2018) %>%
+  bind_rows(sales_2019) %>% 
+  bind_rows(sales_2020) %>%
+  bind_rows(sales_2021) %>%
+  bind_rows(sales_2022) %>%
+  rename(year = 'ANIO',
+         month = 'MES',
+         province = 'PROVINCIA') %>%
+  mutate(month_year = make_date(year = year, month = month, day = 01),
+         province = if_else(province == 'CA\xd1AR','CAÑAR',province),
+         total_sales = gsub(',','.', TOTAL_VENTAS) %>% as.numeric()) %>%
+  select(-TOTAL_VENTAS) %>% 
+  filter(province != 'ND') %>%
+  left_join(province_codes %>% select(province_code, province_no_tilde), by = c('province' = 'province_no_tilde')) %>% 
+  group_by(province_code, month_year) %>% 
+  summarise(total_sales = sum(total_sales))
+
+# Left join to the dataframe
+
+df <-
+  df %>% 
+  left_join(sales, by = c('month_year', 'province_code'))
 
 # Running variable/centered monthly --------------------------------------------------------
 
