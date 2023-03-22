@@ -306,6 +306,13 @@ df <-
   mutate(month = month(month_year),
          year = year(month_year))
 
+# I'd also like a week-level dataset
+
+scvs_weekly <-
+  scvs %>%
+  group_by(week_year = paste0(year(creation_date), "-", week(creation_date))) %>%
+  summarise(buss_new = n())
+
 # Province Populations ----------------------------------------------------
 
 # Add province populations to compute "per capita" indicators
@@ -636,6 +643,15 @@ df <-
 df <-
   df %>% 
   mutate(time = 12 * (as.yearmon(month_year) - as.yearmon(as.Date('2020-05-01'))))
+
+# Final preparations ------------------------------------------------------
+
+# Get the province name, without any kind of tilde
+
+df <-
+  df %>%
+  left_join(province_codes %>% select(province_code, province_no_tilde), by = 'province_code')
+
 
 # Export --------------------------------------------------------------------------------------------------
 
