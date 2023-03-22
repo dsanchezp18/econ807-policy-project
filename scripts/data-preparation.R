@@ -47,6 +47,14 @@ remote_workers_raw <-
   read.csv('data/remote-workers.csv',
            sep = ';')
 
+# Thefts
+
+thefts_raw <-
+  read_excel('data/thefts.xls',
+             col_names = c('theft_type', 'province', 'canton', 'month', 'year', 'thefts'),
+             skip = 2) %>% 
+  slice(-2)
+
 # Area Identifiers ----------------------------------------------------------------------------------------
 
 # Ecuador has 24 provinces which each normally have an id code which is used across the public sector.
@@ -261,8 +269,8 @@ contracts <-
 
 # Group at the province level
 
-jobs_province <-
-  jobs %>% 
+contracts_province <-
+  contracts %>% 
   group_by(province_code, month_year) %>% 
   summarise(contracts = sum(contracts))
 
@@ -270,7 +278,7 @@ jobs_province <-
 
 df <-
   df %>% 
-  left_join(jobs_province, 
+  left_join(contracts_province, 
             by = c('province_code', 'month_year'))
 
 # Remote workers ----------------------------------------------------------
@@ -303,7 +311,7 @@ df <-
   df %>% 
   left_join(remote_workers %>% select(province_code, month_year, remote_workers),
             by = c('province_code', 'month_year'))
- 
+
 # Running variable --------------------------------------------------------
 
 # Define the running variable: number of months before the month of implementation. 

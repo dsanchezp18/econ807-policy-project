@@ -1,10 +1,14 @@
 # Data Sources
 
-1. Directorio de Compañías
+1. Business Creation Data from the Ecuadorian Companies' Superintendency
+
+Directorio de Compañías (Companies' Directory dataset)
 
 https://mercadodevalores.supercias.gob.ec/reportes/directorioCompanias.jsf
 
 2. Indicadores de Seguridad Ciudadana (Ministerio de Gobierno)
+
+- Citizen safety indicators denote thefts and homicides, as reported by MinGob.
 
 http://cifras.ministeriodegobierno.gob.ec/comisioncifras/
 
@@ -31,8 +35,3 @@ https://www.datosabiertos.gob.ec/dataset/contratos-en-el-sistema-unico-de-trabaj
 https://www.ecuadorencifras.gob.ec/registro-empleo-seguridad-social/
 
 - The Social Security Institute's (IESS, for its initials in Spanish) registry of labour contracts. All formal job contracts pass through here, since there is mandatory contribution to Social Security. 
-
-
-
-
-
