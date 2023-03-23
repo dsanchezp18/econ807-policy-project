@@ -303,6 +303,7 @@ df <-
   scvs %>%
   group_by(province_code, month_year) %>% 
   summarise(buss_new = n()) %>% 
+  ungroup() %>% 
   mutate(month = month(month_year),
          year = year(month_year))
 
@@ -311,7 +312,8 @@ df <-
 scvs_weekly <-
   scvs %>%
   group_by(week_year = paste0(year(creation_date), "-", week(creation_date))) %>%
-  summarise(buss_new = n())
+  summarise(buss_new = n()) %>% 
+  ungroup()
 
 # Province Populations ----------------------------------------------------
 
@@ -378,7 +380,8 @@ contracts <-
 contracts_province <-
   contracts %>% 
   group_by(province_code, month_year) %>% 
-  summarise(contracts = sum(contracts))
+  summarise(contracts = sum(contracts)) %>% 
+  ungroup()
 
 # Join it to the main dataframe
 
@@ -400,6 +403,7 @@ remote_workers <-
   filter(!is.na(month_year)) %>% 
   group_by(province, month_year) %>% 
   summarise(remote_workers = sum(Contratos)) %>% 
+  ungroup() %>% 
   mutate(province = case_when(
     province == 'SANTO DOMINGO DE LOS TSÁCHILAS' ~ 'SANTO DOMINGO DE LOS TSACHILAS',
     province == 'GALÁPAGOS' ~ 'GALAPAGOS',
@@ -408,8 +412,7 @@ remote_workers <-
   mutate(year = year(month_year),
          month = month(month_year)) %>% 
   left_join(province_codes %>% select(-province, province_some_tildes, province_all_tildes_sd), 
-            by = c('province' = 'province_no_tilde')) %>% 
-  ungroup()
+            by = c('province' = 'province_no_tilde'))
 
 # Now left join to the actual dataset
 
@@ -593,7 +596,8 @@ tax_registry <-
          )) %>% 
   left_join(province_codes %>% select(province_code, province_no_tilde), by = c('province' = 'province_no_tilde')) %>% 
   group_by(province_code, month_year) %>% 
-  summarise(registered = sum(registered))
+  summarise(registered = sum(registered)) %>% 
+  ungroup()
 
 # Left join to the full dataframe
 
@@ -627,7 +631,8 @@ sales <-
   filter(province != 'ND') %>%
   left_join(province_codes %>% select(province_code, province_no_tilde), by = c('province' = 'province_no_tilde')) %>% 
   group_by(province_code, month_year) %>% 
-  summarise(total_sales = sum(total_sales))
+  summarise(total_sales = sum(total_sales)) %>% 
+  ungroup()
 
 # Left join to the dataframe
 
@@ -644,6 +649,15 @@ df <-
   df %>% 
   mutate(time = 12 * (as.yearmon(month_year) - as.yearmon(as.Date('2020-05-01'))))
 
+# Create a treatment variable and factorize for regressions
+
+df <-
+  df %>%
+  mutate(treat = if_else(month_year > as.Date('2020-05-01'),'Treatment Period','Control Period') %>% as.factor(),
+         province_code = as.factor(province_code),
+         my_event = as.factor(month_year %>% format( '%B%Y')),
+         my_event = relevel(my_event, ref = '2020-05-01'))
+
 # Final preparations ------------------------------------------------------
 
 # Get the province name, without any kind of tilde
@@ -651,7 +665,6 @@ df <-
 df <-
   df %>%
   left_join(province_codes %>% select(province_code, province_no_tilde), by = 'province_code')
-
 
 # Export --------------------------------------------------------------------------------------------------
 
