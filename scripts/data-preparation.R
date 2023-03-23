@@ -105,6 +105,11 @@ sales_2018 <-
 
 sales_2017 <-
   read.csv('data/sri_ventas_2017.csv', sep = ';', fileEncoding = 'Latin1')
+
+# Transit accidents
+
+transit_accidents_raw <-
+  read.csv('data/transit-accidents.csv')
   
 # Area Identifiers ----------------------------------------------------------------------------------------
 
@@ -640,6 +645,32 @@ df <-
   df %>% 
   left_join(sales, by = c('month_year', 'province_code'))
 
+# Transit Accidents -------------------------------------------------------
+
+# Prepare dataset
+
+transit_accidents <-
+  transit_accidents_raw %>%
+  rename(year = 'ANIO',
+         province = 'PROVINCIA',
+         province_code2 = 'DPA_1',
+         month = 'MES_2',
+         date = 'FECHA') %>%
+  mutate(date = dmy(date),
+         month_year = floor_date(date),
+         province_code2 = as.character(province_code2)) %>% 
+  group_by(province_code2, month_year) %>% 
+  summarise(transit_accidents = n()) %>% 
+  ungroup() %>% 
+  left_join(province_codes %>% select(province_code2, province_code), by = 'province_code2') %>% 
+  select(-province_code2)
+
+# Left join to the main one
+
+df <-
+  df %>% 
+  left_join(transit_accidents, by = c('month_year', 'province_code'))
+
 # Running variable/centered monthly --------------------------------------------------------
 
 # Define the running variable: number of months before the month of implementation. 
@@ -649,14 +680,15 @@ df <-
   df %>% 
   mutate(time = 12 * (as.yearmon(month_year) - as.yearmon(as.Date('2020-05-01'))))
 
-# Create a treatment variable and factorize for regressions
+# Create a treatment variable, factorize for regressions and add some extras
 
 df <-
   df %>%
   mutate(treat = if_else(month_year > as.Date('2020-05-01'),'Treatment Period','Control Period') %>% as.factor(),
          province_code = as.factor(province_code),
          my_event = as.factor(month_year %>% format( '%B%Y')),
-         my_event = relevel(my_event, ref = '2020-05-01'))
+         my_event = relevel(my_event, ref = 'May2020'),
+         lag_jobs = lag(jobs))
 
 # Final preparations ------------------------------------------------------
 

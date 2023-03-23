@@ -89,7 +89,7 @@ coeftest(event_study, vcovHAC(event_study))
 
 # Adding the lag of the previous period to the key regression from above
 
-quadratic_fe_lag <- feols(log(jobs) ~ lag(log(jobs)) + I(time^2) + time*treat + I(time^2)*treat | province_code + month, 
+quadratic_fe_lag <- feols(log(jobs) ~ log(lag_jobs) + I(time^2) + time*treat + I(time^2)*treat | province_code + month, 
                       cluster = ~ province_code + month, 
                       data = df)
 
@@ -98,5 +98,66 @@ coeftest(quadratic_fe_lag, vcovHAC(quadratic_fe))
 
 # That messes me up big time. Probably should think about the time series models
 
+# Adding controls ---------------------------------------------------------
 
+# Adding several control variables to correct OVB
 
+# Without COVID-related stuff (more observations)
+
+modified_fe <- feols(log(jobs) ~ time*treat + remote_workers + thefts + homicides + registered + total_sales + transit_accidents | province_code + month,
+                      cluster = ~ province_code + month,
+                      data = df)
+
+summary(modified_fe)
+
+modified_fe_quad <- feols(log(jobs) ~  I(time^2) + time*treat + I(time^2)*treat + remote_workers + thefts + homicides + registered + total_sales + transit_accidents| province_code + month,
+                     cluster = ~ province_code + month,
+                     data = df)
+
+summary(modified_fe_quad)
+
+# Event Study without COVID-19
+
+modified_event_study <- feols(log(jobs) ~ my_event + remote_workers + thefts + homicides + registered + total_sales + transit_accidents | province_code, 
+                               cluster = ~ province_code + my_event,
+                               data = df)
+
+summary(modified_event_study)
+
+# With a lag
+
+modified_lag <- feols(log(jobs) ~ time*treat+ log(lag_jobs) + remote_workers + thefts + homicides + registered + total_sales + transit_accidents | province_code, 
+                    cluster = ~ province_code + my_event,
+                    data = df)
+
+summary(modified_lag)
+
+# With COVID
+
+modified_fe1 <- feols(log(jobs) ~ time*treat + remote_workers + thefts + homicides + total_covid_cases + registered + total_sales + total_covid_dead + transit_accidents | province_code + month,
+                      cluster = ~ province_code + month,
+                      data = df)
+
+summary(modified_fe1)
+
+modified_fe1_quad <- feols(log(jobs) ~ I(time^2) + time*treat + I(time^2)*treat + remote_workers + thefts + homicides + total_covid_cases + registered + total_sales + transit_accidents + total_covid_dead | province_code + month,
+                           cluster = ~ province_code + month,
+                           data = df)
+
+summary(modified_fe1_quad)
+
+# Event Study Regressions
+
+modified_event_study1 <- feols(log(jobs) ~ my_event + remote_workers + thefts + homicides + total_covid_cases + registered + transit_accidents + total_sales + total_covid_dead | province_code, 
+                               cluster = ~ province_code + my_event,
+                               data = df)
+
+summary(modified_event_study1)
+
+# With lags 
+
+modified_lag1 <- feols(log(jobs) ~ + log(lag_jobs) + time*treat + remote_workers + thefts + homicides + total_covid_cases + registered + total_sales + total_covid_dead +  transit_accidents| province_code + month,
+                      cluster = ~ province_code + month,
+                      data = df)
+
+summary(modified_lag1)
