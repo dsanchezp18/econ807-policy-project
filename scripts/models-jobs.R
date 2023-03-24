@@ -132,6 +132,17 @@ modified_lag <- feols(log(jobs) ~ time*treat+ log(lag_jobs) + remote_workers + t
 
 summary(modified_lag)
 
+# Event Study with a lag
+
+modified_event_study_lag <- feols(log(jobs) ~ my_event + log(lag_jobs) + remote_workers + thefts + homicides + registered + total_sales + transit_accidents | province_code, 
+                              cluster = ~ province_code + my_event,
+                              data = df)
+
+summary(modified_event_study_lag)
+
+coeftest(modified_event_study, vcovHAC(modified_event_study_lag))
+
+
 # With COVID
 
 modified_fe1 <- feols(log(jobs) ~ time*treat + remote_workers + thefts + homicides + total_covid_cases + registered + total_sales + total_covid_dead + transit_accidents | province_code + month,
@@ -161,3 +172,32 @@ modified_lag1 <- feols(log(jobs) ~ + log(lag_jobs) + time*treat + remote_workers
                       data = df)
 
 summary(modified_lag1)
+
+# Some models including business creation
+
+modified_fe_buss <- feols(log(jobs) ~ time*treat + buss_new + remote_workers + thefts + homicides + registered + total_sales + transit_accidents | province_code + month,
+                     cluster = ~ province_code + month,
+                     data = df)
+
+summary(modified_fe_buss)
+
+modified_fe_quad_buss <- feols(log(jobs) ~  buss_new + I(time^2) + time*treat + I(time^2)*treat + remote_workers + thefts + homicides + registered + total_sales + transit_accidents| province_code + month,
+                          cluster = ~ province_code + month,
+                          data = df)
+
+summary(modified_fe_quad_buss)
+
+modified_fe1_buss <- feols(log(jobs) ~ buss_new + time*treat + remote_workers + thefts + homicides + total_covid_cases + registered + total_sales + total_covid_dead + transit_accidents | province_code + month,
+                      cluster = ~ province_code + month,
+                      data = df)
+
+summary(modified_fe1_buss)
+
+modified_fe1_quad_buss<- feols(log(jobs) ~ buss_new + I(time^2) + time*treat + I(time^2)*treat + remote_workers + thefts + homicides + total_covid_cases + registered + total_sales + transit_accidents + total_covid_dead | province_code + month,
+                           cluster = ~ province_code + month,
+                           data = df)
+
+summary(modified_fe1_quad_buss)
+
+
+

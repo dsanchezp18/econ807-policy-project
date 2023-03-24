@@ -46,13 +46,15 @@ While less present in the developed world, informality seems to be very prevalen
 
 The desire for the formalization of the economy is well understood, especially considering that the impact on economic activity due to COVID-19 has increased informality worldwide \parencite{ILO.2022}. However, the policy angle to this issue is subtle, given that the causes and consequences of informality are difficult to document and understand. Among others, some policy approaches have focused on the role of governments in providing incentives for formalization. One approach has been to design tax systems that minimize distortions in the market \parencite{Bardey.2019} as well as reducing the costs of formalization by reducing entry regulation for firms. As proposed by \textcite{MauricioPrado.2011}, firms which are less productive endogenously choose to operate in the informal sector due to entry costs and taxation in the formal sector. While larger firms might be able to overcome the costs of formalization, smaller, less productive firms may not; thus, reducing entry costs can directly affect entrepreneurship.
 
-In this paper, I investigate the relationship between entry regulation and labour market formalization by exploiting an exogenous shock on entry regulation in post-pandemic Ecuador. By using administrative data of various Ecuadorian public institutions, I put [a model by some professors] to practice through a comprehensive event study empirical framework which exploits variation across time at the province level in Ecuador. 
+In this paper, I investigate the relationship between entry regulation and labour market formalization by exploiting an exogenous shock on entry regulation in post-pandemic Ecuador. By using administrative data of various Ecuadorian public institutions, I put [a model by some professors] to practice through a comprehensive event study empirical framework which exploits variation across time at the province level in Ecuador. The reform in question was enacted in May 2020 and allowed for the creation of a new legal form of business, the \textit{Sociedad de Acciones Simplificada}\footnote{\textit{Simplified Shares Society}} or SAS. The reform seeked to impact reduced monetary and time costs relative to other legal figures in the firm creation process, and has proven to be effective in doing so \textcite{CaminoMogro.2022}.
 
 % Pending: the model, the results and the contribution to the literature. 
 
 % Further, product market regulation may negatively interact with labour market regulation to reduce employment, sales and increase equilibrium markups and firm rents \parencite{Blanchard.2003}.
 
 % French paper. 
+
+% Portugal paper and "the marginal firms" as a good theoretical framework.
 
 \section{Literature Review}
 

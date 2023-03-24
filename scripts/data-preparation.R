@@ -688,7 +688,8 @@ df <-
          province_code = as.factor(province_code),
          my_event = as.factor(month_year %>% format( '%B%Y')),
          my_event = relevel(my_event, ref = 'May2020'),
-         lag_jobs = lag(jobs))
+         lag_jobs = lag(jobs),
+         lag_contracts = lag(contracts))
 
 # Final preparations ------------------------------------------------------
 
