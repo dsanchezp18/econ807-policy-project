@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{article}
+
+% ========================================= Preamble ========================================= %
+
+% ---- Document Parameters ---- %
+
+\title{The influence of entry regulation on labour market formalization \\[1em] 
+\large{ECON 807 Macroeconomic Theory \& Policy Policy Project Draft}}
+\author{Daniel Sánchez Pazmiño}
+\date{March 2023}
+
+% ---- Load LaTeX packages ---- %
+
+% Referencing
+
+\usepackage[backend = biber, style = apa, citestyle = apa]{biblatex}
+  \addbibresource{refs.bib}
+
+% Misc
+
+\usepackage{lipsum}
+
+% ---- Preamble Chunks ----- %
+
+<<setup, include = F>>=
+system(paste("biber", sub("\\.Rnw$", "", current_input())))
+@
+
+% ----- Document ----- % 
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\lipsum[1]
+
+\end{abstract}
+
+\section{Introduction}
+
+It is well known that informal work -legal but informal economic activities which occur outside the government's regulatory capability \parencite{Sassen.1994} - can hinder economic development through several channels. Informal firms reduce the amount of taxes that can be collected by governments and these businesses tend to remain small and inefficient. Additionally, workers in the informal sector usually lack access to social security and other employment benefits and tend to earn lower wages even after controlling for skills. Informality is also related to bigger gender gaps, higher inequality, lower education and several other factors which worsen economic outcomes \parencite{Delechat2020}. Further, the informal economy has been characterized with poorly defined work spaces, unsafe and unsanitary working conditions, inconsistent pay, long working hours and a lack of access to markets, financial services, training, and technology \parencite{IloND}. 
+
+While less present in the developed world, informality seems to be very prevalent in developing countries, where it represents a third of low and middle-income countries' economic activity \parencite{Delechat2020}. In the world, the informal economy is thought to encompass more than half of the labour force and more than 90\% of small and micro businesses. The work of \textcite{Soto.2002} has motivated much research about informality in Latin America, being one of the regions with the most prevalent levels of informality, as it often is the only option for several workers on the lower end of the wealth distribution \parencite{Oviedo.2009}. At the macroeconomic level, informality could be regarded as one consequence of poor institutions, which have been shown to be significant factors for growth \parencite{Acemoglu.2001, RafaelLaPorta.1997, Glaeser.2004}. Further, its effect on inequality and its potential to be a channel for the propagation of monetary and fiscal policy \textcite{Alberola.2020} make informality a significative macroeconomic determinant of underdevelopment.
+
+The desire for the formalization of the economy is well understood, especially considering that the impact on economic activity due to COVID-19 has increased informality worldwide \parencite{ILO.2022}. However, the policy angle to this issue is subtle, given that the causes and consequences of informality are difficult to document and understand. Among others, some policy approaches have focused on the role of governments in providing incentives for formalization. One approach has been to design tax systems that minimize distortions in the market \parencite{Bardey.2019} as well as reducing the costs of formalization by reducing entry regulation for firms. As proposed by \textcite{MauricioPrado.2011}, firms which are less productive endogenously choose to operate in the informal sector due to entry costs and taxation in the formal sector. While larger firms might be able to overcome the costs of formalization, smaller, less productive firms may not; thus, reducing entry costs can directly affect entrepreneurship.
+
+In this paper, I investigate the relationship between entry regulation and labour market formalization by exploiting an exogenous shock on entry regulation in post-pandemic Ecuador. By using administrative data of various Ecuadorian public institutions, I put [a model by some professors] to practice through a comprehensive event study empirical framework which exploits variation across time at the province level in Ecuador. 
+
+% Pending: the model, the results and the contribution to the literature. 
+
+% Further, product market regulation may negatively interact with labour market regulation to reduce employment, sales and increase equilibrium markups and firm rents \parencite{Blanchard.2003}.
+
+% French paper. 
+
+\section{Literature Review}
+
+% French Industry
+% Macro Paper
+
+
+\end{document}
