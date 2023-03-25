@@ -147,6 +147,99 @@
       \verb Bardey, Mej{\'i}a 2019 - Informality and Optimal Public Policy:Attachments/Bardey, Mej{\'i}a 2019 - Informality and Optimal Public Policy.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Branstetter.2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bf8cab7ebdac0fb0342559f463542b3f}{%
+           family={Branstetter},
+           familyi={B\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36fd528236ee6858801e85281ba4a311}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eac7c1c74bdc6a26784d1e0f60ca3391}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Lowell\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62b7d2391aefc071afa8af8b727c24fb}{%
+           family={Venâncio},
+           familyi={V\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d326e4323cbc4444201cc3a3572bb2f3}
+      \strng{fullhash}{5c20383b93d0558b2ca36889ab4e26d3}
+      \strng{bibnamehash}{5c20383b93d0558b2ca36889ab4e26d3}
+      \strng{authorbibnamehash}{5c20383b93d0558b2ca36889ab4e26d3}
+      \strng{authornamehash}{d326e4323cbc4444201cc3a3572bb2f3}
+      \strng{authorfullhash}{5c20383b93d0558b2ca36889ab4e26d3}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0013-0133}
+      \field{journaltitle}{{The Economic Journal}}
+      \field{number}{577}
+      \field{title}{{Do Entry Regulations Deter Entrepreneurship and Job Creation? Evidence from Recent Reforms in Portugal}}
+      \field{volume}{124}
+      \field{year}{2014}
+      \field{pages}{805\bibrangedash 832}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1111/ecoj.12044
+      \endverb
+      \verb{file}
+      \verb Branstetter, Lima et al. 2014 - Do Entry Regulations Deter Entrepreneurship:Attachments/Branstetter, Lima et al. 2014 - Do Entry Regulations Deter Entrepreneurship.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{CaminoMogro.2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=49db6cd1f03d4643aefc91e346f5372a}{%
+           family={Camino-Mogro},
+           familyi={C\bibinithyphendelim M\bibinitperiod},
+           given={Segundo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7eb0fbda6d5c8e0a8f90c3ee3504cc01}{%
+           family={{Armijos Bravo}},
+           familyi={A\bibinitperiod},
+           given={Grace},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{fullhash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{bibnamehash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{authorbibnamehash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{authornamehash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{authorfullhash}{f953209617225c3eeeb31ef84d13283f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-0388}
+      \field{journaltitle}{{The Journal of Development Studies}}
+      \field{title}{{Red Tape Reduction, More New Firms? Saving Time and Money: Evidence from an Ecuadorian Reform}}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/00220388.2022.2154149
+      \endverb
+    \endentry
     \entry{Delechat2020}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b7d4776e3af7f7658d2173fa2401bfde}{%
@@ -316,14 +409,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Impact of the Covid-19 pandemic on informality: Has informal employment increased or decreased?}}
+      \field{urlday}{2}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
       \field{year}{2022}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.ilo.org/global/topics/employment-promotion/informal-economy/publications/WCMS_840067/lang--en/index.htm
       \endverb
       \verb{url}
       \verb https://www.ilo.org/global/topics/employment-promotion/informal-economy/publications/WCMS_840067/lang--en/index.htm
       \endverb
-      \warn{\item misc entry 'ILO.2022' (refs.bib): Invalid format '2/3/2023' of date field 'urldate' - ignoring}
     \endentry
     \entry{RafaelLaPorta.1997}{article}{}
       \name{author}{4}{}{%
@@ -633,6 +729,99 @@
       \verb Bardey, Mej{\'i}a 2019 - Informality and Optimal Public Policy:Attachments/Bardey, Mej{\'i}a 2019 - Informality and Optimal Public Policy.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Branstetter.2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bf8cab7ebdac0fb0342559f463542b3f}{%
+           family={Branstetter},
+           familyi={B\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36fd528236ee6858801e85281ba4a311}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eac7c1c74bdc6a26784d1e0f60ca3391}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Lowell\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62b7d2391aefc071afa8af8b727c24fb}{%
+           family={Venâncio},
+           familyi={V\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d326e4323cbc4444201cc3a3572bb2f3}
+      \strng{fullhash}{5c20383b93d0558b2ca36889ab4e26d3}
+      \strng{bibnamehash}{5c20383b93d0558b2ca36889ab4e26d3}
+      \strng{authorbibnamehash}{5c20383b93d0558b2ca36889ab4e26d3}
+      \strng{authornamehash}{d326e4323cbc4444201cc3a3572bb2f3}
+      \strng{authorfullhash}{5c20383b93d0558b2ca36889ab4e26d3}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0013-0133}
+      \field{journaltitle}{{The Economic Journal}}
+      \field{number}{577}
+      \field{title}{{Do Entry Regulations Deter Entrepreneurship and Job Creation? Evidence from Recent Reforms in Portugal}}
+      \field{volume}{124}
+      \field{year}{2014}
+      \field{pages}{805\bibrangedash 832}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1111/ecoj.12044
+      \endverb
+      \verb{file}
+      \verb Branstetter, Lima et al. 2014 - Do Entry Regulations Deter Entrepreneurship:Attachments/Branstetter, Lima et al. 2014 - Do Entry Regulations Deter Entrepreneurship.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{CaminoMogro.2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=49db6cd1f03d4643aefc91e346f5372a}{%
+           family={Camino-Mogro},
+           familyi={C\bibinithyphendelim M\bibinitperiod},
+           given={Segundo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7eb0fbda6d5c8e0a8f90c3ee3504cc01}{%
+           family={{Armijos Bravo}},
+           familyi={A\bibinitperiod},
+           given={Grace},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{fullhash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{bibnamehash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{authorbibnamehash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{authornamehash}{f953209617225c3eeeb31ef84d13283f}
+      \strng{authorfullhash}{f953209617225c3eeeb31ef84d13283f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-0388}
+      \field{journaltitle}{{The Journal of Development Studies}}
+      \field{title}{{Red Tape Reduction, More New Firms? Saving Time and Money: Evidence from an Ecuadorian Reform}}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/00220388.2022.2154149
+      \endverb
+    \endentry
     \entry{Delechat2020}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b7d4776e3af7f7658d2173fa2401bfde}{%
@@ -802,14 +991,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Impact of the Covid-19 pandemic on informality: Has informal employment increased or decreased?}}
+      \field{urlday}{2}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
       \field{year}{2022}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.ilo.org/global/topics/employment-promotion/informal-economy/publications/WCMS_840067/lang--en/index.htm
       \endverb
       \verb{url}
       \verb https://www.ilo.org/global/topics/employment-promotion/informal-economy/publications/WCMS_840067/lang--en/index.htm
       \endverb
-      \warn{\item misc entry 'ILO.2022' (refs.bib): Invalid format '2/3/2023' of date field 'urldate' - ignoring}
     \endentry
     \entry{RafaelLaPorta.1997}{article}{}
       \name{author}{4}{}{%

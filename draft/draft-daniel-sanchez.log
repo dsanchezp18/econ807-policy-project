@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  24 MAR 2023 00:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  24 MAR 2023 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -476,20 +476,7 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'draft-daniel-sanchez.bbl' found.
 
-(./draft-daniel-sanchez.bbl
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'ILO.2022':
-(biblatex)                - misc entry 'ILO.2022' (refs.bib): Invalid format '2
-/3/2023' of date field 'urldate' - ignoring.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'ILO.2022':
-(biblatex)                - misc entry 'ILO.2022' (refs.bib): Invalid format '2
-/3/2023' of date field 'urldate' - ignoring.
-
-)
+(./draft-daniel-sanchez.bbl)
 Package biblatex Info: Reference section=0 on input line 79.
 Package biblatex Info: Reference segment=0 on input line 79.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -498,29 +485,40 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 81.
  [1
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-[3] (./draft-daniel-sanchez.aux)
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 97.
+ [2] [3] (./draft-daniel-sanchez.aux)
 Package logreq Info: Writing requests to 'draft-daniel-sanchez.run.xml'.
 \openout1 = `draft-daniel-sanchez.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11184 strings out of 476024
- 216615 string characters out of 5794016
- 1858382 words of memory out of 5000000
- 31542 multiletter control sequences out of 15000+600000
- 515011 words of font info for 41 fonts, out of 8000000 for 9000
+ 11212 strings out of 476024
+ 217098 string characters out of 5794016
+ 1859382 words of memory out of 5000000
+ 31562 multiletter control sequences out of 15000+600000
+ 518142 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,7n,70p,4666b,5046s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,8n,70p,4666b,5046s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb>
-Output written on draft-daniel-sanchez.pdf (3 pages, 76476 bytes).
+pe1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
+b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on draft-daniel-sanchez.pdf (3 pages, 116268 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
