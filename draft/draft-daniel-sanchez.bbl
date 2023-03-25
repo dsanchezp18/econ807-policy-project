@@ -147,6 +147,92 @@
       \verb Bardey, Mej{\'i}a 2019 - Informality and Optimal Public Policy:Attachments/Bardey, Mej{\'i}a 2019 - Informality and Optimal Public Policy.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Bertrand.2002}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3dd6cc70342ba1dea9fa78b4f8d5fd73}{%
+           family={Bertrand},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=938ace2eef44b093a375969e1f648f2d}{%
+           family={Kramarz},
+           familyi={K\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{fullhash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{bibnamehash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{authorbibnamehash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{authornamehash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{authorfullhash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{{The Quarterly Journal of Economics}}
+      \field{number}{4}
+      \field{title}{{Does Entry Regulation Hinder Job Creation? Evidence from the French Retail Industry}}
+      \field{volume}{117}
+      \field{year}{2002}
+      \field{pages}{1369\bibrangedash 1413}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1162/003355302320935052
+      \endverb
+      \verb{file}
+      \verb Bertrand, Kramarz 2002 - Does Entry Regulation Hinder Job:Attachments/Bertrand, Kramarz 2002 - Does Entry Regulation Hinder Job.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Blanchard.2003}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1bb42bb45a1078c2d2b1486908ad0699}{%
+           family={Blanchard},
+           familyi={B\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77e9af4e115e4770ba99522c68c3a7a8}{%
+           family={Giavazzi},
+           familyi={G\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{fullhash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{bibnamehash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{authorbibnamehash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{authornamehash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{authorfullhash}{727afa5f15292fd51e400f949da3bed4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{{The Quarterly Journal of Economics}}
+      \field{number}{3}
+      \field{title}{{Macroeconomic Effects of Regulation and Deregulation in Goods and Labor Markets}}
+      \field{volume}{118}
+      \field{year}{2003}
+      \field{pages}{879\bibrangedash 907}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1162/00335530360698450
+      \endverb
+      \verb{file}
+      \verb Blanchard, Giavazzi 2003 - Macroeconomic Effects of Regulation:Attachments/Blanchard, Giavazzi 2003 - Macroeconomic Effects of Regulation.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{Branstetter.2014}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=bf8cab7ebdac0fb0342559f463542b3f}{%
@@ -240,6 +326,163 @@
       \verb 10.1080/00220388.2022.2154149
       \endverb
     \endentry
+    \entry{Canelas.2014}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d70d51b28adb822751ba5512d5a7673c}{%
+           family={Canelas},
+           familyi={C\bibinitperiod},
+           given={Carla},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Wider Working Paper}%
+      }
+      \strng{namehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{fullhash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{bibnamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authorbibnamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authornamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authorfullhash}{d70d51b28adb822751ba5512d5a7673c}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Minimum wage and informality in Ecuador}}
+      \field{year}{2014}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Canelas.2019}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d70d51b28adb822751ba5512d5a7673c}{%
+           family={Canelas},
+           familyi={C\bibinitperiod},
+           given={Carla},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{fullhash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{bibnamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authorbibnamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authornamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authorfullhash}{d70d51b28adb822751ba5512d5a7673c}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0921-898X}
+      \field{journaltitle}{{Small Business Economics}}
+      \field{number}{4}
+      \field{title}{{Informality and poverty in Ecuador}}
+      \field{volume}{53}
+      \field{year}{2019}
+      \field{pages}{1097\bibrangedash 1115}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/s11187-018-0102-9
+      \endverb
+      \verb{file}
+      \verb Canelas 2019 - Informality and poverty in Ecuador:Attachments/Canelas 2019 - Informality and poverty in Ecuador.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Chavez.2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bb5bfcb7880faf2187110b3bc0a7de07}{%
+           family={Chávez},
+           familyi={C\bibinitperiod},
+           given={Yannira},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=e0034a71b22b627d69fb25af79fc1900}{%
+           family={Medina},
+           familyi={M\bibinitperiod},
+           given={Paúl},
+           giveni={P\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{fullhash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{bibnamehash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{authorbibnamehash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{authornamehash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{authorfullhash}{c545f047d88a3c1e625eb9126ef48b90}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{La Revista de Métodos Cuantitativos para la Economía y la Empresa pretende ser un medio de comunicación útil para todos los que investigan en técnicas matemáticas, estadísticas o econométricas y sus posibles aplicaciones al ámbito económico o empresarial.}
+      \field{journaltitle}{{Revista de Métodos Cuantitativos para la Economía y la Empresa}}
+      \field{title}{{Revista de Métodos Cuantitativos para la Economía y la Empresa}}
+      \field{volume}{13}
+      \field{year}{2012}
+      \field{pages}{24\bibrangedash 53}
+      \range{pages}{30}
+      \verb{file}
+      \verb Yannira Ch{\'a}vez, Pa{\'u}l Medina 2012 - Revista de M{\'e}todos Cuantitativos para:Attachments/Yannira Ch{\'a}vez, Pa{\'u}l Medina 2012 - Revista de M{\'e}todos Cuantitativos para.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.upo.es/revistas/index.php/RevMetCuant/article/view/2138
+      \endverb
+      \verb{url}
+      \verb https://www.upo.es/revistas/index.php/RevMetCuant/article/view/2138
+      \endverb
+    \endentry
+    \entry{LaTorre.2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=64cacf28363b233abffcacc135b82edd}{%
+           family={{La Torre}},
+           familyi={L\bibinitperiod},
+           given={Augusto},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d302ad9672f29891c7b2e02bb570fcd1}{%
+           family={Palladares},
+           familyi={P\bibinitperiod},
+           given={José\bibnamedelima Hidalgo},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{fullhash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{bibnamehash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{authorbibnamehash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{authornamehash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{authorfullhash}{6c9823f719594eebd019c9c660f84ba3}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{CORDES: Corporación de Estudios para el Desarrollo}}
+      \field{number}{1}
+      \field{title}{{La Trampa que Asfixia a la Economía Ecuatoriana.}}
+      \field{volume}{1}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 45}
+      \range{pages}{45}
+      \verb{urlraw}
+      \verb https://www.cordes.org/images/publicaciones/otras/Trampa.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cordes.org/images/publicaciones/otras/Trampa.pdf
+      \endverb
+    \endentry
     \entry{Delechat2020}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b7d4776e3af7f7658d2173fa2401bfde}{%
@@ -248,12 +491,12 @@
            given={Corinne},
            giveni={C\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=f5a2d456598fc222cc888031b64e08bd}{%
+        {{un=1,uniquepart=given,hash=f5a2d456598fc222cc888031b64e08bd}{%
            family={Medina},
            familyi={M\bibinitperiod},
            given={Leandro},
            giveni={L\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{5a9cfab7ce9258d800de4367d4842b2b}
       \strng{fullhash}{5a9cfab7ce9258d800de4367d4842b2b}
@@ -308,6 +551,78 @@
       \field{title}{{The other path : the economic answer to terrorism}}
       \field{year}{2002}
       \keyw{Bureaucracy -- Peru;Informal sector (Economics) -- Peru;Instituto Libertad y Democracia (Lima;Peru -- Economic conditions -- 1968-;Peru);Sendero Luminoso (Guerrilla group)}
+    \endentry
+    \entry{ElianeElBadaoui.2010}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1f6cd3128d45a475f585bf200a05fe4d}{%
+           family={{Eliane El Badaoui}},
+           familyi={E\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=33a7013cd2565f1a7609f72561af05cf}{%
+           family={{Eric Strobl}},
+           familyi={E\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=f48cfbf443229bd76c6e5790e184de63}{%
+           family={{Frank Walsh}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7e722320c4da331e641cd0fab44d492}
+      \strng{fullhash}{832dc92fcd25afeed8ff5417e3c9687a}
+      \strng{bibnamehash}{832dc92fcd25afeed8ff5417e3c9687a}
+      \strng{authorbibnamehash}{832dc92fcd25afeed8ff5417e3c9687a}
+      \strng{authornamehash}{b7e722320c4da331e641cd0fab44d492}
+      \strng{authorfullhash}{832dc92fcd25afeed8ff5417e3c9687a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show theoretically that when larger firms pay higher wages and are more likely to be caught defaulting on labor taxes, then large-high wage firms will be in the formal and small-low wage firms will be in the informal sector. The formal sector wage premium is thus just a firm size wage differential. Using data from Ecuador we illustrate that firm size is indeed the key variable determining whether a formal sector premium exists.}
+      \field{journaltitle}{{Journal of Development Economics}}
+      \field{number}{1}
+      \field{title}{{The formal sector wage premium and firm size}}
+      \field{volume}{91}
+      \field{year}{2010}
+      \field{pages}{37\bibrangedash 47}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.jdeveco.2009.03.007
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S030438780900042X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S030438780900042X
+      \endverb
+      \keyw{Firm size;Formal sector wage premium}
+    \endentry
+    \entry{Euromonitor.2022}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=05050929ff17477dc40a49e0fa69120b}{%
+           family={{Euromonitor Passport}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{fullhash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{bibnamehash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{authorbibnamehash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{authornamehash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{authorfullhash}{05050929ff17477dc40a49e0fa69120b}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Country Report: Business Dynamics in Ecuador}}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www-portal-euromonitor-com.proxy.lib.sfu.ca/portal/Analysis/Tab
+      \endverb
+      \verb{url}
+      \verb https://www-portal-euromonitor-com.proxy.lib.sfu.ca/portal/Analysis/Tab
+      \endverb
     \endentry
     \entry{Glaeser.2004}{article}{}
       \name{author}{4}{}{%
@@ -421,6 +736,54 @@
       \verb https://www.ilo.org/global/topics/employment-promotion/informal-economy/publications/WCMS_840067/lang--en/index.htm
       \endverb
     \endentry
+    \entry{Kaplan.2011}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=627fdc5d9a179f3906a8e80085829217}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={David\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b1d9d80becdf44274821e959ddc9058}{%
+           family={Piedra},
+           familyi={P\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abd8467b87378ae42836519d0483e7ae}{%
+           family={Seira},
+           familyi={S\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1ced3192d47a3ac8a24a5ccf722e3ace}
+      \strng{fullhash}{bc313522872a90dbe114f308ef3eac85}
+      \strng{bibnamehash}{bc313522872a90dbe114f308ef3eac85}
+      \strng{authorbibnamehash}{bc313522872a90dbe114f308ef3eac85}
+      \strng{authornamehash}{1ced3192d47a3ac8a24a5ccf722e3ace}
+      \strng{authorfullhash}{bc313522872a90dbe114f308ef3eac85}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We estimate the effect on business start-ups of a program that significantly speeds up firm registration procedures. The program was implemented in Mexico in different municipalities at different dates. Our estimates suggest that new start-ups increased by about 5{\%} per month in eligible industries, and we present evidence supporting robustness and a causal effect interpretation. Most of the effect is temporary, concentrated in the first 15 months after implementation. The estimated effect is much smaller than World Bank and Mexican authorities claim it is, which suggests attention in business deregulation may be over emphasized. ► We estimate the effect on business start-ups of a program that significantly speeds up firm registration procedures. ► Our estimates suggest that new start-ups increased by about 5{\%} per month in eligible industries, and we present evidence supporting robustness and a causal effect interpretation. ► Most of the effect is temporary, concentrated in the first 15 months after implementation. ► The estimated effect is much smaller than World Bank and Mexican authorities claim it is, which suggests attention in business deregulation may be over emphasized.}
+      \field{issn}{0047-2727}
+      \field{journaltitle}{{Journal of public economics}}
+      \field{number}{11}
+      \field{title}{{Entry regulation and business start-ups: Evidence from Mexico}}
+      \field{volume}{95}
+      \field{year}{2011}
+      \field{pages}{1501\bibrangedash 1515}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.jpubeco.2011.03.007
+      \endverb
+      \keyw{Causal analysis;Deregulation;Economic policy;Entrepreneurship;Estimation;Firm start-ups;Informal sector;Laws;Market entry;Mexico;New business enterprises;Program evaluation;Programme evaluation;Regulation;regulations and rules}
+    \endentry
     \entry{RafaelLaPorta.1997}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=712ea8cb320f5c4337d5be3577ceb768}{%
@@ -473,6 +836,307 @@
       \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2329518
+      \endverb
+    \endentry
+    \entry{Lambert.2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=055863d627c602a46a09416de776368d}{%
+           family={Lambert},
+           familyi={L\bibinitperiod},
+           given={Frederic\bibnamedelima J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=345c66e66c3ff37b464b7b344904f709}{%
+           family={Pescatori},
+           familyi={P\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ab565e425ec95ef4702cf4f077471fc}{%
+           family={Toscani},
+           familyi={T\bibinitperiod},
+           given={Frederik},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2829f763d75dd77659d51bfeeeda2613}
+      \strng{fullhash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
+      \strng{bibnamehash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
+      \strng{authorbibnamehash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
+      \strng{authornamehash}{2829f763d75dd77659d51bfeeeda2613}
+      \strng{authorfullhash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Labor market informality and the business cycle}}
+      \field{year}{2020}
+    \endentry
+    \entry{Leyva.2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b5bacb2ac55df898daf81842452618e6}{%
+           family={Leyva},
+           familyi={L\bibinitperiod},
+           given={Gustavo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e2c57b728219a45bdc103ee2d023fd6e}{%
+           family={Urrutia},
+           familyi={U\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{fullhash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{bibnamehash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{authorbibnamehash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{authornamehash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{authorfullhash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We ask how labor regulation and informality affect macroeconomic volatility and the propagation of shocks in emerging economies. For this, we propose a small open economy business cycle model with frictional labor markets, endogenous labor participation, and an informal sector. Our own calculations from the ENOE national household survey reveal that these three margins are important to account for the labor market dynamics in Mexico. The model is calibrated to the Mexican economy, in particular to business cycle moments for employment and informality. We show that interest rate shocks, which affect specifically job creation in the formal sector, are key to obtain a countercyclical informality rate. In our model, the presence of an informal sector might help to mitigate the impact of a stringent labor regulation on employment and consumption fluctuations. In that sense, it adds flexibility to the economy in its adjustment to shocks, but at the cost of a lower productivity and an excess TFP and output volatility. Reducing the burden of labor regulation to the formal sector might achieve the goal of reducing output volatility while improving at the same time the efficiency in the allocation of resources.}
+      \field{issn}{0022-1996}
+      \field{journaltitle}{{Journal of International Economics}}
+      \field{title}{{Informality, labor regulation, and the business cycle}}
+      \field{volume}{126}
+      \field{year}{2020}
+      \field{pages}{103340}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jinteco.2020.103340
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022199620300568
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022199620300568
+      \endverb
+      \keyw{Business cycle;Foreign interest rate shocks;Informality;Job creation;Labor regulation;Small open economy}
+    \endentry
+    \entry{MacIsaac.1997}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5a81a8e65e383adf89f3a10313876f6b}{%
+           family={MacIsaac},
+           familyi={M\bibinitperiod},
+           given={Donna},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb2f38104f816aded028bdebc8cb8f54}{%
+           family={Rama},
+           familyi={R\bibinitperiod},
+           given={Mart$\backslash$'{ı}n},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{154ecf678787049380975ea514b29289}
+      \strng{fullhash}{154ecf678787049380975ea514b29289}
+      \strng{bibnamehash}{154ecf678787049380975ea514b29289}
+      \strng{authorbibnamehash}{154ecf678787049380975ea514b29289}
+      \strng{authornamehash}{154ecf678787049380975ea514b29289}
+      \strng{authorfullhash}{154ecf678787049380975ea514b29289}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ecuadorian labor costs are said to be high because of the existence of many mandated benefits. Using the 1994 Living Standards Measurement Survey, we show that the effect of these benefits is actually mitigated by a reduction of base earnings, that is, of the foundation on which they are paid. The reduction is larger in the private than in the public sector and is negligible for unionized workers. We also show that, in spite of mandated benefits, interindustry wage differentials are comparable to those of Bolivia, a country characterized by ``flexible'' labor markets but otherwise similar to Ecuador.}
+      \field{journaltitle}{{Journal of Labor Economics}}
+      \field{number}{S3}
+      \field{title}{{Determinants of Hourly Earnings in Ecuador: The Role of Labor Market Regulations}}
+      \field{volume}{15}
+      \field{year}{1997}
+      \field{pages}{S136\bibrangedash S165}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1086/209879
+      \endverb
+    \endentry
+    \entry{Medvedev.2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=77d135d7367d30a6897e050cf3434362}{%
+           family={Medvedev},
+           familyi={M\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9206f22b108f56c42e3f5eec0427823a}{%
+           family={Oviedo},
+           familyi={O\bibinitperiod},
+           given={Ana\bibnamedelima María},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{fullhash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{bibnamehash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{authorbibnamehash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{authornamehash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{authorfullhash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-0388}
+      \field{journaltitle}{{The Journal of Development Studies}}
+      \field{number}{3}
+      \field{title}{{Informality and profitability: Evidence from a new firm survey in Ecuador}}
+      \field{volume}{52}
+      \field{year}{2016}
+      \field{pages}{412\bibrangedash 427}
+      \range{pages}{16}
+    \endentry
+    \entry{Mendoza.2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8af4e563f86bb83d00d3511bd69dabff}{%
+           family={Mendoza},
+           familyi={M\bibinitperiod},
+           given={César\bibnamedelima Andrés},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6eb9afbff2178097826528a2023025a}{%
+           family={Jara},
+           familyi={J\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{fullhash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{bibnamehash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{authorbibnamehash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{authornamehash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{authorfullhash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Regional Science Policy {\&} Practice}}
+      \field{number}{1}
+      \field{title}{{Natural Disasters and Informality: Are local labor markets impacted after an earthquake?}}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{pages}{125\bibrangedash 157}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1111/rsp3.12258
+      \endverb
+    \endentry
+    \entry{Meneses.2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=48fa32a5cc307b3a66e1e40075b7ff96}{%
+           family={Meneses},
+           familyi={M\bibinitperiod},
+           given={Karla},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8af44e9f1d1d5d0fc6e021d83f5ef7d}{%
+           family={Córdova},
+           familyi={C\bibinitperiod},
+           given={Gabriela},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=557b3ec8dba1cb338429289b2337c8c4}{%
+           family={Aguirre},
+           familyi={A\bibinitperiod},
+           given={Kamila},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f844eda4517a05632c17b2d06093af63}
+      \strng{fullhash}{399c965f0685d67d831d210e5cba2964}
+      \strng{bibnamehash}{399c965f0685d67d831d210e5cba2964}
+      \strng{authorbibnamehash}{399c965f0685d67d831d210e5cba2964}
+      \strng{authornamehash}{f844eda4517a05632c17b2d06093af63}
+      \strng{authorfullhash}{399c965f0685d67d831d210e5cba2964}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{El mercado laboral ecuatoriano presenta problemas estructurales que lo caracterizan desde hace varias décadas, y que vulneran los logros para mejorar la cali...}
+      \field{journaltitle}{{Revista Economía y Política}}
+      \field{number}{33}
+      \field{title}{{Lo más destacado y sobresaliente que caracteriza al mercado laboral ecuatoriano en siete hechos estilizados}}
+      \field{year}{2021}
+      \verb{file}
+      \verb Karla J. Meneses Bucheli, Gabriela C{\'o}rdova Montero et al. 2021 - Lo m{\'a}s destacado y sobresaliente:Attachments/Karla J. Meneses Bucheli, Gabriela C{\'o}rdova Montero et al. 2021 - Lo m{\'a}s destacado y sobresaliente.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.redalyc.org/journal/5711/571165147001/html/
+      \endverb
+      \verb{url}
+      \verb https://www.redalyc.org/journal/5711/571165147001/html/
+      \endverb
+    \endentry
+    \entry{Olivieri.2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0c837a9a0fbc54056619af114ab8591d}{%
+           family={Olivieri},
+           familyi={O\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf460dd8516ab82e1f668f0875f78743}{%
+           family={Ortega},
+           familyi={O\bibinitperiod},
+           given={Francesc},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49bf1c906d2ef0af90b97e0634994bd6}{%
+           family={Rivadeneira},
+           familyi={R\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fed3ad72b522d3f669f84579e3229b7c}{%
+           family={Carranza},
+           familyi={C\bibinitperiod},
+           given={Eliana},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{479b7b97acb0a25b53b6f72702e24518}
+      \strng{fullhash}{2010392a762cd16cff07ef8374521486}
+      \strng{bibnamehash}{2010392a762cd16cff07ef8374521486}
+      \strng{authorbibnamehash}{2010392a762cd16cff07ef8374521486}
+      \strng{authornamehash}{479b7b97acb0a25b53b6f72702e24518}
+      \strng{authorfullhash}{2010392a762cd16cff07ef8374521486}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-0388}
+      \field{journaltitle}{{The Journal of Development Studies}}
+      \field{number}{4}
+      \field{title}{{The Labour Market Effects of Venezuelan Migration in Ecuador}}
+      \field{volume}{58}
+      \field{year}{2022}
+      \field{pages}{713\bibrangedash 729}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1080/00220388.2021.1988077
       \endverb
     \endentry
     \entry{Oviedo.2009}{book}{}
@@ -598,6 +1262,56 @@
       \field{pages}{2289\bibrangedash 2304}
       \range{pages}{16}
       \keyw{Analysis;Business structures;Cities;Commercial regulation;Consumer economics;Consumption (Economics);Development;Economic activity;Economic aspects;Economic criminality;Economic development;Economic migration;Economic regulation;Economics;Income distribution;Informal economy;Informal sector;Law;Regulation;Underground economies;Underground economy;Urban economics}
+    \endentry
+    \entry{Weisbrot.2017}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f4c9d2a9b3424e5c7109437697b771b0}{%
+           family={Weisbrot},
+           familyi={W\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5c3d84213fbd6ce0725bbc622be59d1}{%
+           family={Johnston},
+           familyi={J\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=acc5e4fc88586cf63938e6ee944fd075}{%
+           family={Merling},
+           familyi={M\bibinitperiod},
+           given={Lara},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Center for Economic and Policy Research}%
+      }
+      \list{location}{1}{%
+        {Washington DC}%
+      }
+      \strng{namehash}{7a89a0a10bbf4c3e58bb1e36062f7a9f}
+      \strng{fullhash}{2341ef7974c213d44de28fde351bfc45}
+      \strng{bibnamehash}{2341ef7974c213d44de28fde351bfc45}
+      \strng{authorbibnamehash}{2341ef7974c213d44de28fde351bfc45}
+      \strng{authornamehash}{7a89a0a10bbf4c3e58bb1e36062f7a9f}
+      \strng{authorfullhash}{2341ef7974c213d44de28fde351bfc45}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Decade of Reform: Ecuador's Macroeconomic Policies, Institutional Changes, and Results}}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://cepr.net/images/stories/reports/ecuador-2017-02.pdf
+      \endverb
+      \verb{url}
+      \verb https://cepr.net/images/stories/reports/ecuador-2017-02.pdf
+      \endverb
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
@@ -729,6 +1443,92 @@
       \verb Bardey, Mej{\'i}a 2019 - Informality and Optimal Public Policy:Attachments/Bardey, Mej{\'i}a 2019 - Informality and Optimal Public Policy.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Bertrand.2002}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3dd6cc70342ba1dea9fa78b4f8d5fd73}{%
+           family={Bertrand},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=938ace2eef44b093a375969e1f648f2d}{%
+           family={Kramarz},
+           familyi={K\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{fullhash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{bibnamehash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{authorbibnamehash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{authornamehash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \strng{authorfullhash}{a16ddf76fa54c7fab6eaa81bcb60ae7c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{{The Quarterly Journal of Economics}}
+      \field{number}{4}
+      \field{title}{{Does Entry Regulation Hinder Job Creation? Evidence from the French Retail Industry}}
+      \field{volume}{117}
+      \field{year}{2002}
+      \field{pages}{1369\bibrangedash 1413}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1162/003355302320935052
+      \endverb
+      \verb{file}
+      \verb Bertrand, Kramarz 2002 - Does Entry Regulation Hinder Job:Attachments/Bertrand, Kramarz 2002 - Does Entry Regulation Hinder Job.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Blanchard.2003}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1bb42bb45a1078c2d2b1486908ad0699}{%
+           family={Blanchard},
+           familyi={B\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77e9af4e115e4770ba99522c68c3a7a8}{%
+           family={Giavazzi},
+           familyi={G\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{fullhash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{bibnamehash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{authorbibnamehash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{authornamehash}{727afa5f15292fd51e400f949da3bed4}
+      \strng{authorfullhash}{727afa5f15292fd51e400f949da3bed4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{{The Quarterly Journal of Economics}}
+      \field{number}{3}
+      \field{title}{{Macroeconomic Effects of Regulation and Deregulation in Goods and Labor Markets}}
+      \field{volume}{118}
+      \field{year}{2003}
+      \field{pages}{879\bibrangedash 907}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1162/00335530360698450
+      \endverb
+      \verb{file}
+      \verb Blanchard, Giavazzi 2003 - Macroeconomic Effects of Regulation:Attachments/Blanchard, Giavazzi 2003 - Macroeconomic Effects of Regulation.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{Branstetter.2014}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=bf8cab7ebdac0fb0342559f463542b3f}{%
@@ -822,6 +1622,163 @@
       \verb 10.1080/00220388.2022.2154149
       \endverb
     \endentry
+    \entry{Canelas.2014}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d70d51b28adb822751ba5512d5a7673c}{%
+           family={Canelas},
+           familyi={C\bibinitperiod},
+           given={Carla},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Wider Working Paper}%
+      }
+      \strng{namehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{fullhash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{bibnamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authorbibnamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authornamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authorfullhash}{d70d51b28adb822751ba5512d5a7673c}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Minimum wage and informality in Ecuador}}
+      \field{year}{2014}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Canelas.2019}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d70d51b28adb822751ba5512d5a7673c}{%
+           family={Canelas},
+           familyi={C\bibinitperiod},
+           given={Carla},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{fullhash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{bibnamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authorbibnamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authornamehash}{d70d51b28adb822751ba5512d5a7673c}
+      \strng{authorfullhash}{d70d51b28adb822751ba5512d5a7673c}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0921-898X}
+      \field{journaltitle}{{Small Business Economics}}
+      \field{number}{4}
+      \field{title}{{Informality and poverty in Ecuador}}
+      \field{volume}{53}
+      \field{year}{2019}
+      \field{pages}{1097\bibrangedash 1115}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/s11187-018-0102-9
+      \endverb
+      \verb{file}
+      \verb Canelas 2019 - Informality and poverty in Ecuador:Attachments/Canelas 2019 - Informality and poverty in Ecuador.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Chavez.2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bb5bfcb7880faf2187110b3bc0a7de07}{%
+           family={Chávez},
+           familyi={C\bibinitperiod},
+           given={Yannira},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=e0034a71b22b627d69fb25af79fc1900}{%
+           family={Medina},
+           familyi={M\bibinitperiod},
+           given={Paúl},
+           giveni={P\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{fullhash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{bibnamehash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{authorbibnamehash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{authornamehash}{c545f047d88a3c1e625eb9126ef48b90}
+      \strng{authorfullhash}{c545f047d88a3c1e625eb9126ef48b90}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{La Revista de Métodos Cuantitativos para la Economía y la Empresa pretende ser un medio de comunicación útil para todos los que investigan en técnicas matemáticas, estadísticas o econométricas y sus posibles aplicaciones al ámbito económico o empresarial.}
+      \field{journaltitle}{{Revista de Métodos Cuantitativos para la Economía y la Empresa}}
+      \field{title}{{Revista de Métodos Cuantitativos para la Economía y la Empresa}}
+      \field{volume}{13}
+      \field{year}{2012}
+      \field{pages}{24\bibrangedash 53}
+      \range{pages}{30}
+      \verb{file}
+      \verb Yannira Ch{\'a}vez, Pa{\'u}l Medina 2012 - Revista de M{\'e}todos Cuantitativos para:Attachments/Yannira Ch{\'a}vez, Pa{\'u}l Medina 2012 - Revista de M{\'e}todos Cuantitativos para.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.upo.es/revistas/index.php/RevMetCuant/article/view/2138
+      \endverb
+      \verb{url}
+      \verb https://www.upo.es/revistas/index.php/RevMetCuant/article/view/2138
+      \endverb
+    \endentry
+    \entry{LaTorre.2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=64cacf28363b233abffcacc135b82edd}{%
+           family={{La Torre}},
+           familyi={L\bibinitperiod},
+           given={Augusto},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d302ad9672f29891c7b2e02bb570fcd1}{%
+           family={Palladares},
+           familyi={P\bibinitperiod},
+           given={José\bibnamedelima Hidalgo},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{fullhash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{bibnamehash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{authorbibnamehash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{authornamehash}{6c9823f719594eebd019c9c660f84ba3}
+      \strng{authorfullhash}{6c9823f719594eebd019c9c660f84ba3}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{CORDES: Corporación de Estudios para el Desarrollo}}
+      \field{number}{1}
+      \field{title}{{La Trampa que Asfixia a la Economía Ecuatoriana.}}
+      \field{volume}{1}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 45}
+      \range{pages}{45}
+      \verb{urlraw}
+      \verb https://www.cordes.org/images/publicaciones/otras/Trampa.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cordes.org/images/publicaciones/otras/Trampa.pdf
+      \endverb
+    \endentry
     \entry{Delechat2020}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b7d4776e3af7f7658d2173fa2401bfde}{%
@@ -830,12 +1787,12 @@
            given={Corinne},
            giveni={C\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=f5a2d456598fc222cc888031b64e08bd}{%
+        {{un=1,uniquepart=given,hash=f5a2d456598fc222cc888031b64e08bd}{%
            family={Medina},
            familyi={M\bibinitperiod},
            given={Leandro},
            giveni={L\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{5a9cfab7ce9258d800de4367d4842b2b}
       \strng{fullhash}{5a9cfab7ce9258d800de4367d4842b2b}
@@ -890,6 +1847,78 @@
       \field{title}{{The other path : the economic answer to terrorism}}
       \field{year}{2002}
       \keyw{Bureaucracy -- Peru;Informal sector (Economics) -- Peru;Instituto Libertad y Democracia (Lima;Peru -- Economic conditions -- 1968-;Peru);Sendero Luminoso (Guerrilla group)}
+    \endentry
+    \entry{ElianeElBadaoui.2010}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1f6cd3128d45a475f585bf200a05fe4d}{%
+           family={{Eliane El Badaoui}},
+           familyi={E\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=33a7013cd2565f1a7609f72561af05cf}{%
+           family={{Eric Strobl}},
+           familyi={E\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=f48cfbf443229bd76c6e5790e184de63}{%
+           family={{Frank Walsh}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7e722320c4da331e641cd0fab44d492}
+      \strng{fullhash}{832dc92fcd25afeed8ff5417e3c9687a}
+      \strng{bibnamehash}{832dc92fcd25afeed8ff5417e3c9687a}
+      \strng{authorbibnamehash}{832dc92fcd25afeed8ff5417e3c9687a}
+      \strng{authornamehash}{b7e722320c4da331e641cd0fab44d492}
+      \strng{authorfullhash}{832dc92fcd25afeed8ff5417e3c9687a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show theoretically that when larger firms pay higher wages and are more likely to be caught defaulting on labor taxes, then large-high wage firms will be in the formal and small-low wage firms will be in the informal sector. The formal sector wage premium is thus just a firm size wage differential. Using data from Ecuador we illustrate that firm size is indeed the key variable determining whether a formal sector premium exists.}
+      \field{journaltitle}{{Journal of Development Economics}}
+      \field{number}{1}
+      \field{title}{{The formal sector wage premium and firm size}}
+      \field{volume}{91}
+      \field{year}{2010}
+      \field{pages}{37\bibrangedash 47}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.jdeveco.2009.03.007
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S030438780900042X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S030438780900042X
+      \endverb
+      \keyw{Firm size;Formal sector wage premium}
+    \endentry
+    \entry{Euromonitor.2022}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=05050929ff17477dc40a49e0fa69120b}{%
+           family={{Euromonitor Passport}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{fullhash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{bibnamehash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{authorbibnamehash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{authornamehash}{05050929ff17477dc40a49e0fa69120b}
+      \strng{authorfullhash}{05050929ff17477dc40a49e0fa69120b}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Country Report: Business Dynamics in Ecuador}}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www-portal-euromonitor-com.proxy.lib.sfu.ca/portal/Analysis/Tab
+      \endverb
+      \verb{url}
+      \verb https://www-portal-euromonitor-com.proxy.lib.sfu.ca/portal/Analysis/Tab
+      \endverb
     \endentry
     \entry{Glaeser.2004}{article}{}
       \name{author}{4}{}{%
@@ -1003,6 +2032,54 @@
       \verb https://www.ilo.org/global/topics/employment-promotion/informal-economy/publications/WCMS_840067/lang--en/index.htm
       \endverb
     \endentry
+    \entry{Kaplan.2011}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=627fdc5d9a179f3906a8e80085829217}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={David\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b1d9d80becdf44274821e959ddc9058}{%
+           family={Piedra},
+           familyi={P\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abd8467b87378ae42836519d0483e7ae}{%
+           family={Seira},
+           familyi={S\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1ced3192d47a3ac8a24a5ccf722e3ace}
+      \strng{fullhash}{bc313522872a90dbe114f308ef3eac85}
+      \strng{bibnamehash}{bc313522872a90dbe114f308ef3eac85}
+      \strng{authorbibnamehash}{bc313522872a90dbe114f308ef3eac85}
+      \strng{authornamehash}{1ced3192d47a3ac8a24a5ccf722e3ace}
+      \strng{authorfullhash}{bc313522872a90dbe114f308ef3eac85}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We estimate the effect on business start-ups of a program that significantly speeds up firm registration procedures. The program was implemented in Mexico in different municipalities at different dates. Our estimates suggest that new start-ups increased by about 5{\%} per month in eligible industries, and we present evidence supporting robustness and a causal effect interpretation. Most of the effect is temporary, concentrated in the first 15 months after implementation. The estimated effect is much smaller than World Bank and Mexican authorities claim it is, which suggests attention in business deregulation may be over emphasized. ► We estimate the effect on business start-ups of a program that significantly speeds up firm registration procedures. ► Our estimates suggest that new start-ups increased by about 5{\%} per month in eligible industries, and we present evidence supporting robustness and a causal effect interpretation. ► Most of the effect is temporary, concentrated in the first 15 months after implementation. ► The estimated effect is much smaller than World Bank and Mexican authorities claim it is, which suggests attention in business deregulation may be over emphasized.}
+      \field{issn}{0047-2727}
+      \field{journaltitle}{{Journal of public economics}}
+      \field{number}{11}
+      \field{title}{{Entry regulation and business start-ups: Evidence from Mexico}}
+      \field{volume}{95}
+      \field{year}{2011}
+      \field{pages}{1501\bibrangedash 1515}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.jpubeco.2011.03.007
+      \endverb
+      \keyw{Causal analysis;Deregulation;Economic policy;Entrepreneurship;Estimation;Firm start-ups;Informal sector;Laws;Market entry;Mexico;New business enterprises;Program evaluation;Programme evaluation;Regulation;regulations and rules}
+    \endentry
     \entry{RafaelLaPorta.1997}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=712ea8cb320f5c4337d5be3577ceb768}{%
@@ -1055,6 +2132,307 @@
       \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2329518
+      \endverb
+    \endentry
+    \entry{Lambert.2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=055863d627c602a46a09416de776368d}{%
+           family={Lambert},
+           familyi={L\bibinitperiod},
+           given={Frederic\bibnamedelima J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=345c66e66c3ff37b464b7b344904f709}{%
+           family={Pescatori},
+           familyi={P\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ab565e425ec95ef4702cf4f077471fc}{%
+           family={Toscani},
+           familyi={T\bibinitperiod},
+           given={Frederik},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2829f763d75dd77659d51bfeeeda2613}
+      \strng{fullhash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
+      \strng{bibnamehash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
+      \strng{authorbibnamehash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
+      \strng{authornamehash}{2829f763d75dd77659d51bfeeeda2613}
+      \strng{authorfullhash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Labor market informality and the business cycle}}
+      \field{year}{2020}
+    \endentry
+    \entry{Leyva.2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b5bacb2ac55df898daf81842452618e6}{%
+           family={Leyva},
+           familyi={L\bibinitperiod},
+           given={Gustavo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e2c57b728219a45bdc103ee2d023fd6e}{%
+           family={Urrutia},
+           familyi={U\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{fullhash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{bibnamehash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{authorbibnamehash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{authornamehash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \strng{authorfullhash}{88b06b34afd3e68e083e98d0da87d6e3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We ask how labor regulation and informality affect macroeconomic volatility and the propagation of shocks in emerging economies. For this, we propose a small open economy business cycle model with frictional labor markets, endogenous labor participation, and an informal sector. Our own calculations from the ENOE national household survey reveal that these three margins are important to account for the labor market dynamics in Mexico. The model is calibrated to the Mexican economy, in particular to business cycle moments for employment and informality. We show that interest rate shocks, which affect specifically job creation in the formal sector, are key to obtain a countercyclical informality rate. In our model, the presence of an informal sector might help to mitigate the impact of a stringent labor regulation on employment and consumption fluctuations. In that sense, it adds flexibility to the economy in its adjustment to shocks, but at the cost of a lower productivity and an excess TFP and output volatility. Reducing the burden of labor regulation to the formal sector might achieve the goal of reducing output volatility while improving at the same time the efficiency in the allocation of resources.}
+      \field{issn}{0022-1996}
+      \field{journaltitle}{{Journal of International Economics}}
+      \field{title}{{Informality, labor regulation, and the business cycle}}
+      \field{volume}{126}
+      \field{year}{2020}
+      \field{pages}{103340}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jinteco.2020.103340
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022199620300568
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022199620300568
+      \endverb
+      \keyw{Business cycle;Foreign interest rate shocks;Informality;Job creation;Labor regulation;Small open economy}
+    \endentry
+    \entry{MacIsaac.1997}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5a81a8e65e383adf89f3a10313876f6b}{%
+           family={MacIsaac},
+           familyi={M\bibinitperiod},
+           given={Donna},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb2f38104f816aded028bdebc8cb8f54}{%
+           family={Rama},
+           familyi={R\bibinitperiod},
+           given={Mart$\backslash$'{ı}n},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{154ecf678787049380975ea514b29289}
+      \strng{fullhash}{154ecf678787049380975ea514b29289}
+      \strng{bibnamehash}{154ecf678787049380975ea514b29289}
+      \strng{authorbibnamehash}{154ecf678787049380975ea514b29289}
+      \strng{authornamehash}{154ecf678787049380975ea514b29289}
+      \strng{authorfullhash}{154ecf678787049380975ea514b29289}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ecuadorian labor costs are said to be high because of the existence of many mandated benefits. Using the 1994 Living Standards Measurement Survey, we show that the effect of these benefits is actually mitigated by a reduction of base earnings, that is, of the foundation on which they are paid. The reduction is larger in the private than in the public sector and is negligible for unionized workers. We also show that, in spite of mandated benefits, interindustry wage differentials are comparable to those of Bolivia, a country characterized by ``flexible'' labor markets but otherwise similar to Ecuador.}
+      \field{journaltitle}{{Journal of Labor Economics}}
+      \field{number}{S3}
+      \field{title}{{Determinants of Hourly Earnings in Ecuador: The Role of Labor Market Regulations}}
+      \field{volume}{15}
+      \field{year}{1997}
+      \field{pages}{S136\bibrangedash S165}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1086/209879
+      \endverb
+    \endentry
+    \entry{Medvedev.2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=77d135d7367d30a6897e050cf3434362}{%
+           family={Medvedev},
+           familyi={M\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9206f22b108f56c42e3f5eec0427823a}{%
+           family={Oviedo},
+           familyi={O\bibinitperiod},
+           given={Ana\bibnamedelima María},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{fullhash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{bibnamehash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{authorbibnamehash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{authornamehash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \strng{authorfullhash}{286dc1c46c889e8547b7e5fd7fcdf40f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-0388}
+      \field{journaltitle}{{The Journal of Development Studies}}
+      \field{number}{3}
+      \field{title}{{Informality and profitability: Evidence from a new firm survey in Ecuador}}
+      \field{volume}{52}
+      \field{year}{2016}
+      \field{pages}{412\bibrangedash 427}
+      \range{pages}{16}
+    \endentry
+    \entry{Mendoza.2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8af4e563f86bb83d00d3511bd69dabff}{%
+           family={Mendoza},
+           familyi={M\bibinitperiod},
+           given={César\bibnamedelima Andrés},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6eb9afbff2178097826528a2023025a}{%
+           family={Jara},
+           familyi={J\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{fullhash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{bibnamehash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{authorbibnamehash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{authornamehash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \strng{authorfullhash}{c0e81d6c76c163ae2f351440ecf141ec}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Regional Science Policy {\&} Practice}}
+      \field{number}{1}
+      \field{title}{{Natural Disasters and Informality: Are local labor markets impacted after an earthquake?}}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{pages}{125\bibrangedash 157}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1111/rsp3.12258
+      \endverb
+    \endentry
+    \entry{Meneses.2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=48fa32a5cc307b3a66e1e40075b7ff96}{%
+           family={Meneses},
+           familyi={M\bibinitperiod},
+           given={Karla},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8af44e9f1d1d5d0fc6e021d83f5ef7d}{%
+           family={Córdova},
+           familyi={C\bibinitperiod},
+           given={Gabriela},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=557b3ec8dba1cb338429289b2337c8c4}{%
+           family={Aguirre},
+           familyi={A\bibinitperiod},
+           given={Kamila},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f844eda4517a05632c17b2d06093af63}
+      \strng{fullhash}{399c965f0685d67d831d210e5cba2964}
+      \strng{bibnamehash}{399c965f0685d67d831d210e5cba2964}
+      \strng{authorbibnamehash}{399c965f0685d67d831d210e5cba2964}
+      \strng{authornamehash}{f844eda4517a05632c17b2d06093af63}
+      \strng{authorfullhash}{399c965f0685d67d831d210e5cba2964}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{El mercado laboral ecuatoriano presenta problemas estructurales que lo caracterizan desde hace varias décadas, y que vulneran los logros para mejorar la cali...}
+      \field{journaltitle}{{Revista Economía y Política}}
+      \field{number}{33}
+      \field{title}{{Lo más destacado y sobresaliente que caracteriza al mercado laboral ecuatoriano en siete hechos estilizados}}
+      \field{year}{2021}
+      \verb{file}
+      \verb Karla J. Meneses Bucheli, Gabriela C{\'o}rdova Montero et al. 2021 - Lo m{\'a}s destacado y sobresaliente:Attachments/Karla J. Meneses Bucheli, Gabriela C{\'o}rdova Montero et al. 2021 - Lo m{\'a}s destacado y sobresaliente.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.redalyc.org/journal/5711/571165147001/html/
+      \endverb
+      \verb{url}
+      \verb https://www.redalyc.org/journal/5711/571165147001/html/
+      \endverb
+    \endentry
+    \entry{Olivieri.2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0c837a9a0fbc54056619af114ab8591d}{%
+           family={Olivieri},
+           familyi={O\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf460dd8516ab82e1f668f0875f78743}{%
+           family={Ortega},
+           familyi={O\bibinitperiod},
+           given={Francesc},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49bf1c906d2ef0af90b97e0634994bd6}{%
+           family={Rivadeneira},
+           familyi={R\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fed3ad72b522d3f669f84579e3229b7c}{%
+           family={Carranza},
+           familyi={C\bibinitperiod},
+           given={Eliana},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{479b7b97acb0a25b53b6f72702e24518}
+      \strng{fullhash}{2010392a762cd16cff07ef8374521486}
+      \strng{bibnamehash}{2010392a762cd16cff07ef8374521486}
+      \strng{authorbibnamehash}{2010392a762cd16cff07ef8374521486}
+      \strng{authornamehash}{479b7b97acb0a25b53b6f72702e24518}
+      \strng{authorfullhash}{2010392a762cd16cff07ef8374521486}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-0388}
+      \field{journaltitle}{{The Journal of Development Studies}}
+      \field{number}{4}
+      \field{title}{{The Labour Market Effects of Venezuelan Migration in Ecuador}}
+      \field{volume}{58}
+      \field{year}{2022}
+      \field{pages}{713\bibrangedash 729}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1080/00220388.2021.1988077
       \endverb
     \endentry
     \entry{Oviedo.2009}{book}{}
@@ -1180,6 +2558,56 @@
       \field{pages}{2289\bibrangedash 2304}
       \range{pages}{16}
       \keyw{Analysis;Business structures;Cities;Commercial regulation;Consumer economics;Consumption (Economics);Development;Economic activity;Economic aspects;Economic criminality;Economic development;Economic migration;Economic regulation;Economics;Income distribution;Informal economy;Informal sector;Law;Regulation;Underground economies;Underground economy;Urban economics}
+    \endentry
+    \entry{Weisbrot.2017}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f4c9d2a9b3424e5c7109437697b771b0}{%
+           family={Weisbrot},
+           familyi={W\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5c3d84213fbd6ce0725bbc622be59d1}{%
+           family={Johnston},
+           familyi={J\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=acc5e4fc88586cf63938e6ee944fd075}{%
+           family={Merling},
+           familyi={M\bibinitperiod},
+           given={Lara},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Center for Economic and Policy Research}%
+      }
+      \list{location}{1}{%
+        {Washington DC}%
+      }
+      \strng{namehash}{7a89a0a10bbf4c3e58bb1e36062f7a9f}
+      \strng{fullhash}{2341ef7974c213d44de28fde351bfc45}
+      \strng{bibnamehash}{2341ef7974c213d44de28fde351bfc45}
+      \strng{authorbibnamehash}{2341ef7974c213d44de28fde351bfc45}
+      \strng{authornamehash}{7a89a0a10bbf4c3e58bb1e36062f7a9f}
+      \strng{authorfullhash}{2341ef7974c213d44de28fde351bfc45}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Decade of Reform: Ecuador's Macroeconomic Policies, Institutional Changes, and Results}}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://cepr.net/images/stories/reports/ecuador-2017-02.pdf
+      \endverb
+      \verb{url}
+      \verb https://cepr.net/images/stories/reports/ecuador-2017-02.pdf
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

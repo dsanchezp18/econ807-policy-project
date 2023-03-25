@@ -714,3 +714,20 @@ df18_22 <-
 
 save(df18_22,
      file = 'data/df18_22.RData')
+
+# Do the exact same thing but for the first draft
+
+# Export the main dataframe to an RData object
+
+save(df, 
+     file = 'draft/data/df-main.RData')
+
+# Export a reduced dataframe to an RData object, between 2018 and 2022
+
+df18_22 <-
+  df %>% 
+  filter(year %>% between(2018, 2022))
+
+save(df18_22,
+     file = 'draft/data/df18_22.RData')
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  24 MAR 2023 21:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  25 MAR 2023 00:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(c:/texlive/2022/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+(c:/texlive/2022/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -77,6 +77,28 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 (c:/texlive/2022/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 2021/01/29 v2.0g defines alltt environment
 )
+(c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen147
+\Gm@wd@mp=\dimen148
+\Gm@odd@mp=\dimen149
+\Gm@even@mp=\dimen150
+\Gm@layoutwidth=\dimen151
+\Gm@layoutheight=\dimen152
+\Gm@layouthoffset=\dimen153
+\Gm@layoutvoffset=\dimen154
+\Gm@dimlist=\toks17
+)
 (c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
@@ -87,9 +109,6 @@ Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 (c:/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-)
 (c:/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
@@ -99,7 +118,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 (c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count193
+\etb@tempcnta=\count196
 )
 (c:/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
@@ -109,7 +128,7 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 (c:/texlive/2022/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count194
+\lrq@indent=\count197
 
 (c:/texlive/2022/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -121,49 +140,49 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count195
-\c@listtotal=\count196
-\c@listcount=\count197
-\c@liststart=\count198
-\c@liststop=\count199
-\c@citecount=\count266
-\c@citetotal=\count267
-\c@multicitecount=\count268
-\c@multicitetotal=\count269
-\c@instcount=\count270
-\c@maxnames=\count271
-\c@minnames=\count272
-\c@maxitems=\count273
-\c@minitems=\count274
-\c@citecounter=\count275
-\c@maxcitecounter=\count276
-\c@savedcitecounter=\count277
-\c@uniquelist=\count278
-\c@uniquename=\count279
-\c@refsection=\count280
-\c@refsegment=\count281
-\c@maxextratitle=\count282
-\c@maxextratitleyear=\count283
-\c@maxextraname=\count284
-\c@maxextradate=\count285
-\c@maxextraalpha=\count286
-\c@abbrvpenalty=\count287
-\c@highnamepenalty=\count288
-\c@lownamepenalty=\count289
-\c@maxparens=\count290
-\c@parenlevel=\count291
-\blx@tempcnta=\count292
-\blx@tempcntb=\count293
-\blx@tempcntc=\count294
-\c@blx@maxsection=\count295
-\blx@maxsegment@0=\count296
-\blx@notetype=\count297
-\blx@parenlevel@text=\count298
-\blx@parenlevel@foot=\count299
-\blx@sectionciteorder@0=\count300
-\blx@sectionciteorderinternal@0=\count301
-\blx@entrysetcounter=\count302
-\blx@biblioinstance=\count303
+\c@tabx@nest=\count198
+\c@listtotal=\count199
+\c@listcount=\count266
+\c@liststart=\count267
+\c@liststop=\count268
+\c@citecount=\count269
+\c@citetotal=\count270
+\c@multicitecount=\count271
+\c@multicitetotal=\count272
+\c@instcount=\count273
+\c@maxnames=\count274
+\c@minnames=\count275
+\c@maxitems=\count276
+\c@minitems=\count277
+\c@citecounter=\count278
+\c@maxcitecounter=\count279
+\c@savedcitecounter=\count280
+\c@uniquelist=\count281
+\c@uniquename=\count282
+\c@refsection=\count283
+\c@refsegment=\count284
+\c@maxextratitle=\count285
+\c@maxextratitleyear=\count286
+\c@maxextraname=\count287
+\c@maxextradate=\count288
+\c@maxextraalpha=\count289
+\c@abbrvpenalty=\count290
+\c@highnamepenalty=\count291
+\c@lownamepenalty=\count292
+\c@maxparens=\count293
+\c@parenlevel=\count294
+\blx@tempcnta=\count295
+\blx@tempcntb=\count296
+\blx@tempcntc=\count297
+\c@blx@maxsection=\count298
+\blx@maxsegment@0=\count299
+\blx@notetype=\count300
+\blx@parenlevel@text=\count301
+\blx@parenlevel@foot=\count302
+\blx@sectionciteorder@0=\count303
+\blx@sectionciteorderinternal@0=\count304
+\blx@entrysetcounter=\count305
+\blx@biblioinstance=\count306
 \labelnumberwidth=\skip51
 \labelalphawidth=\skip52
 \biblabelsep=\skip53
@@ -175,9 +194,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language87
-\c@mincomprange=\count304
-\c@maxcomprange=\count305
-\c@mincompwidth=\count306
+\c@mincomprange=\count307
+\c@maxcomprange=\count308
+\c@mincompwidth=\count309
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -192,84 +211,84 @@ File: apa.dbx 2022/06/22 v9.16 APA biblatex style data model
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count307
-\c@savedafterword=\count308
-\c@annotator=\count309
-\c@savedannotator=\count310
-\c@author=\count311
-\c@savedauthor=\count312
-\c@bookauthor=\count313
-\c@savedbookauthor=\count314
-\c@commentator=\count315
-\c@savedcommentator=\count316
-\c@editor=\count317
-\c@savededitor=\count318
-\c@editora=\count319
-\c@savededitora=\count320
-\c@editorb=\count321
-\c@savededitorb=\count322
-\c@editorc=\count323
-\c@savededitorc=\count324
-\c@foreword=\count325
-\c@savedforeword=\count326
-\c@holder=\count327
-\c@savedholder=\count328
-\c@introduction=\count329
-\c@savedintroduction=\count330
-\c@namea=\count331
-\c@savednamea=\count332
-\c@nameb=\count333
-\c@savednameb=\count334
-\c@namec=\count335
-\c@savednamec=\count336
-\c@translator=\count337
-\c@savedtranslator=\count338
-\c@shortauthor=\count339
-\c@savedshortauthor=\count340
-\c@shorteditor=\count341
-\c@savedshorteditor=\count342
-\c@narrator=\count343
-\c@savednarrator=\count344
-\c@execproducer=\count345
-\c@savedexecproducer=\count346
-\c@execdirector=\count347
-\c@savedexecdirector=\count348
-\c@with=\count349
-\c@savedwith=\count350
-\c@labelname=\count351
-\c@savedlabelname=\count352
-\c@institution=\count353
-\c@savedinstitution=\count354
-\c@lista=\count355
-\c@savedlista=\count356
-\c@listb=\count357
-\c@savedlistb=\count358
-\c@listc=\count359
-\c@savedlistc=\count360
-\c@listd=\count361
-\c@savedlistd=\count362
-\c@liste=\count363
-\c@savedliste=\count364
-\c@listf=\count365
-\c@savedlistf=\count366
-\c@location=\count367
-\c@savedlocation=\count368
-\c@organization=\count369
-\c@savedorganization=\count370
-\c@origlocation=\count371
-\c@savedoriglocation=\count372
-\c@origpublisher=\count373
-\c@savedorigpublisher=\count374
-\c@publisher=\count375
-\c@savedpublisher=\count376
-\c@language=\count377
-\c@savedlanguage=\count378
-\c@origlanguage=\count379
-\c@savedoriglanguage=\count380
-\c@citation=\count381
-\c@savedcitation=\count382
-\c@pageref=\count383
-\c@savedpageref=\count384
+\c@afterword=\count310
+\c@savedafterword=\count311
+\c@annotator=\count312
+\c@savedannotator=\count313
+\c@author=\count314
+\c@savedauthor=\count315
+\c@bookauthor=\count316
+\c@savedbookauthor=\count317
+\c@commentator=\count318
+\c@savedcommentator=\count319
+\c@editor=\count320
+\c@savededitor=\count321
+\c@editora=\count322
+\c@savededitora=\count323
+\c@editorb=\count324
+\c@savededitorb=\count325
+\c@editorc=\count326
+\c@savededitorc=\count327
+\c@foreword=\count328
+\c@savedforeword=\count329
+\c@holder=\count330
+\c@savedholder=\count331
+\c@introduction=\count332
+\c@savedintroduction=\count333
+\c@namea=\count334
+\c@savednamea=\count335
+\c@nameb=\count336
+\c@savednameb=\count337
+\c@namec=\count338
+\c@savednamec=\count339
+\c@translator=\count340
+\c@savedtranslator=\count341
+\c@shortauthor=\count342
+\c@savedshortauthor=\count343
+\c@shorteditor=\count344
+\c@savedshorteditor=\count345
+\c@narrator=\count346
+\c@savednarrator=\count347
+\c@execproducer=\count348
+\c@savedexecproducer=\count349
+\c@execdirector=\count350
+\c@savedexecdirector=\count351
+\c@with=\count352
+\c@savedwith=\count353
+\c@labelname=\count354
+\c@savedlabelname=\count355
+\c@institution=\count356
+\c@savedinstitution=\count357
+\c@lista=\count358
+\c@savedlista=\count359
+\c@listb=\count360
+\c@savedlistb=\count361
+\c@listc=\count362
+\c@savedlistc=\count363
+\c@listd=\count364
+\c@savedlistd=\count365
+\c@liste=\count366
+\c@savedliste=\count367
+\c@listf=\count368
+\c@savedlistf=\count369
+\c@location=\count370
+\c@savedlocation=\count371
+\c@organization=\count372
+\c@savedorganization=\count373
+\c@origlocation=\count374
+\c@savedoriglocation=\count375
+\c@origpublisher=\count376
+\c@savedorigpublisher=\count377
+\c@publisher=\count378
+\c@savedpublisher=\count379
+\c@language=\count380
+\c@savedlanguage=\count381
+\c@origlanguage=\count382
+\c@savedoriglanguage=\count383
+\c@citation=\count384
+\c@savedcitation=\count385
+\c@pageref=\count386
+\c@savedpageref=\count387
 \shorthandwidth=\skip59
 \shortjournalwidth=\skip60
 \shortserieswidth=\skip61
@@ -295,19 +314,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count385
-\c@textcitetotal=\count386
-\c@textcitemaxnames=\count387
-\c@biburlbigbreakpenalty=\count388
-\c@biburlbreakpenalty=\count389
-\c@biburlnumpenalty=\count390
-\c@biburlucpenalty=\count391
-\c@biburllcpenalty=\count392
+\c@textcitecount=\count388
+\c@textcitetotal=\count389
+\c@textcitemaxnames=\count390
+\c@biburlbigbreakpenalty=\count391
+\c@biburlbreakpenalty=\count392
+\c@biburlnumpenalty=\count393
+\c@biburlucpenalty=\count394
+\c@biburllcpenalty=\count395
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count393
+\c@smartand=\count396
 )
 Package biblatex Info: Trying to load bibliography style 'apa'...
 Package biblatex Info: ... file 'apa.bbx' found.
@@ -319,8 +338,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count394
-\c@bbx:relatedtotal=\count395
+\c@bbx:relatedcount=\count397
+\c@bbx:relatedtotal=\count398
 )
 Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defin
 ed, overwriting.
@@ -370,7 +389,7 @@ Package: expl3 2023-02-22 L3 programming layer (loader)
 
 (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count396
+\l__color_backend_stack_int=\count399
 \l__pdf_internal_box=\box51
 ))
 Package biblatex Info: ... and expl3
@@ -389,49 +408,49 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count397
-\l__lipsum_a_int=\count398
-\l__lipsum_b_int=\count399
+\g__lipsum_par_int=\count400
+\l__lipsum_a_int=\count401
+\l__lipsum_b_int=\count402
 
 (c:/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (c:/texlive/2022/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-\@quotelevel=\count400
-\@quotereset=\count401
+\@quotelevel=\count403
+\@quotereset=\count404
 
 (./draft-daniel-sanchez.aux)
 \openout1 = `draft-daniel-sanchez.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count402
-\scratchdimen=\dimen147
+\scratchcounter=\count405
+\scratchdimen=\dimen155
 \scratchbox=\box52
-\nofMPsegments=\count403
-\nofMParguments=\count404
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count405
-\MPscratchDim=\dimen148
-\MPnumerator=\count406
-\makeMPintoPDFobject=\count407
-\everyMPtoPDFconversion=\toks18
+\nofMPsegments=\count406
+\nofMParguments=\count407
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count408
+\MPscratchDim=\dimen156
+\MPnumerator=\count409
+\makeMPintoPDFobject=\count410
+\everyMPtoPDFconversion=\toks19
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -441,9 +460,42 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
-
 (c:/texlive/2022/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
 File: english-apa.lbx 2022/06/22 v9.16 APA biblatex localisation
 Package biblatex Info: Trying to load language 'english'...
@@ -477,48 +529,56 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'draft-daniel-sanchez.bbl' found.
 
 (./draft-daniel-sanchez.bbl)
-Package biblatex Info: Reference section=0 on input line 79.
-Package biblatex Info: Reference segment=0 on input line 79.
+Package biblatex Info: Reference section=0 on input line 89.
+Package biblatex Info: Reference segment=0 on input line 89.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 81.
+(Font)              <12> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 81.
+(Font)              <8> on input line 91.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 91.
  [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<figure/figure-1-1.pdf, id=11, 722.7pt x 433.62pt>
+File: figure/figure-1-1.pdf Graphic file (type pdf)
+<use figure/figure-1-1.pdf>
+Package pdftex.def Info: figure/figure-1-1.pdf  used on input line 111.
+(pdftex.def)             Requested size: 452.9679pt x 271.77934pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 97.
+(Font)              <10.95> on input line 115.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 97.
+(Font)              <9> on input line 115.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 97.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 97.
- [2] [3] (./draft-daniel-sanchez.aux)
+(Font)              <5> on input line 115.
+ [2 <./figure/figure-1-1.pdf>] [3] [4] [5]
+(./draft-daniel-sanchez.aux)
 Package logreq Info: Writing requests to 'draft-daniel-sanchez.run.xml'.
 \openout1 = `draft-daniel-sanchez.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11212 strings out of 476024
- 217098 string characters out of 5794016
- 1859382 words of memory out of 5000000
- 31562 multiletter control sequences out of 15000+600000
- 518142 words of font info for 51 fonts, out of 8000000 for 9000
+ 11791 strings out of 476024
+ 227619 string characters out of 5794016
+ 1862382 words of memory out of 5000000
+ 32129 multiletter control sequences out of 15000+600000
+ 519061 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,8n,70p,4666b,5046s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on draft-daniel-sanchez.pdf (3 pages, 116268 bytes).
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texl
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on draft-daniel-sanchez.pdf (5 pages, 163919 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

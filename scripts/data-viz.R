@@ -10,7 +10,6 @@
 library(tidyverse)
 library(lubridate)
 library(patchwork)
-library(rdrobust)
 
 # Load data
 
@@ -29,7 +28,7 @@ theme_ds <-
 
 df %>%
   filter(year %>% between(2019, 2022)) %>%
-  ggplot(aes(month_year, jobs)) +
+  ggplot(aes(month_year %>% as.Date(), jobs)) +
   geom_point() +
   scale_x_date(date_breaks = '1 month', 
                date_labels = '%m-%y') +
