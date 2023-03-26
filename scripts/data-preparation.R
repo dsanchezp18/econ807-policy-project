@@ -686,6 +686,7 @@ df <-
   df %>%
   mutate(treat = if_else(month_year > as.Date('2020-05-01'),'Treatment Period','Control Period') %>% as.factor(),
          province_code = as.factor(province_code),
+         province_doe = relevel(province_code, ref = '17'),
          my_event = as.factor(month_year %>% format( '%B%Y')),
          my_event = relevel(my_event, ref = 'May2020'),
          lag_jobs = lag(jobs),
@@ -711,6 +712,15 @@ save(df,
 df18_22 <-
   df %>% 
   filter(year %>% between(2018, 2022))
+
+# Look at the grouped dataset
+
+df_province_codes <-
+  df18_22 %>% 
+  group_by(province_code) %>% 
+  summarise(obs = n()) %>% 
+  ungroup() %>% 
+  arrange(desc(obs))
 
 save(df18_22,
      file = 'data/df18_22.RData')

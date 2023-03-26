@@ -439,50 +439,6 @@
       \verb https://www.upo.es/revistas/index.php/RevMetCuant/article/view/2138
       \endverb
     \endentry
-    \entry{LaTorre.2017}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=64cacf28363b233abffcacc135b82edd}{%
-           family={{La Torre}},
-           familyi={L\bibinitperiod},
-           given={Augusto},
-           giveni={A\bibinitperiod},
-           givenun=0,
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=d302ad9672f29891c7b2e02bb570fcd1}{%
-           family={Palladares},
-           familyi={P\bibinitperiod},
-           given={José\bibnamedelima Hidalgo},
-           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{fullhash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{bibnamehash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{authorbibnamehash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{authornamehash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{authorfullhash}{6c9823f719594eebd019c9c660f84ba3}
-      \field{sortinit}{d}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{{CORDES: Corporación de Estudios para el Desarrollo}}
-      \field{number}{1}
-      \field{title}{{La Trampa que Asfixia a la Economía Ecuatoriana.}}
-      \field{volume}{1}
-      \field{year}{2017}
-      \field{pages}{1\bibrangedash 45}
-      \range{pages}{45}
-      \verb{urlraw}
-      \verb https://www.cordes.org/images/publicaciones/otras/Trampa.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.cordes.org/images/publicaciones/otras/Trampa.pdf
-      \endverb
-    \endentry
     \entry{Delechat2020}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b7d4776e3af7f7658d2173fa2401bfde}{%
@@ -676,6 +632,89 @@
       \verb 10.1023/B:JOEG.0000038933.16398.ed
       \endverb
     \endentry
+    \entry{Hausman.2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2fb7ee06ee61182ec17c68781b5c5882}{%
+           family={Hausman},
+           familyi={H\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3fd533d5c2ec3656d2d44fb4cd9876a}{%
+           family={Rapson},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{fullhash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{bibnamehash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{authorbibnamehash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{authornamehash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{authorfullhash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent empirical work in several economic fields, particularly environmental and energy economics, has adapted the regression discontinuity (RD) framework to applications where time is the running variable and treatment begins at a particular threshold in time. In this guide for practitioners, we discuss several features of this regression discontinuity in time framework that differ from the more standard cross-sectional RD framework. First, many applications (particularly in environmental economics) lack cross-sectional variation and are estimated using observations far from the temporal threshold. This common empirical practice is hard to square with the assumptions of a cross-sectional RD, which is conceptualized for an estimation bandwidth shrinking even as the sample size increases. Second, estimates may be biased if the time-series properties of the data are ignored (for instance, in the presence of an autoregressive process), or more generally if short-run and long-run effects differ. Finally, tests for sorting or bunching near the threshold are often irrelevant, making the framework closer to an event study than a regression discontinuity design. Based on these features and motivated by hypothetical examples using air quality data, we offer suggestions for the empirical researcher wishing to use the RD in time framework.}
+      \field{issn}{1941-1340}
+      \field{journaltitle}{{Annual review of resource economics}}
+      \field{number}{1}
+      \field{title}{{Regression Discontinuity in Time: Considerations for Empirical Applications}}
+      \field{volume}{10}
+      \field{year}{2018}
+      \field{pages}{533\bibrangedash 552}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1146/annurev-resource-121517-033306
+      \endverb
+      \keyw{Analysis;autoregression;Econometrics;Energy economics;Environmental economics;interrupted time series;Methods;Regression Analysis;regression discontinuity design;Sample size;Studies;Time-series analysis;treatment effects}
+    \endentry
+    \entry{HuntingtonKlein.2021}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6887be9a9a480474e5f6f4d0070a8ca6}{%
+           family={Huntington-Klein},
+           familyi={H\bibinithyphendelim K\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton}%
+      }
+      \list{publisher}{1}{%
+        {Chapman {\&} Hall/CRC}%
+      }
+      \strng{namehash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{fullhash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{bibnamehash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{authorbibnamehash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{authornamehash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{authorfullhash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{"}The Effect: An Introduction to Research Design and Causality is about research design, specifically concerning research that uses observational data to make a causal inference. It is separated into two halves, each with different approaches to that subject. The first half goes through the concepts of causality, with very little in the way of estimation. It introduces the concept of identification thoroughly and clearly and discusses it as a process of trying to isolate variation that has a causal interpretation. Subjects include heavy emphasis on data-generating processes and causal diagrams. Concepts are demonstrated with a heavy emphasis on graphical intuition and the question of what we do to data. When we {"}add a control variable{"} what does that actually do?{"}}
+      \field{edition}{1st}
+      \field{isbn}{9781032125787}
+      \field{series}{{A Chapman {\&} Hall book}}
+      \field{title}{{The effect: An introduction to research design and causality / Nick Huntington-Klein}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://theeffectbook.net/
+      \endverb
+      \verb{url}
+      \verb https://theeffectbook.net/
+      \endverb
+    \endentry
     \entry{IloND}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4c71304c785ea61a4cc5e87929348719}{%
@@ -838,43 +877,6 @@
       \verb http://www.jstor.org/stable/2329518
       \endverb
     \endentry
-    \entry{Lambert.2020}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=055863d627c602a46a09416de776368d}{%
-           family={Lambert},
-           familyi={L\bibinitperiod},
-           given={Frederic\bibnamedelima J.},
-           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=345c66e66c3ff37b464b7b344904f709}{%
-           family={Pescatori},
-           familyi={P\bibinitperiod},
-           given={Andreas},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0ab565e425ec95ef4702cf4f077471fc}{%
-           family={Toscani},
-           familyi={T\bibinitperiod},
-           given={Frederik},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{2829f763d75dd77659d51bfeeeda2613}
-      \strng{fullhash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
-      \strng{bibnamehash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
-      \strng{authorbibnamehash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
-      \strng{authornamehash}{2829f763d75dd77659d51bfeeeda2613}
-      \strng{authorfullhash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Labor market informality and the business cycle}}
-      \field{year}{2020}
-    \endentry
     \entry{Leyva.2020}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b5bacb2ac55df898daf81842452618e6}{%
@@ -960,6 +962,46 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1086/209879
+      \endverb
+    \endentry
+    \entry{Mankiw.1986}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=474cb51282bc298228df113afdfd755f}{%
+           family={Mankiw},
+           familyi={M\bibinitperiod},
+           given={N.\bibnamedelimi Gregory},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05b1805ba14dd00cec1e7274204394c3}{%
+           family={Whinston},
+           familyi={W\bibinitperiod},
+           given={Michael\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{fullhash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{bibnamehash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{authorbibnamehash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{authornamehash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{authorfullhash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{07416261}
+      \field{journaltitle}{{The RAND Journal of Economics}}
+      \field{number}{1}
+      \field{title}{{Free Entry and Social Inefficiency}}
+      \field{volume}{17}
+      \field{year}{1986}
+      \field{pages}{48}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.2307/2555627
       \endverb
     \endentry
     \entry{Medvedev.2016}{article}{}
@@ -1262,6 +1304,60 @@
       \field{pages}{2289\bibrangedash 2304}
       \range{pages}{16}
       \keyw{Analysis;Business structures;Cities;Commercial regulation;Consumer economics;Consumption (Economics);Development;Economic activity;Economic aspects;Economic criminality;Economic development;Economic migration;Economic regulation;Economics;Income distribution;Informal economy;Informal sector;Law;Regulation;Underground economies;Underground economy;Urban economics}
+    \endentry
+    \entry{Taljaard.2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=270bed6a42e27366508533298a82e334}{%
+           family={Taljaard},
+           familyi={T\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c647eae0c93ec008ebe092eb144eeee}{%
+           family={McKenzie},
+           familyi={M\bibinitperiod},
+           given={Joanne\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb02786f78cb0b5037fe39643a014858}{%
+           family={Ramsay},
+           familyi={R\bibinitperiod},
+           given={Craig\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18acccd95580a48bd6c5f4010bb058a7}{%
+           family={Grimshaw},
+           familyi={G\bibinitperiod},
+           given={Jeremy\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5822076d8ab96ba02f08923f9e15a490}
+      \strng{fullhash}{cd83591a4c7debd035059ac02569a8f1}
+      \strng{bibnamehash}{cd83591a4c7debd035059ac02569a8f1}
+      \strng{authorbibnamehash}{cd83591a4c7debd035059ac02569a8f1}
+      \strng{authornamehash}{5822076d8ab96ba02f08923f9e15a490}
+      \strng{authorfullhash}{cd83591a4c7debd035059ac02569a8f1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An interrupted time series design is a powerful quasi-experimental approach for evaluating effects of interventions introduced at a specific point in time. To utilize the strength of this design, a modification to standard regression analysis, such as segmented regression, is required. In segmented regression analysis, the change in intercept and/or slope from pre- to post-intervention is estimated and used to test causal hypotheses about the intervention. We illustrate segmented regression using data from a previously published study that evaluated the effectiveness of a collaborative intervention to improve quality in pre-hospital ambulance care for acute myocardial infarction (AMI) and stroke. In the original analysis, a standard regression model was used with time as a continuous variable. We contrast the results from this standard regression analysis with those from segmented regression analysis. We discuss the limitations of the former and advantages of the latter, as well as the challenges of using segmented regression in analysing complex quality improvement interventions. Based on the estimated change in intercept and slope from pre- to post-intervention using segmented regression, we found insufficient evidence of a statistically significant effect on quality of care for stroke, although potential clinically important effects for AMI cannot be ruled out. Segmented regression analysis is the recommended approach for analysing data from an interrupted time series study. Several modifications to the basic segmented regression analysis approach are available to deal with challenges arising in the evaluation of complex quality improvement interventions.}
+      \field{issn}{1748-5908}
+      \field{journaltitle}{{Implement Sci}}
+      \field{number}{1}
+      \field{title}{{The use of segmented regression in analysing interrupted time series studies: an example in pre-hospital ambulance care}}
+      \field{volume}{9}
+      \field{year}{2014}
+      \field{pages}{77}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/1748-5908-9-77
+      \endverb
+      \keyw{Ambulances - organization {\&} administration;Analysis;Cooperative Behavior;Data Interpretation;Emergency Medical Services - organization {\&} administration;Humans;Interrupted time series design;Medical care;Myocardial Infarction - diagnosis;Myocardial Infarction - therapy;Quality improvement collaborative;Quality management;Quality of Health Care - organization {\&} administration;Regression Analysis;Research Design;Segmented regression analysis;Statistical;Stroke - diagnosis;Stroke - therapy}
     \endentry
     \entry{Weisbrot.2017}{misc}{}
       \name{author}{3}{}{%
@@ -1735,50 +1831,6 @@
       \verb https://www.upo.es/revistas/index.php/RevMetCuant/article/view/2138
       \endverb
     \endentry
-    \entry{LaTorre.2017}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=64cacf28363b233abffcacc135b82edd}{%
-           family={{La Torre}},
-           familyi={L\bibinitperiod},
-           given={Augusto},
-           giveni={A\bibinitperiod},
-           givenun=0,
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=d302ad9672f29891c7b2e02bb570fcd1}{%
-           family={Palladares},
-           familyi={P\bibinitperiod},
-           given={José\bibnamedelima Hidalgo},
-           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{fullhash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{bibnamehash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{authorbibnamehash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{authornamehash}{6c9823f719594eebd019c9c660f84ba3}
-      \strng{authorfullhash}{6c9823f719594eebd019c9c660f84ba3}
-      \field{sortinit}{d}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{{CORDES: Corporación de Estudios para el Desarrollo}}
-      \field{number}{1}
-      \field{title}{{La Trampa que Asfixia a la Economía Ecuatoriana.}}
-      \field{volume}{1}
-      \field{year}{2017}
-      \field{pages}{1\bibrangedash 45}
-      \range{pages}{45}
-      \verb{urlraw}
-      \verb https://www.cordes.org/images/publicaciones/otras/Trampa.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.cordes.org/images/publicaciones/otras/Trampa.pdf
-      \endverb
-    \endentry
     \entry{Delechat2020}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b7d4776e3af7f7658d2173fa2401bfde}{%
@@ -1972,6 +2024,89 @@
       \verb 10.1023/B:JOEG.0000038933.16398.ed
       \endverb
     \endentry
+    \entry{Hausman.2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2fb7ee06ee61182ec17c68781b5c5882}{%
+           family={Hausman},
+           familyi={H\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3fd533d5c2ec3656d2d44fb4cd9876a}{%
+           family={Rapson},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{fullhash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{bibnamehash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{authorbibnamehash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{authornamehash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \strng{authorfullhash}{7b014bbeb30dd53f18b194b0fc5ee893}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent empirical work in several economic fields, particularly environmental and energy economics, has adapted the regression discontinuity (RD) framework to applications where time is the running variable and treatment begins at a particular threshold in time. In this guide for practitioners, we discuss several features of this regression discontinuity in time framework that differ from the more standard cross-sectional RD framework. First, many applications (particularly in environmental economics) lack cross-sectional variation and are estimated using observations far from the temporal threshold. This common empirical practice is hard to square with the assumptions of a cross-sectional RD, which is conceptualized for an estimation bandwidth shrinking even as the sample size increases. Second, estimates may be biased if the time-series properties of the data are ignored (for instance, in the presence of an autoregressive process), or more generally if short-run and long-run effects differ. Finally, tests for sorting or bunching near the threshold are often irrelevant, making the framework closer to an event study than a regression discontinuity design. Based on these features and motivated by hypothetical examples using air quality data, we offer suggestions for the empirical researcher wishing to use the RD in time framework.}
+      \field{issn}{1941-1340}
+      \field{journaltitle}{{Annual review of resource economics}}
+      \field{number}{1}
+      \field{title}{{Regression Discontinuity in Time: Considerations for Empirical Applications}}
+      \field{volume}{10}
+      \field{year}{2018}
+      \field{pages}{533\bibrangedash 552}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1146/annurev-resource-121517-033306
+      \endverb
+      \keyw{Analysis;autoregression;Econometrics;Energy economics;Environmental economics;interrupted time series;Methods;Regression Analysis;regression discontinuity design;Sample size;Studies;Time-series analysis;treatment effects}
+    \endentry
+    \entry{HuntingtonKlein.2021}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6887be9a9a480474e5f6f4d0070a8ca6}{%
+           family={Huntington-Klein},
+           familyi={H\bibinithyphendelim K\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton}%
+      }
+      \list{publisher}{1}{%
+        {Chapman {\&} Hall/CRC}%
+      }
+      \strng{namehash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{fullhash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{bibnamehash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{authorbibnamehash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{authornamehash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \strng{authorfullhash}{6887be9a9a480474e5f6f4d0070a8ca6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{"}The Effect: An Introduction to Research Design and Causality is about research design, specifically concerning research that uses observational data to make a causal inference. It is separated into two halves, each with different approaches to that subject. The first half goes through the concepts of causality, with very little in the way of estimation. It introduces the concept of identification thoroughly and clearly and discusses it as a process of trying to isolate variation that has a causal interpretation. Subjects include heavy emphasis on data-generating processes and causal diagrams. Concepts are demonstrated with a heavy emphasis on graphical intuition and the question of what we do to data. When we {"}add a control variable{"} what does that actually do?{"}}
+      \field{edition}{1st}
+      \field{isbn}{9781032125787}
+      \field{series}{{A Chapman {\&} Hall book}}
+      \field{title}{{The effect: An introduction to research design and causality / Nick Huntington-Klein}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://theeffectbook.net/
+      \endverb
+      \verb{url}
+      \verb https://theeffectbook.net/
+      \endverb
+    \endentry
     \entry{IloND}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4c71304c785ea61a4cc5e87929348719}{%
@@ -2134,43 +2269,6 @@
       \verb http://www.jstor.org/stable/2329518
       \endverb
     \endentry
-    \entry{Lambert.2020}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=055863d627c602a46a09416de776368d}{%
-           family={Lambert},
-           familyi={L\bibinitperiod},
-           given={Frederic\bibnamedelima J.},
-           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=345c66e66c3ff37b464b7b344904f709}{%
-           family={Pescatori},
-           familyi={P\bibinitperiod},
-           given={Andreas},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0ab565e425ec95ef4702cf4f077471fc}{%
-           family={Toscani},
-           familyi={T\bibinitperiod},
-           given={Frederik},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{2829f763d75dd77659d51bfeeeda2613}
-      \strng{fullhash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
-      \strng{bibnamehash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
-      \strng{authorbibnamehash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
-      \strng{authornamehash}{2829f763d75dd77659d51bfeeeda2613}
-      \strng{authorfullhash}{494cb5c5de873bf9d3f3b9fcf4b4d9ea}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Labor market informality and the business cycle}}
-      \field{year}{2020}
-    \endentry
     \entry{Leyva.2020}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b5bacb2ac55df898daf81842452618e6}{%
@@ -2256,6 +2354,46 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1086/209879
+      \endverb
+    \endentry
+    \entry{Mankiw.1986}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=474cb51282bc298228df113afdfd755f}{%
+           family={Mankiw},
+           familyi={M\bibinitperiod},
+           given={N.\bibnamedelimi Gregory},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05b1805ba14dd00cec1e7274204394c3}{%
+           family={Whinston},
+           familyi={W\bibinitperiod},
+           given={Michael\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{fullhash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{bibnamehash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{authorbibnamehash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{authornamehash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \strng{authorfullhash}{11f0b69b46b8278be9d0105bf30eef8c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{07416261}
+      \field{journaltitle}{{The RAND Journal of Economics}}
+      \field{number}{1}
+      \field{title}{{Free Entry and Social Inefficiency}}
+      \field{volume}{17}
+      \field{year}{1986}
+      \field{pages}{48}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.2307/2555627
       \endverb
     \endentry
     \entry{Medvedev.2016}{article}{}
@@ -2558,6 +2696,60 @@
       \field{pages}{2289\bibrangedash 2304}
       \range{pages}{16}
       \keyw{Analysis;Business structures;Cities;Commercial regulation;Consumer economics;Consumption (Economics);Development;Economic activity;Economic aspects;Economic criminality;Economic development;Economic migration;Economic regulation;Economics;Income distribution;Informal economy;Informal sector;Law;Regulation;Underground economies;Underground economy;Urban economics}
+    \endentry
+    \entry{Taljaard.2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=270bed6a42e27366508533298a82e334}{%
+           family={Taljaard},
+           familyi={T\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c647eae0c93ec008ebe092eb144eeee}{%
+           family={McKenzie},
+           familyi={M\bibinitperiod},
+           given={Joanne\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb02786f78cb0b5037fe39643a014858}{%
+           family={Ramsay},
+           familyi={R\bibinitperiod},
+           given={Craig\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18acccd95580a48bd6c5f4010bb058a7}{%
+           family={Grimshaw},
+           familyi={G\bibinitperiod},
+           given={Jeremy\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5822076d8ab96ba02f08923f9e15a490}
+      \strng{fullhash}{cd83591a4c7debd035059ac02569a8f1}
+      \strng{bibnamehash}{cd83591a4c7debd035059ac02569a8f1}
+      \strng{authorbibnamehash}{cd83591a4c7debd035059ac02569a8f1}
+      \strng{authornamehash}{5822076d8ab96ba02f08923f9e15a490}
+      \strng{authorfullhash}{cd83591a4c7debd035059ac02569a8f1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An interrupted time series design is a powerful quasi-experimental approach for evaluating effects of interventions introduced at a specific point in time. To utilize the strength of this design, a modification to standard regression analysis, such as segmented regression, is required. In segmented regression analysis, the change in intercept and/or slope from pre- to post-intervention is estimated and used to test causal hypotheses about the intervention. We illustrate segmented regression using data from a previously published study that evaluated the effectiveness of a collaborative intervention to improve quality in pre-hospital ambulance care for acute myocardial infarction (AMI) and stroke. In the original analysis, a standard regression model was used with time as a continuous variable. We contrast the results from this standard regression analysis with those from segmented regression analysis. We discuss the limitations of the former and advantages of the latter, as well as the challenges of using segmented regression in analysing complex quality improvement interventions. Based on the estimated change in intercept and slope from pre- to post-intervention using segmented regression, we found insufficient evidence of a statistically significant effect on quality of care for stroke, although potential clinically important effects for AMI cannot be ruled out. Segmented regression analysis is the recommended approach for analysing data from an interrupted time series study. Several modifications to the basic segmented regression analysis approach are available to deal with challenges arising in the evaluation of complex quality improvement interventions.}
+      \field{issn}{1748-5908}
+      \field{journaltitle}{{Implement Sci}}
+      \field{number}{1}
+      \field{title}{{The use of segmented regression in analysing interrupted time series studies: an example in pre-hospital ambulance care}}
+      \field{volume}{9}
+      \field{year}{2014}
+      \field{pages}{77}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/1748-5908-9-77
+      \endverb
+      \keyw{Ambulances - organization {\&} administration;Analysis;Cooperative Behavior;Data Interpretation;Emergency Medical Services - organization {\&} administration;Humans;Interrupted time series design;Medical care;Myocardial Infarction - diagnosis;Myocardial Infarction - therapy;Quality improvement collaborative;Quality management;Quality of Health Care - organization {\&} administration;Regression Analysis;Research Design;Segmented regression analysis;Statistical;Stroke - diagnosis;Stroke - therapy}
     \endentry
     \entry{Weisbrot.2017}{misc}{}
       \name{author}{3}{}{%
