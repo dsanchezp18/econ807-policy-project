@@ -35,3 +35,16 @@ https://www.datosabiertos.gob.ec/dataset/contratos-en-el-sistema-unico-de-trabaj
 https://www.ecuadorencifras.gob.ec/registro-empleo-seguridad-social/
 
 - The Social Security Institute's (IESS, for its initials in Spanish) registry of labour contracts. All formal job contracts pass through here, since there is mandatory contribution to Social Security. 
+
+6. IRS Active Contributors
+
+6. IRS Sales
+
+7. Remote Workers
+
+8. Transit Accidents
+
+9. Covid Cases
+
+10. Layoffs
+

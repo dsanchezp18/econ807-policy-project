@@ -106,11 +106,79 @@ sales_2018 <-
 sales_2017 <-
   read.csv('data/sri_ventas_2017.csv', sep = ';', fileEncoding = 'Latin1')
 
+# Inscriptions
+
+ins_2017 <-
+  read.csv('data/sri_inscripciones_2017.csv',
+           sep = ';') %>%
+  rename(TOTAL = 'COUNT.O667410.NUMERO_RUC.')
+
+ins_2018 <-
+  read.csv('data/sri_inscripciones_2018.csv',
+           sep = ';') %>% 
+  rename(TOTAL = 'COUNT.O667410.NUMERO_RUC.')
+
+ins_2019 <-
+  read.csv('data/sri_inscripciones_2019.csv',
+           sep = ';') %>% 
+  rename(TOTAL = 'COUNT.O667410.NUMERO_RUC.')
+
+ins_2020 <-
+  read.csv('data/sri_inscripciones_2020.csv',
+           sep = ';') %>% 
+  rename(TOTAL = 'COUNT.O667410.NUMERO_RUC.')
+
+ins_2021 <-
+  read.csv('data/sri_inscripciones_2021.csv',
+           sep = '|')
+
+ins_2022 <-
+  read.csv('data/sri_inscripciones_2022.csv',
+           sep = '|')
+
+# Suspensions
+
+# Inscriptions
+
+sus_2017 <-
+  read.csv('data/sri_cierres_2017.csv',
+           sep = ';')
+
+sus_2018 <-
+  read.csv('data/sri_cierres_2018.csv',
+           sep = ';')
+
+sus_2019 <-
+  read.csv('data/sri_cierres_2019.csv',
+           sep = ';') 
+sus_2020 <-
+  read.csv('data/sri_cierres_2020.csv',
+           sep = ';') 
+
+sus_2021 <-
+  read.csv('data/sri_cierres_2021.csv',
+           sep = '|')
+
+sus_2022 <-
+  read.csv('data/sri_cierres_2022.csv',
+           sep = '|')
+
 # Transit accidents
 
 transit_accidents_raw <-
   read.csv('data/transit-accidents.csv')
   
+# Layoffs
+
+layoffs_raw <-
+  read.csv('data/layoffs.csv', sep = ';')
+
+# Google mobility data
+
+mobility_raw <-
+  read.csv('data/google-mobility-reports.csv') %>%
+  filter(country_region == 'Ecuador')
+
 # Area Identifiers ----------------------------------------------------------------------------------------
 
 # Ecuador has 24 provinces which each normally have an id code which is used across the public sector.
@@ -221,7 +289,7 @@ province_all_tildes_sdt <- c(
   'IMBABURA',                     
   'LOJA',                          
   'LOS RÍOS',                      
-  'MANABí',                        
+  'MANABÍ',                        
   'MORONA SANTIAGO',               
   'NAPO',              
   'PASTAZA',                       
@@ -235,6 +303,33 @@ province_all_tildes_sdt <- c(
   'SANTA ELENA'
 )
 
+province_lower_some_tildes <- c(
+  'Azuay',
+  'Bolivar',
+  'Cañar',
+  'Carchi',
+  'Cotopaxi',
+  'Chimborazo',
+  'El Oro',
+  'Esmeraldas',
+  'Guayas',
+  'Imbabura',
+  'Loja',
+  'Los Rios',
+  'Manabí',
+  'Morona-Santiago',
+  'Napo',
+  'Pastaza',
+  'Pichincha',
+  'Tungurahua',
+  'Zamora Chinchipe',
+  'Galápagos Islands',
+  'Sucumbios',
+  'Orellana',
+  'Santo Domingo de los Tsachilas',
+  'Santa Elena'
+)
+
 province_codes <-
   province_codes %>% 
   mutate(province_no_tilde = provinces_no_tilde,
@@ -244,7 +339,8 @@ province_codes <-
          province_code2 = case_when(
            as.numeric(province_code) <= 9 ~ str_sub(province_code, -1, -1),
            TRUE ~ province_code
-         ))
+         ),
+         province_lower_some_tildes = province_lower_some_tildes)
 
 # Months -------------------------------------------------------------------
 
@@ -671,6 +767,105 @@ df <-
   df %>% 
   left_join(transit_accidents, by = c('month_year', 'province_code'))
 
+# Inscriptions ------------------------------------------------------
+
+# Prepare the dataset
+
+ins <-
+  ins_2017 %>%
+  bind_rows(ins_2018) %>% 
+  bind_rows(ins_2019) %>% 
+  bind_rows(ins_2020) %>% 
+  bind_rows(ins_2021) %>% 
+  bind_rows(ins_2022) %>%
+  left_join(month_lookup_tax_registry, 
+            by = c("DFC_DESCRIPCION_MES" = "spanish_month")) %>%
+  rename(year = 'DFC_ANIO_PK',
+         month_str = 'english_month',
+         ins = 'TOTAL',
+         province = 'DESCRIPCION_PROVINCIA') %>% 
+  select(-DFC_DESCRIPCION_MES) %>% 
+  mutate(month_year = parse_date_time(paste0(month_str, year), orders = 'b Y') %>% ymd(),
+         province = case_when(
+           province == 'CA\xd1AR' ~ 'CAÑAR',
+           province == '' ~ NA,
+           TRUE ~ province
+         )) %>% 
+  left_join(province_codes %>% select(province_code, province_no_tilde), by = c('province' = 'province_no_tilde')) %>% 
+  group_by(province_code, month_year) %>% 
+  summarise(registered = sum(ins)) %>% 
+  ungroup()
+
+# Left join to the main database
+
+df <-
+  df %>% 
+  left_join(ins, by = c('month_year', 'province_code'))
+
+# Suspensions -------------------------------------------------------------
+
+sus <-
+  sus_2017 %>%
+  bind_rows(sus_2018) %>% 
+  bind_rows(sus_2019) %>% 
+  bind_rows(sus_2020) %>% 
+  bind_rows(sus_2021) %>% 
+  bind_rows(sus_2022) %>%
+  left_join(month_lookup_tax_registry, 
+            by = c("DFC_DESCRIPCION_MES" = "spanish_month")) %>%
+  rename(year = 'DFC_ANIO_PK',
+         month_str = 'english_month',
+         sus = 'TOTAL',
+         province = 'DESCRIPCION_PROVINCIA') %>% 
+  select(-DFC_DESCRIPCION_MES) %>% 
+  mutate(month_year = parse_date_time(paste0(month_str, year), orders = 'b Y') %>% ymd(),
+         province = case_when(
+           province == 'CA\xd1AR' ~ 'CAÑAR',
+           province == '' ~ NA,
+           TRUE ~ province
+         )) %>% 
+  left_join(province_codes %>% select(province_code, province_no_tilde), by = c('province' = 'province_no_tilde')) %>% 
+  group_by(province_code, month_year) %>% 
+  summarise(registered = sum(sus)) %>% 
+  ungroup()
+
+# Left join to the main database
+
+df <-
+  df %>% 
+  left_join(sus, by = c('month_year', 'province_code'))
+
+# Layoffs -----------------------------------------------------------------
+
+# Prepare the dataset
+
+layoffs <-
+  layoffs_raw %>% 
+  mutate(month_year = dmy(Fecha.Lagalizacion),
+         year = year(month_year),
+         province = case_when(
+           Provincia.Acta == 'PICHINCHA (REGIMEN COSTA)' ~ 'PICHINCHA',
+           Provincia.Acta == 'CAÑAR (REGIMEN COSTA)' ~ 'CAÑAR',
+           Provincia.Acta == 'COTOPAXI(REGIMEN COSTA)' ~ 'COTOPAXI',
+           Provincia.Acta == 'AZUAY (REGIMEN COSTA)' ~ 'AZUAY',
+           Provincia.Acta == 'CHIMBORAZO(REGIMEN COSTA)' ~ 'CHIMBORAZO',
+           TRUE ~ Provincia.Acta
+         )) %>% 
+  rename(layoffs = 'Actas') %>% 
+  group_by(province, month_year) %>% 
+  summarise(layoffs = sum(layoffs)) %>% 
+  ungroup() %>%
+  left_join(province_codes %>% select(province_code, province_some_tildes), 
+            by = c('province' = 'province_some_tildes')) %>% 
+  select(-province)
+
+# Join to the main dataframe
+
+df <-
+  df %>% 
+  left_join(layoffs, 
+            by = c('province_code', 'month_year'))
+
 # Running variable/centered monthly --------------------------------------------------------
 
 # Define the running variable: number of months before the month of implementation. 
@@ -684,13 +879,58 @@ df <-
 
 df <-
   df %>%
-  mutate(treat = if_else(month_year > as.Date('2020-05-01'),'Treatment Period','Control Period') %>% as.factor(),
+  mutate(treat = if_else(month_year > as.Date('2020-05-01'),'Treatment Period', 'Control Period') %>% as.factor(),
          province_code = as.factor(province_code),
          province_doe = relevel(province_code, ref = '17'),
          my_event = as.factor(month_year %>% format( '%B%Y')),
          my_event = relevel(my_event, ref = 'May2020'),
          lag_jobs = lag(jobs),
          lag_contracts = lag(contracts))
+
+# Google Mobility Reports -------------------------------------------------
+
+# Prepare the data
+
+mobility <-
+  mobility_raw %>%
+  mutate(date = ymd(date),
+         month_year = floor_date(date, unit = 'months'),
+         sub_region_1 = case_when(
+           sub_region_1 == '' ~ NA,
+           TRUE ~ sub_region_1
+         ),
+         sub_region_2 = case_when(
+           sub_region_2 == '' ~ NA,
+           TRUE ~ sub_region_2
+         )) %>% 
+  rename(retail = 'retail_and_recreation_percent_change_from_baseline',
+         grocery = 'grocery_and_pharmacy_percent_change_from_baseline',
+         parks = 'parks_percent_change_from_baseline',
+         transit = 'transit_stations_percent_change_from_baseline',
+         workplaces = 'workplaces_percent_change_from_baseline',
+         residential = 'residential_percent_change_from_baseline',
+         province_lower = 'sub_region_1') %>%
+  filter(!is.na(province_lower),
+         is.na(sub_region_2)) %>% 
+  group_by(province_lower, month_year) %>% 
+  summarise(retail = mean(retail, na.rm = T),
+            grocery =  mean(grocery, na.rm = T),
+            parks =  mean(parks, na.rm = T),
+            transit =  mean(transit, na.rm = T),
+            workplaces =  mean(retail, na.rm = T),
+            residential =  mean(residential, na.rm = T)) %>% 
+  ungroup() %>%
+  mutate(total_mob = (retail + grocery + parks + transit + workplaces + residential)/6) %>% 
+  left_join(province_codes %>% select(province_code, province_lower_some_tildes), 
+            by = c('province_lower' = 'province_lower_some_tildes')) %>%
+  select(-province_lower)
+
+# Left join to the main dataframe
+
+df <-
+  df %>% 
+  left_join(mobility, 
+            by = c('month_year','province_code'))
 
 # Final preparations ------------------------------------------------------
 
@@ -740,4 +980,21 @@ df18_22 <-
 
 save(df18_22,
      file = 'draft/data/df18_22.RData')
+
+# Do the exact same thing but for the final draft
+
+# Export the main dataframe to an RData object
+
+save(df, 
+     file = 'final/data/df-main.RData')
+
+# Export a reduced dataframe to an RData object, between 2018 and 2022
+
+df18_22 <-
+  df %>% 
+  filter(year %>% between(2018, 2022))
+
+save(df18_22,
+     file = 'final/data/df18_22.RData')
+
 

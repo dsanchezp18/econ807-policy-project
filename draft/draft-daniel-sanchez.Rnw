@@ -241,8 +241,7 @@ Table \ref{tab:regseg} displays OLS estimation results for the empirical model s
 <<segmented-regressions, results = 'asis'>>=
 data <- 
   df18_22 %>%
-  mutate(jobs = log(jobs),
-         buss_new = log(buss_new),
+  mutate(buss_new = log(buss_new),
          remote_workers = log(remote_workers),
          registered = log(registered),
          total_sales = log(total_sales),
@@ -270,7 +269,8 @@ fe1 <- feols(log(jobs) ~ time*treat | provcode,
 
 # FE with variables, not COVID-19
 
-fe2 <- feols(log(jobs) ~ time*treat + remote_workers + thefts + homicides + registered + total_sales + transit_accidents |
+fe2 <- feols(log(jobs) ~ time*treat + remote_workers + thefts + homicides + registered +
+               total_sales + transit_accidents |
                provcode,
              cluster = ~ month_year + provcode,
              data = data)
