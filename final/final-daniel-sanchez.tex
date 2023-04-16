@@ -63,7 +63,7 @@
 \title{The influence of entry regulation on formal employment \\[1em] 
 \large{ECON 807 Macroeconomic Theory \& Policy Policy Project Draft}\footnote{
 Length: 10 pages, not including titlepage, references or appendices. \\
-This file has been uploaded with a \texttt{.rar} file including the R project which replicates the environment upon which this paper was written. Also, review the paper's \href{https://github.com/dsanchezp18/econ807-policy-project}{GitHub repository} to quickly glance at the data preparation or the model estimation and data visualization in a \texttt{.Rnw} file (R Sweave/Knitr).}}
+This file has been uploaded with a \texttt{.rar} file including the R project which replicates the environment upon which this paper was written. Also, review the paper's \href{https://github.com/dsanchezp18/econ807-policy-project}{GitHub repository} to quickly glance at the data preparation or the model estimation and data visualization in a \texttt{.Rnw} file (R Sweave/Knitr). The paper's source code is in the \texttt{final} folder in the repository.}}
 \author{Daniel Sánchez Pazmiño}
 \date{March 2023}
 
@@ -104,11 +104,11 @@ This file has been uploaded with a \texttt{.rar} file including the R project wh
 \maketitle
 \section{Introduction}
 
-It is well known that informal work -legal but informal economic activities which occur outside the government's regulatory capability \parencite{Sassen.1994} - can hinder economic development through several channels. Informal firms reduce the amount of taxes that can be collected by governments and these businesses tend to remain small and inefficient. Informality is also related to bigger gender gaps, higher inequality, lower education and several other negative outcomes \parencite{Delechat2020}. Additionally, informal sector workers often lack access to social security and other employment benefits and tend to earn lower wages. The informal economy has been characterized with poorly defined work spaces, unsafe and unsanitary working conditions, long working hours and a lack of access to markets, financial services, training, and technology \parencite{IloND}. 
+It is well known that informal work -legal but informal economic activities which occur outside the government's regulatory capability \parencite{Sassen.1994}- can hinder economic development through several channels. Informal firms reduce the amount of taxes that can be collected and these businesses tend to remain relativy smaller and less efficient. Informality is also related to bigger gender gaps, higher inequality, lower education and other negative outcomes \parencite{Delechat2020}. Additionally, informal sector workers often lack access to social security and other employment benefits and tend to earn lower wages. The informal economy has been characterized with poorly defined work spaces, unsafe and unsanitary working conditions, long working hours and a lack of access to markets, financial services, training, and technology \parencite{IloND}. 
 
-While less present in the developed world, informality is very prevalent in developing countries, where it represents a third of low and middle-income countries' economic activity \parencite{Delechat2020}. The work of \textcite{Soto.2002} has motivated much research about informality in Latin America, being one of the regions with the most prevalent levels of informality, as it often is the only option for several workers on the lower end of the wealth distribution \parencite{Oviedo.2009}. At the macroeconomic level, informality could be regarded as one consequence of poor institutions, which have been shown to be significant factors for growth \parencite{Acemoglu.2001, RafaelLaPorta.1997, Glaeser.2004}. Further, its effect on inequality and its potential to be a channel for the propagation of monetary and fiscal policy \parencite{Alberola.2020} make informality a significant macroeconomic determinant of underdevelopment.
+While less present in the developed world, informality is very prevalent in developing countries, where it represents a third of low and middle-income countries' economic activity \parencite{Delechat2020}. The work of \textcite{Soto.2002} has motivated much research about informality in Latin America, being one of the regions with the most prevalent levels of informality, as it often is the only option for several workers on the lower end of the wealth distribution \parencite{Oviedo.2009}. At the macroeconomic level, informality could be regarded at the institutional level, which has been shown to be a significant factor for growth \parencite{Acemoglu.2001, RafaelLaPorta.1997, Glaeser.2004}. Further, its effect on inequality and its potential as a channel for propagation of monetary and fiscal policy \parencite{Alberola.2020} make informality a significant macroeconomic determinant of development.
 
-The desire for the formalization of the economy is well understood, especially considering that the COVID-19 pandemic has increased informality worldwide \parencite{ILO.2022}. However, the policy angle is subtle, given that the causes and consequences of informality are difficult to document and understand. Some approaches have focused on the role of governments in providing incentives for formalization. Designing tax systems that minimize distortions in the market \parencite{Bardey.2019} as well as reducing the costs of formalization by reducing entry regulation for firms are some of the implementations of this approach. \textcite{MauricioPrado.2011} proposes that firms which are less productive endogenously choose to operate informally due to entry costs and taxation. Thus, reducing entry costs can directly affect formalization of businesses and an underlying consequence is that these businesses are more likely to hire formal workers. Figure \ref{fig:fig} displays all active businesses before and after the policy change as well as the amount of job contracts registered under Social Security in Ecuador, showing how employment and business creation tend to move together.
+The desire for the formalization of the economy is thus well understood, especially considering that the COVID-19 pandemic has increased informality worldwide \parencite{ILO.2022}. However, the policy angle is subtle, given that the causes and consequences of informality are difficult to document and understand. Some approaches have focused on the role of governments in providing incentives for formalization. Designing tax systems that minimize distortions in the market \parencite{Bardey.2019} as well as reducing the costs of formalization by reducing firm entry regulation are some of this approach's implementations. \textcite{MauricioPrado.2011} proposes that firms which are less productive endogenously choose to operate informally due to entry costs and taxation. Thus, reducing entry costs can directly affect formalization of businesses, which may impact formal employment.
 
 \begin{figure}[h]
 \caption{Active formal businesses and job contracts registered under Social Security in Ecuador}
@@ -119,19 +119,19 @@ The desire for the formalization of the economy is well understood, especially c
 \end{knitrout}
 \end{figure}
 
-In this paper, I investigate the relationship between entry regulation and labour market formalization by exploiting an exogenous shock on entry regulation in post-pandemic Ecuador. By using administrative data from various Ecuadorian public institutions and a comprehensive event study or interrupted time series empirical framework, I exploit variation across time at the province level in Ecuador before and after the reform. The policy change was enacted in May 2020 and allowed for the creation of a new legal form of business, the \textit{Sociedad de Acciones Simplificada}\footnote{In English, \textit{Simplified Shares Society.}} (SAS). The reform sought to reduce monetary and time costs relative to other legal figures in the firm creation process, and has proven to be effective in doing so and fostering business creation \parencite{CaminoMogro.2022}.
+In this paper, I investigate the relationship between entry regulation and labour market formalization by exploiting an exogenous shock on entry regulation in Ecuador. By using administrative data from various Ecuadorian public institutions and a comprehensive event study or interrupted time series empirical framework, I exploit variation in formal employment across time at the province level in Ecuador before and after the reform. The policy change was enacted in May 2020 and allowed for the creation of a new legal form of business, the \textit{Sociedad de Acciones Simplificada}\footnote{In English, \textit{Simplified Shares Society.}} (SAS). The reform sought to reduce monetary and time costs relative to other legal figures in the firm creation process, and has proven to be effective in doing so and fostering business creation \parencite{CaminoMogro.2022}. Figure \ref{fig:fig} displays all active businesses before and after the policy change as well as the amount of job contracts registered under Social Security in Ecuador, showing how employment and business creation tend to move together.
 
-I base my empirical analysis under a theoretical framework informed by the work of \textcite{Branstetter.2014}. In a simple model of entrepreneurship, it is predicted that reduced entry costs will increase firm entry and employment, however, all impacts are \textit{at the margin}: new firms will be generally smaller, less productive and less likely to hire large amounts of new workers. While the results from the empirical analysis show a positive effect of the reform on employment, the effect is not robust to different specifications. Further, event study specifications suggest that due to the timing of the policy, the immediate effects of the policy might be due to catch-up effects from the pandemic rather than due to the underlying economic mechanism of the reform.These results suggest that the true causal effect of the policy on employment is too small to identify with my empirical strategy or even null. Some evidence which supports the validity of the model with Ecuadorian data, as the empirical validations in Portugal \parencite{Branstetter.2014} and Mexico \parencite{Kaplan.2011} also find small positive effects of entry cost deregulation. However, the possibility of a null effect of the reform in Ecuador might be explained by the lack of coordination between entry and labour market regulation.
+I base my empirical analysis on a theoretical framework informed by the work of \textcite{Branstetter.2014}. In a simple model of entrepreneurship it is predicted that reduced entry costs will increase firm entry and employment, however, all impacts are \textit{at the margin}: new firms will be generally smaller, less productive and less likely to hire large amounts of new workers. While the results from the empirical analysis show a positive effect of the reform on employment, the effect is not robust to different specifications. Further, event study specifications suggest that due to the timing of the policy, the immediate effects of the policy might be due to catch-up effects from the pandemic rather than due to the reform itself. These results suggest that the true causal effect of the policy on employment is too small to identify with this empirical strategy. Some evidence which supports the validity of the model with Ecuadorian data, as the empirical validations in Portugal \parencite{Branstetter.2014} and Mexico \parencite{Kaplan.2011}, also find small positive effects of entry cost deregulation. However, the possibility of a null effect of the reform in Ecuador might be explained by the lack of coordination between entry and labour market regulation.
 
-Through this paper, I contribute to the very reduced stream of research which analyses the impact of entry regulations on employment, considering the existence of informal and formal sectors. Further, the use of administrative instead of survey data enhances the possibilities of extracting insight which is valid at any level of aggregation. No other research links these type of policies to the creation of formal employment, given that these policies are more geared towards fostering entrepreneurship, labour markets being managed through other types of policies. However, given that \textcite{Branstetter.2014} identifies marginal firms as smaller, which are more likely to be informal \parencite{ElianeElBadaoui.2010}, entry cost regulation may be an important policy tool for tackling informality, specially when labour market reform is politically blocked, as is the case of Ecuador. 
+Through this paper, I contribute to the very reduced stream of research which analyses the impact of entry regulations on employment, considering the existence of informal and formal sectors. Further, the use of administrative instead of survey data enhances the possibilities of extracting insight which is valid at any level of aggregation. No other research links these types of policies to the creation of formal employment, given that these policies are more geared towards fostering entrepreneurship. However, given that \textcite{Branstetter.2014} identifies marginal firms as smaller, which are more likely to be informal \parencite{ElianeElBadaoui.2010}, entry cost regulation may be an important policy tool for tackling informality, especially when labour market reform is politically blocked, as is the case of Ecuador. 
 
 \section{Literature Review}
 
-The literature on informality and entry cost regulation is individually extensive, but few papers explore the relationship between the two. The theory points to informality being an endogenous decision, where firms with low productivity often prefer to remain informal, the size of the firm often being an important determinant of this decision \parencite{Delechat2020, MauricioPrado.2011, ElianeElBadaoui.2010}. This endogeneity makes informality difficult to investigate empirically: many informal workers are not officially registered and may not report their activities accurately \textcite{Oviedo.2009}. In the macroeconomic context, it has been shown that informality lowers TFP, increases output volatility and may produce significant input misallocation. Further, informal jobs have been found to respond heavily to changes in formal employment \parencite{Leyva.2020}. In this sense, I use fluctuations in formal work to hypothesize the effects on informality, but it is out of the paper's scope to difference between informal to formal market and from outside the labour force to the formal market movements.
+The literature on informality and entry cost regulation is extensive, but few papers explore the relationship between the two. The theory points to informality being an endogenous decision, where firms with low productivity often prefer to remain informal, the size of the firm often being an important determinant of this decision \parencite{Delechat2020, MauricioPrado.2011, ElianeElBadaoui.2010}. This endogeneity makes informality difficult to investigate empirically: many informal workers are not officially registered and may not report their activities accurately \textcite{Oviedo.2009}. In the macroeconomic context, it has been shown that informality lowers TFP, increases output volatility and may produce significant input misallocation. Further, informal jobs have been found to respond heavily to changes in formal employment \parencite{Leyva.2020}.
 
-Research on Ecuador is limited and has focused on the effect of exogenous shocks on measurements of informality, notably measuring the effects of a significant earthquake in 2016 \parencite{Mendoza.2020} and the labour market impact of Venezuelan migration \parencite{Olivieri.2022}, both finding positive effects on informality. It is found that poverty and informality are jointly determined, where informal workers often come from low education and low income backgrounds. Further, the informal labour market is mainly supply-led but it is so heterogenously: low-skilled workers often have no choice to work informally, while better educated workers sometimes choose to operate informally \parencite{Canelas.2019}. On the firm side, it is determined that the endogenous choice of sector is also present in Ecuador \parencite{Medvedev.2016}. Ecuador also documents a formal sector wage premium \textcite{MacIsaac.1997}, which, according to \textcite{ElianeElBadaoui.2010}, responds to a firm size wage premium due to the endogenous choice of the firm to operate in the informal sector. 
+Research on Ecuador is limited and has focused on the effect of exogenous shocks on measurements of informality, notably measuring the effects of an earthquake in 2016 \parencite{Mendoza.2020} and the labour market impact of Venezuelan migration \parencite{Olivieri.2022}, both finding positive effects on informality. It is found that poverty and informality are jointly determined, where informal workers often come from low education and low income backgrounds. Further, the informal labour market is mainly supply-led but it is so heterogenously: low-skilled workers often have no choice to work informally, while better educated workers sometimes choose to operate informally \parencite{Canelas.2019}. On the firm side, it is determined that the endogenous choice of sector is also present in Ecuador \parencite{Medvedev.2016}. Ecuador also documents a formal sector wage premium \textcite{MacIsaac.1997}, which, according to \textcite{ElianeElBadaoui.2010}, responds to a firm size wage premium due to the endogenous choice of the firm to operate in the informal sector. 
 
-Estimating the size and nature of the informal economy and to assess the impact of policies aimed at reducing informality is difficult, however, one common idea that has come up as a policy angle is reducing distortions for businesses by simplifying entry regulation. These type of policies have been implemented widely across Latin America as well as in Europe, which have had positive results \parencite{Oviedo.2009}. However, research has been focused on the policy's effectiveness at creating formal businesses, not measuring their labour market impact. \textcite{Branstetter.2014} develop a simple entrepreneurship model and validate it with a reduction of entry costs in Portugal, finding the reform significantly impacted business creation but mostly for marginal firms. These marginal firms were typically small, owned by relatively poorly educated entrepreneurs, and operating in low-technology sectors and were less likely to survive their first two years. Employment effects of the reform were positive but small, as was the case of a Mexican deregulation of entry by \textcite{Kaplan.2011}. Further, \textcite{Bertrand.2002} find that both product market and entry regulation were sources of employment growth in France in the 1970s, focusing on the retail sector in France. Further, a macroeconomic study of product and labour market regulation, modelled as higher entry costs, links higher levels of regulations to lower employment \parencite{Blanchard.2003}. However, none of these papers acknowledge the existence of formal and informal sectors.
+Estimating the size and nature of the informal economy and to assess the impact of policies aimed at reducing informality is difficult, however, one common idea that has come up as a policy angle is reducing distortions for businesses by simplifying entry regulation. These types of policies have been implemented across Latin America as well as in Europe, which have had positive results \parencite{Oviedo.2009}. However, research has been focused on the policy's effectiveness at creating formal businesses, not measuring their labour market impact. \textcite{Branstetter.2014} develop a simple entrepreneurship model and validate it with a reduction of entry costs in Portugal, finding the reform significantly impacted business creation but mostly for marginal firms. These marginal firms were typically small, owned by relatively poorly educated entrepreneurs, and operating in low-technology sectors and less likely to survive after two years. Employment effects of the reform were positive but small, as was the case of a Mexican deregulation of entry by \textcite{Kaplan.2011}. Further, \textcite{Bertrand.2002} find that both product market and entry regulation were sources of employment growth in France in the 1970s, focusing on the retail sector in France. Further, a macroeconomic study of product and labour market regulation, modelled as higher entry costs, links higher levels of regulations to lower employment \parencite{Blanchard.2003}. However, none of these papers acknowledge the existence of formal and informal sectors.
 
 \section{Theoretical Framework}
 
@@ -141,7 +141,9 @@ I use the theoretical model of entrepreneurship proposed by \textcite{Branstette
   h(\theta) + \eta
 \end{equation}
 
-where $h$ is a function of the agent's entrepreneurial ability and $\eta$ is an idiosyncratic term, also drawn from a probability distribution and unknown to the entrepreneur before starting their entrepreneurship operation. By defining $h$ as Cobb-Douglas, considering only labour $L$ as a production input and introducing two periods, it is possible to define two profit functions, where the difference between the two is that a fixed cost $F$ is included in $\pi_t$ for $t = 1$ but not for $t=2$ and $\eta$ is revealed to the agent in $t=2$. The value for operation as an entrepreneur depends on the level of entrepreneurial ability relative to the market wage rate $w$, as well as $F$. The model predicts that a decrease on entry costs ($F$) increases the value of entrepreneurship, allowing for more business entry. Further, the level of employment depends on the level of entrepreneurship, and each entrepreneur's labour demand will depend once again on their endowment $\theta$ relative to $w$. Any decrease in $F$ will increase the level of employment, considering that there will be more entrepreneurs in the economy. However, since reductions in $F$ will work \textit{at the margin}, all extra entrepreneurs generated by the policy change will have relatively low $\theta$ and thus smaller labour demand.
+where $h$ is a function of the agent's entrepreneurial ability and $\eta$ is an idiosyncratic term, also drawn from a probability distribution and unknown to the entrepreneur before starting their entrepreneurship operation. By defining $h$ as Cobb-Douglas, considering only labour $L$ as a production input and introducing two periods, it is possible to define two profit functions, where the difference between the two is that a fixed cost $F$ is included in $\pi_t$ for $t = 1$ but not for $t=2$ and $\eta$ is revealed to the agent in $t=2$. 
+
+The value for operation as an entrepreneur depends on the level of entrepreneurial ability relative to the market wage rate $w$ as well as on fixed costs $F$. The model predicts that a decrease on $F$ increases the value of entrepreneurship, allowing for more business entry. Further, the level of employment depends on the level of entrepreneurship, and each entrepreneur's labour demand will depend once again on their endowment $\theta$ relative to $w$. Any decrease in $F$ will increase overall employment, considering that there will be more entrepreneurs. However, since reductions in $F$ will work \textit{at the margin}, all extra entrepreneurs will have relatively low $\theta$ and thus smaller labour demand.
 
 This model does not consider the level of capital $K$ and liquidity constraints, and assumes that all workers are hired formally. By observing formal employment fluctuations, it is possible to apply this model to the empirical analysis. However, the model is not able to explain changes in informal employment per se, only changes in formal employment. The extent to which changes in formal employment relate to informal employment is dependent on the ability to observe the pre-policy status of workers hired after the policy change, which is out of the scope of this paper.
 
@@ -149,7 +151,7 @@ This model does not consider the level of capital $K$ and liquidity constraints,
 
 Ecuador is a middle income country located in upper South America next to Colombia and Peru. The country is comprised of twenty-four provinces across four regions and all provinces encompass a central unified republic. After its full dollarization in 2000, the country saw an economic surge between 2007-2014 as a result of high oil prices and a relatively indebted government \parencite{Weisbrot.2017}. However, after a sharp decline in oil prices and the COVID-19 pandemic, the country seems to be unable to return to its pre-pandemic levels, with employment indicators at an all-time low. 
 
-However, informality and underemployment in this labour market have been shown to be historically high \parencite{Meneses.2021, Chavez.2012, Mendoza.2020}. It has been determined that minimum wage increases in Ecuador (which have been frequent and substantial) have had no effect on employment levels due to high-level of non-compliance and informality in the labour market \parencite{Canelas.2014}. Further, Ecuador has been shown to have one of the most cumbersome labour market legislations in the region \parencite{MacIsaac.1997}, whose effect is attenuated by smaller base earnings over which benefits are paid.
+However, informality and underemployment\footnote{The Ecuadorian National Institute of Statistics considers ``adequate employment'' as people with a job who earn labour income equal to or greater than the minimum wage on an hourly basis. In this sense, underemployment in this paper is considered as any employment which does not comply with this condition.}in this labour market have been shown to be historically high \parencite{Meneses.2021, Chavez.2012, Mendoza.2020}. It has been determined that minimum wage increases in Ecuador (which have been frequent and substantial) have had no effect on employment levels due to high-level of non-compliance and informality in the labour market \parencite{Canelas.2014}. Further, Ecuador has been shown to have one of the most cumbersome labour market legislations in the region \parencite{MacIsaac.1997}, whose effect is attenuated by smaller base earnings over which benefits are paid.
 
 Not only the labour market is highly regulated in the country: the business environment in Ecuador is cumbersome, including several artificial costs which could create inefficiencies. Ecuador constantly ranks very low in terms of property rights, judicial transparency and economic freedom. Its low standing in economic freedom responds to a flawed and corrupt judiciary, characterized by inefficiency and difficulty to start a business \textcite{Euromonitor.2022}. Further, an unstable economic and political environment after the election of conservative businessman Guillermo Lasso not long after a decade-long leftist regime has taken a toll on the government's financing capabilities. The political instability has also made the deregulation of labour markets difficult only one set of market-friendly policies set forth by the new president have been passed, the labour market reform being immediately rejected by a strong opposing majority in Congress. Thus, other types of reforms which indirectly target the labour market would be welcome. 
 
@@ -170,12 +172,12 @@ I construct a province-month panel dataset of the country with variables stemmin
 Formal jobs & \num{10.24} & \num{10.23} & \num{10.16} & \num{10.08} & \num{10.14}\\
 Active businesses & \num{2.24} & \num{2.52} & \num{2.42} & \num{2.84} & \num{3.05}\\
 Remote workers & \num{0.93} & \num{1.37} & \num{3.15} & \num{2.37} & \num{1.79}\\
-Registered tax contributors & \num{10.54} & \num{10.61} & \num{10.69} & \num{10.76} & \num{10.87}\\
+Registered tax contributors & \num{6.48} & \num{6.53} & \num{6.02} & \num{6.38} & \num{6.39}\\
 Reported sales & \num{18.80} & \num{18.81} & \num{18.71} & \num{18.81} & \num{18.96}\\
 Total COVID-19 cases &  &  & \num{6.41} & \num{6.47} & \num{6.43}\\
 Total COVID-19 deaths &  &  & \num{2.97} & \num{2.64} & \num{1.96}\\
-Thefts & \num{4.52} & \num{4.53} & \num{4.19} & \num{4.33} & \num{4.52}\\
-Homicides & \num{1.05} & \num{1.11} & \num{1.19} & \num{1.38} & \num{1.81}\\
+Thefts & \num{4.57} & \num{4.59} & \num{4.24} & \num{4.38} & \num{4.57}\\
+Homicides & \num{1.10} & \num{1.18} & \num{1.25} & \num{1.46} & \num{1.91}\\
 Transit Accidents & \num{1.04} & \num{1.10} & \num{1.01} & \num{0.92} & \num{1.14}\\
 \bottomrule
 \end{tabular}
@@ -216,42 +218,42 @@ Table \ref{tab:regseg} displays OLS estimation results for the empirical model s
 \toprule
   & (1) & (2) & (3) & (4) & (5) & (6)\\
 \midrule
-Time & \num{0.000}* & \num{0.000} & \num{0.000} & \num{0.000}*** & \num{0.000} & \num{0.000}\\
- & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000})\\
-Time (quadratic) &  &  &  & \num{0.000}*** & \num{0.000} & \num{0.001}***\\
- &  &  &  & (\num{0.000}) & (\num{0.000}) & \vphantom{1} (\num{0.000})\\
-Treatment & \num{-0.024}*** & \num{-0.016}*** & \num{-0.011}*** & \num{-0.007}*** & \num{0.000} & \num{0.002}***\\
- & (\num{0.003}) & (\num{0.003}) & (\num{0.001}) & (\num{0.002}) & (\num{0.001}) & (\num{0.001})\\
-Interaction & \num{0.000} & \num{0.000}*** & \num{0.000} &  &  & \\
- & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) &  &  & \\
-Interaction (quadratic) &  &  &  & \num{0.000}*** & \num{0.000} & \num{-0.001}***\\
- &  &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.000})\\
-WFH workers &  &  & \num{0.000} & \num{0.000} & \num{0.000}** & \num{0.000}\\
- &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & \vphantom{2} (\num{0.000})\\
-Thefts &  &  & \num{0.002} & \num{0.001} & \num{0.001}* & \num{0.000}\\
+Time & \num{0.003}* & \num{0.000} & \num{0.000} & \num{-0.004}*** & \num{0.000} & \num{0.001}\\
+ & (\num{0.002}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001})\\
+Time (quadratic) &  &  &  & \num{0.000}*** & \num{0.000} & \num{0.011}***\\
+ &  &  &  & (\num{0.000}) & (\num{0.000}) & \vphantom{1} (\num{0.001})\\
+Treatment & \num{-0.237}*** & \num{-0.152}*** & \num{-0.119}*** & \num{-0.073}*** & \num{0.001} & \num{0.025}***\\
+ & (\num{0.030}) & (\num{0.026}) & (\num{0.014}) & (\num{0.016}) & (\num{0.011}) & (\num{0.006})\\
+Interaction & \num{0.001} & \num{0.003}*** & \num{0.001} &  &  & \\
+ & (\num{0.002}) & (\num{0.001}) & (\num{0.001}) &  &  & \\
+Interaction (quadratic) &  &  &  & \num{0.000}*** & \num{0.000} & \num{-0.011}***\\
+ &  &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.001})\\
+WFH workers &  &  & \num{0.001} & \num{0.001} & \num{0.000} & \num{0.000}\\
  &  &  & (\num{0.002}) & (\num{0.002}) & (\num{0.001}) & (\num{0.001})\\
-Homicides &  &  & \num{0.000} & \num{0.000} & \num{0.000} & \num{0.000}\\
- &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & \vphantom{1} (\num{0.000})\\
-Tax contributors &  &  & \num{-0.011} & \num{-0.012} & \num{0.000} & \num{-0.002}\\
- &  &  & (\num{0.007}) & (\num{0.008}) & (\num{0.002}) & (\num{0.001})\\
-Sales &  &  & \num{0.004}** & \num{0.003}** & \num{0.001} & \num{0.000}\\
- &  &  & (\num{0.002}) & (\num{0.001}) & (\num{0.000}) & (\num{0.001})\\
-Transit Accidents &  &  & \num{0.000} & \num{0.000} & \num{0.000} & \num{0.000}\\
- &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000})\\
-Businesses &  &  &  &  & \num{0.001}*** & \num{0.001}\\
- &  &  &  &  & (\num{0.000}) & (\num{0.000})\\
-Lag of jobs &  &  &  &  & \num{0.089}*** & \num{0.080}***\\
- &  &  &  &  & (\num{0.003}) & (\num{0.006})\\
+Thefts &  &  & \num{0.019} & \num{0.011} & \num{0.015}* & \num{0.000}\\
+ &  &  & (\num{0.017}) & (\num{0.017}) & (\num{0.008}) & (\num{0.007})\\
+Homicides &  &  & \num{0.002} & \num{0.001} & \num{0.001}** & \num{0.001}\\
+ &  &  & (\num{0.004}) & (\num{0.004}) & (\num{0.001}) & (\num{0.002})\\
+Tax contributors &  &  & \num{0.001} & \num{-0.001}* & \num{0.002}** & \num{0.001}\\
+ &  &  & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001})\\
+Sales &  &  & \num{0.039}** & \num{0.033}** & \num{0.007} & \num{0.003}\\
+ &  &  & (\num{0.016}) & (\num{0.013}) & (\num{0.004}) & (\num{0.006})\\
+Transit Accidents &  &  & \num{0.003} & \num{0.002} & \num{-0.001} & \num{-0.002}\\
+ &  &  & (\num{0.002}) & (\num{0.002}) & (\num{0.001}) & (\num{0.002})\\
+Businesses &  &  &  &  & \num{0.008}*** & \num{0.006}\\
+ &  &  &  &  & (\num{0.002}) & (\num{0.004})\\
+Lag of jobs &  &  &  &  & \num{0.950}*** & \num{0.886}***\\
+ &  &  &  &  & (\num{0.029}) & (\num{0.061})\\
 COVID-19 cases &  &  &  &  &  & \num{0.000}\\
- &  &  &  &  &  & \vphantom{1} (\num{0.000})\\
-COVID-19 deaths &  &  &  &  &  & \num{0.000}\\
- &  &  &  &  &  & (\num{0.000})\\
+ &  &  &  &  &  & (\num{0.002})\\
+COVID-19 deaths &  &  &  &  &  & \num{-0.001}\\
+ &  &  &  &  &  & (\num{0.001})\\
 \midrule
-$N$ & \num{1327} & \num{1327} & \num{394} & \num{394} & \num{394} & \num{216}\\
-Adj. $R^2$ & \num{0.00117} & \num{0.99758} & \num{0.99947} & \num{0.99953} & \num{0.99991} & \num{0.99989}\\
-Adj. Within $R^2$ &  & \num{0.41197} & \num{0.71887} & \num{0.75168} & \num{0.95209} & \num{0.83333}\\
-AIC & \num{-1548.18} & \num{-9517.90} & \num{-3485.56} & \num{-3533.54} & \num{-4180.01} & \num{-2257.66}\\
-BIC & \num{-1527.42} & \num{-9377.75} & \num{-3374.23} & \num{-3418.22} & \num{-4056.75} & \num{-2149.66}\\
+$N$ & \num{1327} & \num{1327} & \num{439} & \num{439} & \num{439} & \num{239}\\
+Adj. $R^2$ & \num{0.00071} & \num{0.99835} & \num{0.99955} & \num{0.99960} & \num{0.99994} & \num{0.99991}\\
+Adj. Within $R^2$ &  & \num{0.46583} & \num{0.74803} & \num{0.77687} & \num{0.96416} & \num{0.85563}\\
+AIC & \num{4708.41} & \num{-3771.83} & \num{-1851.95} & \num{-1904.38} & \num{-2705.34} & \num{-1398.01}\\
+BIC & \num{4729.17} & \num{-3631.68} & \num{-1733.50} & \num{-1781.85} & \num{-2574.64} & \num{-1283.29}\\
 Province FE &  & X & X & X & X & X\\
 \bottomrule
 \end{tabular}
@@ -271,7 +273,7 @@ $ *p < 0.1, **p < 0.05, ***p < 0.01.$
 \textbf{Notes:} Event study plots where the coefficients of period dummies are plotted against time. The reference level is May 2020. All plots include the standard controls, which are defined in Model 3 of Table \ref{tab:regseg}. COVID-19 outcomes include total suspected COVID-19 cases and deaths, as reported by the Ecuadorian Ministry of Health.
 \end{figure}
 
-Models 3 through 5 consider a variety of controls and alternative specifications to check for the robustness of Model 2's results. Model 3 adds a variety of controls. WFH workers will control for temporary waves of COVID-19 contagions. The amount of transit accidents work to that effect as well. Further, thefts and homicides should control for any kind of effect of the recent violence wave that has stricken the country beginning 2020 and intensified during 2022. Both the amount of firm-type tax contributors and reported sales to the tax authority control for economic fluctuations. The effect is only significant when considering a quadratic trend of the time variable (Model 4), and in even in such case, the magnitude of the effect is very small: on average, the SAS reform created 0.0041\% more Social Security-registered jobs. 
+Models 3 through 5 consider a variety of controls and alternative specifications to check for the robustness of Model 2's results. Model 3 adds a variety of controls. WFH workers will control for temporary waves of COVID-19 contagions. The amount of transit accidents work to that effect as well. Further, thefts and homicides should control for any kind of effect of the recent violence wave that has stricken the country beginning 2020 and intensified during 2022. Both the amount of firm-type tax contributors and reported sales to the tax authority control for economic fluctuations. The effect is only significant when considering a quadratic trend of the time variable (Model 4), and in even in such case, the magnitude of the effect is very small: on average, the SAS reform created 0.041533\% more Social Security-registered jobs. 
 
 Model 5 performs a robustness check and controls for the natural log of active businesses. The theoretical model predicts that employment will be a result of a higher number of businesses entering the economy, which means that controlling for business creation over time should render the effect of the policy on employment statistically insignificant. Further, a positive significance of the business coefficient should be seen. Both of these results are seen in the data, which is evidence in favour of the theoretical model. Further, I take into account the possibility of an autoregressive process by adding a lag of the dependent variable, which is statistically significant, supporting the possibility of an AR(1) process. 
 
@@ -330,42 +332,42 @@ Transit Accidents           & All transit accidents reported to the National Tra
 \toprule
   & (1) & (2) & (3) & (4) & (5) & (6)\\
 \midrule
-Time & \num{0.000} & \num{0.000} & \num{0.000}* & \num{0.000}*** & \num{0.000} & \num{0.000}\\
- & (\num{0.001}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000})\\
-Time (quadratic) &  &  &  & \num{0.000}*** & \num{0.000} & \num{0.001}***\\
- &  &  &  & (\num{0.000}) & (\num{0.000}) & \vphantom{1} (\num{0.000})\\
-Treatment & \num{-0.024}*** & \num{-0.016}*** & \num{-0.011}*** & \num{-0.007}*** & \num{0.000} & \num{0.002}\\
- & (\num{0.004}) & (\num{0.003}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001})\\
-Interaction & \num{0.000} & \num{0.000}*** & \num{0.000} &  &  & \\
- & (\num{0.001}) & (\num{0.000}) & (\num{0.000}) &  &  & \\
-Interaction (quadratic) &  &  &  & \num{0.000}*** & \num{0.000} & \num{-0.001}***\\
- &  &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.000})\\
-WFH workers &  &  & \num{0.000} & \num{0.000} & \num{0.000}*** & \num{0.000}\\
- &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & \vphantom{2} (\num{0.000})\\
-Thefts &  &  & \num{0.002}* & \num{0.001} & \num{0.001}*** & \num{0.000}\\
- &  &  & (\num{0.001}) & (\num{0.001}) & (\num{0.000}) & (\num{0.001})\\
-Homicides &  &  & \num{0.000} & \num{0.000} & \num{0.000} & \num{0.000}\\
- &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & \vphantom{1} (\num{0.000})\\
-Tax contributors &  &  & \num{-0.011}** & \num{-0.012}** & \num{0.000} & \num{-0.002}\\
- &  &  & (\num{0.005}) & (\num{0.005}) & (\num{0.001}) & (\num{0.002})\\
-Sales &  &  & \num{0.004}*** & \num{0.003}*** & \num{0.001}* & \num{0.000}\\
- &  &  & (\num{0.001}) & (\num{0.001}) & (\num{0.000}) & (\num{0.000})\\
-Transit Accidents &  &  & \num{0.000} & \num{0.000} & \num{0.000} & \num{0.000}\\
- &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000})\\
-Businesses &  &  &  &  & \num{0.001}*** & \num{0.001}**\\
- &  &  &  &  & (\num{0.000}) & (\num{0.000})\\
-Lag of jobs &  &  &  &  & \num{0.089}*** & \num{0.080}***\\
- &  &  &  &  & (\num{0.003}) & (\num{0.006})\\
+Time & \num{0.003} & \num{0.000} & \num{0.000} & \num{-0.004}*** & \num{0.000} & \num{0.001}\\
+ & (\num{0.006}) & (\num{0.001}) & (\num{0.000}) & (\num{0.001}) & (\num{0.000}) & (\num{0.001})\\
+Time (quadratic) &  &  &  & \num{0.000}*** & \num{0.000} & \num{0.011}***\\
+ &  &  &  & (\num{0.000}) & (\num{0.000}) & \vphantom{1} (\num{0.003})\\
+Treatment & \num{-0.237}*** & \num{-0.152}*** & \num{-0.119}*** & \num{-0.073}*** & \num{0.001} & \num{0.025}*\\
+ & (\num{0.040}) & (\num{0.022}) & (\num{0.011}) & (\num{0.014}) & (\num{0.006}) & (\num{0.014})\\
+Interaction & \num{0.001} & \num{0.003}*** & \num{0.001} &  &  & \\
+ & (\num{0.006}) & (\num{0.001}) & (\num{0.001}) &  &  & \\
+Interaction (quadratic) &  &  &  & \num{0.000}*** & \num{0.000} & \num{-0.011}***\\
+ &  &  &  & (\num{0.000}) & (\num{0.000}) & (\num{0.003})\\
+WFH workers &  &  & \num{0.001} & \num{0.001} & \num{0.000} & \num{0.000}\\
+ &  &  & (\num{0.002}) & (\num{0.002}) & (\num{0.000}) & (\num{0.001})\\
+Thefts &  &  & \num{0.019} & \num{0.011} & \num{0.015}*** & \num{0.000}\\
+ &  &  & (\num{0.011}) & (\num{0.011}) & (\num{0.004}) & (\num{0.006})\\
+Homicides &  &  & \num{0.002} & \num{0.001} & \num{0.001} & \num{0.001}\\
+ &  &  & (\num{0.003}) & (\num{0.003}) & (\num{0.001}) & (\num{0.002})\\
+Tax contributors &  &  & \num{0.001} & \num{-0.001} & \num{0.002}*** & \num{0.001}\\
+ &  &  & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001})\\
+Sales &  &  & \num{0.039}*** & \num{0.033}*** & \num{0.007}** & \num{0.003}\\
+ &  &  & (\num{0.011}) & (\num{0.010}) & (\num{0.003}) & (\num{0.004})\\
+Transit Accidents &  &  & \num{0.003} & \num{0.002} & \num{-0.001} & \num{-0.002}\\
+ &  &  & (\num{0.002}) & (\num{0.002}) & (\num{0.001}) & (\num{0.002})\\
+Businesses &  &  &  &  & \num{0.008}*** & \num{0.006}**\\
+ &  &  &  &  & (\num{0.002}) & (\num{0.003})\\
+Lag of jobs &  &  &  &  & \num{0.950}*** & \num{0.886}***\\
+ &  &  &  &  & (\num{0.031}) & (\num{0.056})\\
 COVID-19 cases &  &  &  &  &  & \num{0.000}\\
- &  &  &  &  &  & \vphantom{1} (\num{0.000})\\
-COVID-19 deaths &  &  &  &  &  & \num{0.000}\\
- &  &  &  &  &  & (\num{0.000})\\
+ &  &  &  &  &  & (\num{0.002})\\
+COVID-19 deaths &  &  &  &  &  & \num{-0.001}\\
+ &  &  &  &  &  & (\num{0.001})\\
 \midrule
-$N$ & \num{1327} & \num{1327} & \num{394} & \num{394} & \num{394} & \num{216}\\
-Adj. $R^2$ & \num{0.00117} & \num{0.99758} & \num{0.99947} & \num{0.99953} & \num{0.99991} & \num{0.99989}\\
-Adj. Within $R^2$ &  & \num{0.41197} & \num{0.71887} & \num{0.75168} & \num{0.95209} & \num{0.83333}\\
-AIC & \num{-1548.18} & \num{-9517.90} & \num{-3485.56} & \num{-3533.54} & \num{-4180.01} & \num{-2257.66}\\
-BIC & \num{-1527.42} & \num{-9377.75} & \num{-3374.23} & \num{-3418.22} & \num{-4056.75} & \num{-2149.66}\\
+$N$ & \num{1327} & \num{1327} & \num{439} & \num{439} & \num{439} & \num{239}\\
+Adj. $R^2$ & \num{0.00071} & \num{0.99835} & \num{0.99955} & \num{0.99960} & \num{0.99994} & \num{0.99991}\\
+Adj. Within $R^2$ &  & \num{0.46583} & \num{0.74803} & \num{0.77687} & \num{0.96416} & \num{0.85563}\\
+AIC & \num{4708.41} & \num{-3771.83} & \num{-1851.95} & \num{-1904.38} & \num{-2705.34} & \num{-1398.01}\\
+BIC & \num{4729.17} & \num{-3631.68} & \num{-1733.50} & \num{-1781.85} & \num{-2574.64} & \num{-1283.29}\\
 Province FE &  & X & X & X & X & X\\
 \bottomrule
 \end{tabular}

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  27 MAR 2023 20:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  15 APR 2023 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**draft-daniel-sanchez.tex
-(./draft-daniel-sanchez.tex
+**final-daniel-sanchez.tex
+(./final-daniel-sanchez.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -597,8 +597,8 @@ h' as default language. on input line 102.
 \@quotelevel=\count428
 \@quotereset=\count429
 
-(./draft-daniel-sanchez.aux)
-\openout1 = `draft-daniel-sanchez.aux'.
+(./final-daniel-sanchez.aux)
+\openout1 = `final-daniel-sanchez.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
 LaTeX Font Info:    ... okay on input line 102.
@@ -713,19 +713,19 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `draft-daniel-sanchez.bcf'.
+\openout3 = `final-daniel-sanchez.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'draft-daniel-sanchez.bbl' found.
+Package biblatex Info: ... file 'final-daniel-sanchez.bbl' found.
 
-(./draft-daniel-sanchez.bbl)
+(./final-daniel-sanchez.bbl)
 Package biblatex Info: Reference section=0 on input line 102.
 Package biblatex Info: Reference segment=0 on input line 102.
 Package hyperref Info: Link coloring OFF on input line 102.
- (./draft-daniel-sanchez.out)
-(./draft-daniel-sanchez.out)
+ (./final-daniel-sanchez.out)
+(./final-daniel-sanchez.out)
 \@outlinefile=\write4
-\openout4 = `draft-daniel-sanchez.out'.
+\openout4 = `final-daniel-sanchez.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 105.
@@ -737,49 +737,53 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 105.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 105.
-<figure/figure-1-1.pdf, id=55, 722.7pt x 433.62pt>
+<figure/figure-1-1.pdf, id=54, 722.7pt x 433.62pt>
 File: figure/figure-1-1.pdf Graphic file (type pdf)
 <use figure/figure-1-1.pdf>
 Package pdftex.def Info: figure/figure-1-1.pdf  used on input line 118.
 (pdftex.def)             Requested size: 452.9679pt x 271.77934pt.
- [1
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 122.
- [2 <./figure/figure-1-1.pdf>] [3] [4] [5]
-Overfull \hbox (34.72278pt too wide) in paragraph at lines 215--258
+[1
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figure/fi
+gure-1-1.pdf>] [3] [4] [5]
+Overfull \hbox (34.72278pt too wide) in paragraph at lines 217--260
 [][] 
  []
 
-<figure/event-study-1.pdf, id=168, 722.7pt x 505.89pt>
+<figure/event-study-1.pdf, id=170, 722.7pt x 505.89pt>
 File: figure/event-study-1.pdf Graphic file (type pdf)
 <use figure/event-study-1.pdf>
-Package pdftex.def Info: figure/event-study-1.pdf  used on input line 269.
+Package pdftex.def Info: figure/event-study-1.pdf  used on input line 271.
 (pdftex.def)             Requested size: 452.9679pt x 317.0759pt.
 [6] [7] [8 <./figure/event-study-1.pdf>] [9] [10] [11] [12]
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.302 \caption{Data Sources}
+l.304 \caption{Data Sources}
                             
-Underfull \hbox (badness 1281) in paragraph at lines 309--309
+Underfull \hbox (badness 1281) in paragraph at lines 311--311
 []|\OT1/cmr/m/n/10.95 Active com-pa-nies reg-is-tered
  []
 
 
-Underfull \hbox (badness 5563) in paragraph at lines 310--310
+Underfull \hbox (badness 5563) in paragraph at lines 312--312
 []|\OT1/cmr/m/n/10.95 Number of WFH work-ers
  []
 
 
-Underfull \hbox (badness 5245) in paragraph at lines 312--312
+Underfull \hbox (badness 5245) in paragraph at lines 314--314
 []|\OT1/cmr/m/n/10.95 Total num-ber of re-ported
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--317
+Underfull \hbox (badness 10000) in paragraph at lines 319--319
 \OT1/cmr/m/n/10.95 to the Na-tional Tran-sit
  []
 
@@ -788,9 +792,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.326 ...ted regressions with HAC standard errors}
+l.328 ...ted regressions with HAC standard errors}
                                                   
-Overfull \hbox (34.72278pt too wide) in paragraph at lines 329--372
+Overfull \hbox (34.72278pt too wide) in paragraph at lines 331--374
 [][] 
  []
 
@@ -799,16 +803,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13
 
-] [14] (./draft-daniel-sanchez.aux)
-Package rerunfilecheck Info: File `draft-daniel-sanchez.out' has not changed.
+] [14] (./final-daniel-sanchez.aux)
+Package rerunfilecheck Info: File `final-daniel-sanchez.out' has not changed.
 (rerunfilecheck)             Checksum: 2AF945A9234E3A01F8E370B8FCF4EE11;1052.
-Package logreq Info: Writing requests to 'draft-daniel-sanchez.run.xml'.
-\openout1 = `draft-daniel-sanchez.run.xml'.
+Package logreq Info: Writing requests to 'final-daniel-sanchez.run.xml'.
+\openout1 = `final-daniel-sanchez.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21475 strings out of 476024
- 433086 string characters out of 5794016
+ 21476 strings out of 476024
+ 433097 string characters out of 5794016
  1879382 words of memory out of 5000000
  41646 multiletter control sequences out of 15000+600000
  520526 words of font info for 59 fonts, out of 8000000 for 9000
@@ -830,10 +834,10 @@ amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.p
 fb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/tex
 live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on draft-daniel-sanchez.pdf (14 pages, 283913 bytes).
+Output written on final-daniel-sanchez.pdf (14 pages, 285217 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 382 PDF objects out of 1000 (max. 8388607)
+ 324 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
