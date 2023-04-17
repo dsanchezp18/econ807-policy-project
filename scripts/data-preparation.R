@@ -138,8 +138,6 @@ ins_2022 <-
 
 # Suspensions
 
-# Inscriptions
-
 sus_2017 <-
   read.csv('data/sri_cierres_2017.csv',
            sep = ';')
@@ -787,13 +785,13 @@ ins <-
   select(-DFC_DESCRIPCION_MES) %>% 
   mutate(month_year = parse_date_time(paste0(month_str, year), orders = 'b Y') %>% ymd(),
          province = case_when(
-           province == 'CA\xd1AR' ~ 'CAÑAR',
-           province == '' ~ NA,
-           TRUE ~ province
+         province == 'CA\xd1AR' ~ 'CAÑAR',
+         province == '' ~ NA,
+         TRUE ~ province
          )) %>% 
   left_join(province_codes %>% select(province_code, province_no_tilde), by = c('province' = 'province_no_tilde')) %>% 
   group_by(province_code, month_year) %>% 
-  summarise(registered = sum(ins)) %>% 
+  summarise(ins = sum(ins)) %>% 
   ungroup()
 
 # Left join to the main database
@@ -826,7 +824,7 @@ sus <-
          )) %>% 
   left_join(province_codes %>% select(province_code, province_no_tilde), by = c('province' = 'province_no_tilde')) %>% 
   group_by(province_code, month_year) %>% 
-  summarise(registered = sum(sus)) %>% 
+  summarise(sus = sum(sus)) %>% 
   ungroup()
 
 # Left join to the main database
