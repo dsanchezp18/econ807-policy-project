@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  16 APR 2023 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  17 APR 2023 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,78 +740,74 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 105.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 105.
-<figure/figure-1-1.pdf, id=54, 722.7pt x 433.62pt>
+ [1
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<figure/figure-1-1.pdf, id=79, 722.7pt x 433.62pt>
 File: figure/figure-1-1.pdf Graphic file (type pdf)
 <use figure/figure-1-1.pdf>
-Package pdftex.def Info: figure/figure-1-1.pdf  used on input line 118.
+Package pdftex.def Info: figure/figure-1-1.pdf  used on input line 124.
 (pdftex.def)             Requested size: 452.9679pt x 271.77934pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 122.
-[1
-
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figure/fi
-gure-1-1.pdf>] [3] [4] [5] [6]
-Overfull \hbox (34.72278pt too wide) in paragraph at lines 225--274
+(Font)              <10.95> on input line 128.
+ [2 <./figure/figure-1-1.pdf>] [3] [4] [5] [6]
+Overfull \hbox (34.72278pt too wide) in paragraph at lines 231--280
 [][] 
  []
 
-<figure/event-study-1.pdf, id=184, 722.7pt x 505.89pt>
+<figure/event-study-1.pdf, id=185, 722.7pt x 505.89pt>
 File: figure/event-study-1.pdf Graphic file (type pdf)
 <use figure/event-study-1.pdf>
-Package pdftex.def Info: figure/event-study-1.pdf  used on input line 285.
+Package pdftex.def Info: figure/event-study-1.pdf  used on input line 291.
 (pdftex.def)             Requested size: 452.9679pt x 317.0759pt.
 [7] [8] [9 <./figure/event-study-1.pdf>] [10] [11] [12] [13]
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.320 \caption{Data Sources}
+l.326 \caption{Data Sources}
                             
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
 []|\OT1/cmr/m/n/10.95 Job con-tracts reg-is-tered
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 328--328
+Underfull \hbox (badness 1281) in paragraph at lines 334--334
 []|\OT1/cmr/m/n/10.95 Active com-pa-nies reg-is-tered
  []
 
 
-Underfull \hbox (badness 5563) in paragraph at lines 329--329
+Underfull \hbox (badness 5563) in paragraph at lines 335--335
 []|\OT1/cmr/m/n/10.95 Number of WFH work-ers
  []
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 330--330
+Underfull \hbox (badness 6445) in paragraph at lines 336--336
 []|\OT1/cmr/m/n/10.95 Number of reg-is-tered tax
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 330--330
+Underfull \hbox (badness 5924) in paragraph at lines 336--336
 \OT1/cmr/m/n/10.95 con-trib-u-tors at the In-ter-
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 330--330
+Underfull \hbox (badness 1418) in paragraph at lines 336--336
 \OT1/cmr/m/n/10.95 nal Rev-enue Ser-vice (SRI),
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 330--330
+Underfull \hbox (badness 2326) in paragraph at lines 336--336
 \OT1/cmr/m/n/10.95 tions) and tax con-tributed
  []
 
 
-Underfull \hbox (badness 5245) in paragraph at lines 331--331
+Underfull \hbox (badness 5245) in paragraph at lines 337--337
 []|\OT1/cmr/m/n/10.95 Total num-ber of re-ported
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--336
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
 \OT1/cmr/m/n/10.95 to the Na-tional Tran-sit
  []
 
@@ -820,9 +816,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.346 ...ted regressions with HAC standard errors}
+l.352 ...ted regressions with HAC standard errors}
                                                   
-Overfull \hbox (34.72278pt too wide) in paragraph at lines 349--398
+Overfull \hbox (34.72278pt too wide) in paragraph at lines 355--404
 [][] 
  []
 
@@ -833,17 +829,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ] [15]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 402.
+(Font)              <14.4> on input line 408.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 402.
+(Font)              <7> on input line 408.
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.408 ... job contracts as the explained variable}
+l.414 ... job contracts as the explained variable}
                                                   
-Overfull \hbox (26.20609pt too wide) in paragraph at lines 410--459
+Overfull \hbox (26.20609pt too wide) in paragraph at lines 416--465
 [][] 
  []
 
@@ -855,25 +851,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.464 ...lained variable with HAC standard errors}
+l.470 ...lained variable with HAC standard errors}
                                                   
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.464 ...lained variable with HAC standard errors}
+l.470 ...lained variable with HAC standard errors}
                                                   
-Overfull \hbox (26.20609pt too wide) in paragraph at lines 467--516
+Overfull \hbox (26.20609pt too wide) in paragraph at lines 473--522
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figure/event-study1-1.pdf, id=298, 722.7pt x 505.89pt>
+<figure/event-study1-1.pdf, id=301, 722.7pt x 505.89pt>
 File: figure/event-study1-1.pdf Graphic file (type pdf)
 <use figure/event-study1-1.pdf>
-Package pdftex.def Info: figure/event-study1-1.pdf  used on input line 524.
+Package pdftex.def Info: figure/event-study1-1.pdf  used on input line 530.
 (pdftex.def)             Requested size: 452.9679pt x 317.0759pt.
 [16
 
@@ -888,10 +884,10 @@ Package logreq Info: Writing requests to 'final-daniel-sanchez.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21501 strings out of 476024
- 433548 string characters out of 5794016
+ 21502 strings out of 476024
+ 433562 string characters out of 5794016
  1897382 words of memory out of 5000000
- 41662 multiletter control sequences out of 15000+600000
+ 41663 multiletter control sequences out of 15000+600000
  521759 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,10n,77p,4666b,5046s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -912,10 +908,10 @@ cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.
 pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/te
 xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2022
 /texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on final-daniel-sanchez.pdf (18 pages, 316953 bytes).
+Output written on final-daniel-sanchez.pdf (18 pages, 318474 bytes).
 PDF statistics:
- 414 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
+ 417 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
  76 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
