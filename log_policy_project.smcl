@@ -1,0 +1,26 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\user\Documents\GitHub\econ807-policy-project\log_policy_project.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}31 Oct 2023, 00:00:12
+{txt}
+{com}. 
+. // --------------------- Load data ------------------------------ //
+. 
+. import excel using "data/directorio_companias.xlsx"
+{res}{text}(23 vars, 181,896 obs)
+
+{com}. 
+. // -------------- End ----------------------------------------- //
+. 
+. * Turn off the log
+. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\user\Documents\GitHub\econ807-policy-project\log_policy_project.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}31 Oct 2023, 00:00:40
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
