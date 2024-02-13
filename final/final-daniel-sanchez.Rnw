@@ -1,3 +1,4 @@
+%LTeX: language=en-CA
 % First Draft for ECON807 Policy Project
 % Daniel Sánchez Pazmiño
 % ECON807 Spring 2023
