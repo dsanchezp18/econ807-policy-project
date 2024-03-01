@@ -87,7 +87,7 @@ knitr::opts_chunk$set(echo = F,
 
 \begin{abstract}
 
-Informal labour markets are very prevalent in Latin America, where often political blockage difficults passing legislation which can address these issues directly. Alternative policies may be taken into account to help tackle the issue of informal work. In this paper, I explore the effect of an entry cost deregulation reform which happened in Ecuador in May 2020. An event-study approach is taken for the empirical analysis with a theoretical framework proposed by \textcite{Branstetter.2014}. While the empirical analysis shows mixed results, there is significant evidence which supports the fit of the theoretical with the data. In this sense, it is possible that a reduction in fixed entry costs for firms can create employment, but such reduction should be large enough to have a statistically significant effect.
+Informal labour markets are very prevalent in Latin America, where political blockage often difficults legislation which can address these issues. Alternative policies may be taken into account to help tackle informal work. In this paper, I explore the effect of an entry cost deregulation reform which took place in Ecuador in May 2020. An segmented regression approach is taken for the empirical analysis with a theoretical framework proposed by \textcite{Branstetter.2014}. While the empirical analysis shows mixed results, there is significant evidence which supports the fit of the theoretical with the data. In this sense, it is possible that a reduction in fixed entry costs for firms can create employment, but such reduction should be large enough to have a statistically significant effect.
 \end{abstract}
 
 \section{Introduction}
@@ -230,7 +230,7 @@ All variables in natural log form. See Appendix A for data sources.
 \end{table}
 \subsection{Empirical Strategy}
 
-To identify the causal effect of the SAS reform on formal job creation, I take an event-study approach with a regression framework (interrupted time series) in the lines of \textcite{Taljaard.2014}. Given that Ecuador is a unified republic, I do not observe variation in treatment across the cross-section. I take pre-event data as my control group, and use the event study framework to evaluate this assumption. Two approaches are implemented: segmented regressions using an interaction term between a time trend and a ``treatment'' dummy after the date of the policy change, and event study specifications using month-year dummies across the study's horizon. The segmented regressions take the following general form:
+To identify the causal effect of the SAS reform on formal job creation, I take a segmented regression approach (interrupted time series) in the line of \textcite{Taljaard.2014}. Given that Ecuador is a unified republic, I do not observe variation in treatment across the cross-section. I take pre-event data as my control group, and use the event study framework to evaluate this assumption. Two approaches are implemented: segmented regressions using an interaction term between a time trend and a ``treatment'' dummy after the date of the policy change, and event study specifications using month-year dummies across the study's horizon. The segmented regressions take the following general form:
 
 \begin{equation}
 \label{eqn:seg}
